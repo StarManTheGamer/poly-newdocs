@@ -4,4 +4,4 @@ icon: polytoria/Camera
 
 # Camera
 
-Inherited from [Instance](../Instance)
+{{ inherits("Instance") }}

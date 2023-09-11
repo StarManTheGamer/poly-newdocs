@@ -4,4 +4,4 @@ icon: polytoria/BodyPosition
 
 # BodyPosition
 
-Inherited from [Instance](../Instance)
+{{ inherits("Instance") }}

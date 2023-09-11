@@ -17,6 +17,7 @@ theme:
 
 plugins:
   - search
+  - macros
   - mkdocs-nav-weight:
       section_renamed: true
       index_weight: -10
