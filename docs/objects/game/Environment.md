@@ -4,3 +4,5 @@ weight: 2
 ---
 
 # Environment
+
+{{ inherits("Instance") }}

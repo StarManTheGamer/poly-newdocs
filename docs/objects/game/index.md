@@ -1,6 +1,6 @@
 ---
-weight: 7
+weight: 1
 empty: true
 ---
 
-# System
+# Game

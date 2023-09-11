@@ -8,6 +8,8 @@ def define_env(env):
     as the class name is not always equvilent to the markdown file's path.
 
     This assumes that the class is correctly placed in the docs/objects/ folder
+
+    TODO: move file searching logic to a seperate function
     """
     @env.macro
     def inherits(className):
@@ -20,8 +22,25 @@ def define_env(env):
                         filePath = os.path.join(root, file)
                         filePath = filePath[len(search_path):]
                         filePath = filePath[:-3]
-                        return "Inherited from [%s](/objects/%s)" % (className, filePath)
-        return "Inherited from %s" % (className)
+                        return "Inherits [%s](/objects/%s)" % (className, filePath)
+        return "Inherits %s" % (className)
+
+    @env.macro
+    def ambiguous(className, description):
+        # Find the actual link for the input classname by searching for the markdown file
+        search_path = "docs/objects/"
+        text = "Not to be confused with %s" % (className)
+        for root, dirs, files in os.walk(search_path):
+            for file in files:
+                if file.endswith(".md"):
+                    if file[:-3] == className:
+                        filePath = os.path.join(root, file)
+                        filePath = filePath[len(search_path):]
+                        filePath = filePath[:-3]
+                        text = "Not to be confused with [%s](/objects/%s)" % (className, filePath)
+
+        return "!!! note \"%s, %s\"" % (text, description)
+    
 
     """
     !!! NOT SAFE FOR PRODUCTION USE !!!

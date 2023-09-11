@@ -4,3 +4,4 @@ weight: 1
 ---
 
 # Game
+{{ inherits("Instance") }}

@@ -1,7 +1,9 @@
 ---
-icon: polytoria/Camera
+icon: polytoria/NPC
+weight: 5
+
 ---
 
-# Camera
+# NPC
 
 {{ inherits("Instance") }}
