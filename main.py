@@ -22,7 +22,7 @@ def define_env(env):
                         filePath = os.path.join(root, file)
                         filePath = filePath[len(search_path):]
                         filePath = filePath[:-3]
-                        return "Inherits [%s](/objects/%s)" % (className, filePath)
+                        return "Inherits [:polytoria-%s: %s](/objects/%s)" % (className, className, filePath)
         return "Inherits %s" % (className)
 
     @env.macro
@@ -41,6 +41,21 @@ def define_env(env):
 
         return "!!! note \"%s, %s\"" % (text, description)
     
+
+    @env.macro
+    def notnewable():
+        return """!!! warning "Not newable"
+    This object cannot be created by scripts using `Instance.New()`"""
+
+    @env.macro
+    def abstract():
+        return """!!! danger "Abstract object"
+    This object exists only to serve as a foundation for other objects. It cannot be accessed directly, but its properties are documented below."""
+
+    @env.macro
+    def service():
+        return """!!! example "Service object"
+    This object is automatically created by Polytoria. Its parent cannot be changed."""
 
     """
     !!! NOT SAFE FOR PRODUCTION USE !!!

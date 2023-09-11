@@ -6,4 +6,8 @@ weight: 101
 
 # DynamicInstance
 
+{{ abstract() }}
+
+{{ notnewable() }}
+
 {{ inherits("Instance") }}

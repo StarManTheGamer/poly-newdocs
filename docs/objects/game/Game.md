@@ -4,4 +4,9 @@ weight: 1
 ---
 
 # Game
+
+{{ service() }}
+
+{{ notnewable() }}
+
 {{ inherits("Instance") }}

@@ -7,4 +7,8 @@ weight: 4
 
 {{ ambiguous("Player", "the object that represents a single player.") }}
 
+{{ service() }}
+
+{{ notnewable() }}
+
 {{ inherits("Instance") }}

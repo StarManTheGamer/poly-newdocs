@@ -6,4 +6,4 @@ weight: 2
 
 # MeshPart
 
-{{ inherits("Instance") }}
+{{ inherits("BasePart") }}

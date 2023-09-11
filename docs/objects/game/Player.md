@@ -7,4 +7,6 @@ weight: 5
 
 {{ ambiguous("Players","the service object that contains all connected players.") }}
 
+{{ notnewable() }}
+
 {{ inherits("Instance") }}

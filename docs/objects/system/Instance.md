@@ -4,3 +4,7 @@ weight: 100
 ---
 
 # Instance
+
+{{ abstract() }}
+
+{{ notnewable() }}

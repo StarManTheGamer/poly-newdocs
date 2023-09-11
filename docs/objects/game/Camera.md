@@ -6,4 +6,8 @@ weight: 8
 
 # Camera
 
+{{ service() }}
+
+{{ notnewable() }}
+
 {{ inherits("Instance") }}

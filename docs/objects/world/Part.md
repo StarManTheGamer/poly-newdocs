@@ -6,4 +6,4 @@ weight: 1
 
 # Part
 
-{{ inherits("Instance") }}
+{{ inherits("BasePart") }}

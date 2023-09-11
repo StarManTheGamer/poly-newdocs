@@ -6,4 +6,4 @@ weight: 4
 
 # Text3D
 
-{{ inherits("Instance") }}
+{{ inherits("DynamicInstance") }}

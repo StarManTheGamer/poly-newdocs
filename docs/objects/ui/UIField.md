@@ -4,6 +4,10 @@ weight: 100
 
 ---
 
-# UIFIeld
+# UIField
+
+{{ abstract() }}
+
+{{ notnewable() }}
 
 {{ inherits("Instance") }}
