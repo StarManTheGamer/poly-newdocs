@@ -1,9 +1,11 @@
 # Home
 
-Welcome to the Polytoria Scripting API documentation! On this site, you can find the documentation of the Polytoria scripting language.
+Welcome to the Polytoria Scripting API documentation! This documentation provides up-to-date information on creating your experiences on Polytoria using scripting.
 
-Polytoria uses Lua, of which you can find the documentation [here](https://www.lua.org/manual/5.2/)
+Polytoria uses the Lua programming language. If you are unfamiliar with Lua, you can find the documentation [here](https://www.lua.org/manual/5.2/)
 
-## Contributing to docs
+## Contributing to our docs
 
-You can contribute to the project by creating a pull request on [our github repository](https://github.com/Polytoria/Docs).
+The entire documentation is open source; you can access it right now!
+
+You can contribute to our documenting efforts by creating a pull request on [our GitHub repository](https://github.com/Polytoria/Docs). Feel free to add working examples or clarifications where needed.
