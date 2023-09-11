@@ -1,25 +1,28 @@
-site_name: Polytoria Scripting API
+site_name: Polytoria Scripting Documentation
 copyright: Copyright &copy; 2019 - 2023 Polytoria
 theme:
   features:
     - navigation.tabs
     - navigation.instant
+    - navigation.sections
     - content.code.annotate
   name: material
+  custom_dir: docs/theme
   logo: assets/logo.svg
   font:
     text: Rubik
   palette:
-    - scheme: default
-      primary: blue
-      toggle:
-        icon: material/weather-sunny
-        name: Switch to dark mode
     - scheme: slate
       primary: blue
-      toggle:
-        icon: material/weather-night
-        name: Switch to light mode
+
+plugins:
+  - search
+  - mkdocs-nav-weight:
+      section_renamed: true
+      index_weight: -10
+      warning: true
+      reverse: false
+  
 markdown_extensions:
   - pymdownx.highlight
   - pymdownx.inlinehilite
@@ -28,5 +31,11 @@ markdown_extensions:
   - tables
   - admonition
   - pymdownx.superfences
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+      options:
+        custom_icons:
+          - docs/theme/.icons
 extra_css:
   - assets/extra.css
