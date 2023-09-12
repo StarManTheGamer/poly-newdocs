@@ -98,15 +98,15 @@ def property(name):
     else:
         property_type = "%s" % (property_type)
         
-    if "=" in property_type:
-        split = property_type.split("=")
+    split = property_type.split("=")
+    if not has_link:
+        split[0] = "`%s`" % (split[0])
+    if len(split) > 1:
         property_type = split[0]
         default_value = split[1]
-        if not has_link:
-            property_type = "`%s`" % (property_type)
         type_text = "%s = `%s`" % (property_type, default_value)
     else:
-        type_text = "%s" % (property_type)
+        type_text = "%s" % (split[0])
 
 
 
