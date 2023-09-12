@@ -91,16 +91,19 @@ def property(name):
     property_type = value.split(":")[1].strip()
     default_value = ""
     type_text = property_type
-
+    has_link = False
     if (getClassLink(property_type) != "?"):
         property_type = getClassLink(property_type)
+        has_link = True
     else:
-        property_type = "`%s`" % (property_type)
+        property_type = "%s" % (property_type)
         
     if "=" in property_type:
         split = property_type.split("=")
         property_type = split[0]
         default_value = split[1]
+        if not has_link:
+            property_type = "`%s`" % (property_type)
         type_text = "%s = `%s`" % (property_type, default_value)
     else:
         type_text = "%s" % (property_type)
