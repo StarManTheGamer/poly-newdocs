@@ -29,7 +29,7 @@ def define_env(env):
     """
     @env.macro
     def inherits(className):
-        return "Inherits %s" % (getClassLink(className))
+        return "Inherits %s\n{ data-search-exclude }" % (getClassLink(className))
 
    
     @env.macro
@@ -50,27 +50,40 @@ def define_env(env):
 
     @env.macro
     def notnewable():
-        return """!!! warning "Not newable"
-    This object cannot be created by scripts using `Instance.New()`"""
+        return """<div data-search-exclude markdown>
+        
+!!! warning "Not newable"
+    This object cannot be created by scripts using `Instance.New()`
+    
+    </div>"""
 
     @env.macro
     def abstract():
-        return """!!! danger "Abstract object"
-    This object exists only to serve as a foundation for other objects. It cannot be accessed directly, but its properties are documented below."""
+        return """<div data-search-exclude markdown>
+!!! danger "Abstract object"
+    This object exists only to serve as a foundation for other objects. It cannot be accessed directly, but its properties are documented below.
+    
+    Additionally, it cannot be created in the creator menu or with `Instance.New()`
+</div>"""
 
     @env.macro
     def service():
-        return """!!! example "Service object"
-    This object is automatically created by Polytoria. Additionally, scripts cannot change its parent."""
+        return """<div data-search-exclude markdown>
+!!! example "Service object"
+    This object is automatically created by Polytoria. Additionally, scripts cannot change its parent.
+</div>"""
 
     @env.macro
     def nosync():
-        return """!!! failure "Does not sync!"
-    This object does not sync across the server and client. It is recommended to avoid changing its properties from %ss, as the changes will not be visible to players.""" % (getClassLink("Script"))
-
+        return """<div data-search-exclude markdown>
+!!! failure "Does not sync!"
+    This object does not sync across the server and client. It is recommended to avoid changing its properties from %ss, as the changes will not be visible to players.
+</div>""" % (getClassLink("Script"))
     @env.macro
     def serverproperty():
-        return "!!! warning \"This property is only available to the server. It can only be accessed with server scripts\"" 
+        return """<div data-search-exclude markdown>
+!!! warning \"This property is only available to the server. It can only be accessed with server scripts.
+</div>\""""
     
     @env.macro
     def clientproperty():
@@ -89,6 +102,14 @@ def property(name):
     value = name[3:] # in form "name:type=value"
     name = value.split(":")[0].strip()
     property_type = value.split(":")[1].strip()
+    type_friendlyname_table = {
+        "int": "number",
+        "float": "number",
+        "bool": "boolean",
+    }
+    if property_type in type_friendlyname_table:
+        property_type = type_friendlyname_table[property_type]
+        
     default_value = ""
     type_text = property_type
     has_link = False
@@ -110,7 +131,11 @@ def property(name):
 
 
 
-    return "### %s : %s { #%s data-toc-label=\"%s\" }" % (name, type_text, name, name)
+    return "### :polytoria-Property: %s : %s { #%s data-toc-label=\"%s\" }" % (name, type_text, name, name)
+
+def event(name):
+    value = name[3:]
+    return "### :polytoria-Event: %s { #%s data-toc-label=\"%s\" }" % (value, value, value)
 
 def method(name):
     value = name[3:] # in form "name:type"
@@ -123,6 +148,8 @@ def on_pre_page_macros(env):
     lines = markdown_text.split("\n")
     for i in range(len(lines)):
         if lines[i].endswith("{ property }"):
-            lines[i] = property(lines[i][:-12])
+            lines[i] = property(lines[i][:-len("{ property }")])
+        elif lines[i].endswith("{ event }"):
+            lines[i] = event(lines[i][:-len("{ event }")])
     markdown_text = "\n".join(lines)
     env.markdown = markdown_text

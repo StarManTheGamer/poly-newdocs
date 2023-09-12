@@ -7,19 +7,21 @@ weight: 1
 
 {{ notnewable() }}
 
+<div data-search-exclude markdown>
 !!! tip "This object can be accessed in scripts by using the `game` keyword."
+</div>
 
 :polytoria-Game: Game is the root object in the Polytoria instance tree. It is the object of which everything is descended
 
 {{ inherits("Instance") }}
 
 ## Properties
-### GameID:number { property }
+### GameID:int { property }
 The ID of the current Polytoria place.
 
 The value is `0` when testing locally through Polytoria Creator, which can be used as a conditional to check if the game is live or not.
 
-### InstanceCount:number { property }
+### InstanceCount:int { property }
 The total number of instances currently loaded
 
 !!! note "Remarks"

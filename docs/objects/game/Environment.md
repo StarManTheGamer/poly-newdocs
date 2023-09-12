@@ -9,6 +9,8 @@ weight: 2
 
 {{ notnewable() }}
 
+:polytoria-Environment: Environment is the primary object intended for storing active objects in the game.
+
 {{ inherits("Instance") }}
 
 ## Properties
@@ -24,10 +26,10 @@ game["Environment"].FogColor = Color.New(1, 1, 1, 1)
 ### FogEnabled:boolean { property }
 Whether or not fog is enabled.
 
-### FogStartDistance:number { property }
+### FogStartDistance:float { property }
 The distance from the camera at which fog starts to appear
 
-### FogEndDistance:number { property }
+### FogEndDistance:float { property }
 The distance from the camera at which fog is fully opaque
 
 ### Gravity:Vector3=Vector3.New(0, -75, 0) { property }

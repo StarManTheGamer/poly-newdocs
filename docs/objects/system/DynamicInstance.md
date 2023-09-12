@@ -8,6 +8,4 @@ weight: 101
 
 {{ abstract() }}
 
-{{ notnewable() }}
-
 {{ inherits("Instance") }}
