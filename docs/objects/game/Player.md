@@ -5,7 +5,7 @@ weight: 5
 
 # Player
 
-{{ ambiguous("Players","the service object that contains all connected players.") }}
+{{ ambiguousMultiple([["Players","the service object that contains all connected players."], ["PlayerAvatar","the avatar"]]) }}
 
 {{ notnewable() }}
 

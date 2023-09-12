@@ -9,3 +9,7 @@ Polytoria uses the Lua programming language. If you are unfamiliar with Lua, yo
 The entire documentation is open source; you can access it right now!
 
 You can contribute to our documenting efforts by creating a pull request on [our GitHub repository](https://github.com/Polytoria/Docs). Feel free to add working examples or clarifications where needed.
+
+## Credits
+
+The Polytoria Scripting documentation site is powered by [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/). If you are having any issues with the site, consider contributing to the Material for MkDocs project.

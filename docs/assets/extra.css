@@ -14,6 +14,7 @@
 
 svg[viewBox="0 0 48 48"] {
 	color: transparent !important;
+	transform: translateY(1px);
 }
 
 .md-nav__link span:not(:only-child) {
@@ -21,6 +22,3 @@ svg[viewBox="0 0 48 48"] {
 	margin-top: 0.11em;
 }
 
-.md-footer {
-	display: none;
-}

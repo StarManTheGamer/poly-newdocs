@@ -6,6 +6,8 @@ weight: 4
 
 # BodyPart
 
+{{ nosync() }}
+
 {{ notnewable() }}
 
 {{ inherits("Instance") }}

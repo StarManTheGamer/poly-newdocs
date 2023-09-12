@@ -6,4 +6,4 @@ weight: 3
 
 # Seat
 
-{{ inherits("BasePart") }}
+{{ inherits("Part") }}

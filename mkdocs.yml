@@ -3,9 +3,15 @@ copyright: Copyright &copy; 2019 - 2023 Polytoria
 theme:
   features:
     - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.expand
     - navigation.instant
-    - navigation.sections
+    - navigation.path
     - content.code.annotate
+    - header.autohide
+    - navigation.top
+    - toc.follow
+    
   name: material
   custom_dir: docs/theme
   logo: assets/logo.svg
@@ -14,7 +20,20 @@ theme:
   palette:
     - scheme: slate
       primary: blue
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+    - scheme: default
+      primary: blue
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
 
+
+# For consistency, for MkDocs is instead credited on the main home page ❤️
+extra:
+  generator: false
+  
 plugins:
   - search
   - macros
@@ -31,7 +50,9 @@ markdown_extensions:
   - pymdownx.snippets
   - tables
   - admonition
-  - pymdownx.superfences
+  - attr_list
+  - toc:
+      permalink: true
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
