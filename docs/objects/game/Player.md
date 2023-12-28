@@ -9,4 +9,6 @@ weight: 5
 
 {{ notnewable() }}
 
+:polytoria-Player: Player is the class of the player and it's character controlled by it's player.
+
 {{ inherits("Instance") }}
