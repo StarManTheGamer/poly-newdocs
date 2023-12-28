@@ -15,10 +15,10 @@ Parts are physical objects that can be placed in the world.
 ### Anchored:bool { property }
 Specifies whether the part is to be affected by physics or not.
 
-### AngularDrag:number { property }
+### AngularDrag:int { property }
 Angular drag (air resistance) of this part.
 
-### AngularDrag:number { property }
+### AngularDrag:int { property }
 Angular drag (air resistance) of this part.
 
 ### AngularVelocity:Vector3 { property }
@@ -30,7 +30,7 @@ Specifies whether the part can be collided with or not.
 ### Color:Color { property }
 Specifies the color of a part.
 
-### Drag:number { property }
+### Drag:int { property }
 Drag (air resistance) of this part.
 
 ### Forward:Vector3 { property }
@@ -42,7 +42,7 @@ Controls whether to display studs on the part or not.
 ### IsSpawn:bool { property }
 Specifies whether the part can be used as a spawn location or not.
 
-### Mass:number { property }
+### Mass:int { property }
 Specifies the mass of a part in kilograms.
 
 ### Material:PartMaterial { property }

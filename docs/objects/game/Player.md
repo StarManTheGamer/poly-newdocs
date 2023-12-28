@@ -29,12 +29,12 @@ The current health of the player.
 ### IsAdmin:bool { property }
 Returns whether or not the player is a Polytoria admin.
 
-{{ readonlyproperty() }}
+{{ readonly() }}
 
 ### IsCreator:bool { property }
 Returns whether or not the player is the creator of the current game.
 
-{{ readonlyproperty() }}
+{{ readonly() }}
 
 ### IsInputFocused:bool { property }
 Determines whether or not the player is currently focused on an input.
@@ -42,7 +42,7 @@ Determines whether or not the player is currently focused on an input.
 ### JumpPower:int { property }
 Specifies how high the player's jump is.
 
-### MaxHealth:int { property }
+### MaxHealth:int=100 { property }
 Specifies the maximum health the player can have.
 
 ### MaxStamina:int { property }
@@ -72,7 +72,7 @@ The rate at which stamina regenerates after being depleted for the player.
 ### UserID:int { property }
 Returns the player's user ID.
 
-{{ readonlyproperty() }}
+{{ readonly() }}
 
 ### WalkSpeed:int=16 { property }
 Determines how fast the player walks.
@@ -81,7 +81,7 @@ Determines how fast the player walks.
 ### Chatted:string { event }
 Fires when the player sends a chat message.
 
-Example
+**Example**
 ```lua
 game["Players"]["willemsteller"].Chatted:Connect(function (message)
     print("Player wrote: " .. message)
@@ -91,7 +91,7 @@ end)
 ### Died { event }
 Fires when the player dies.
 
-Example
+**Example**
 ```lua
 game["Players"]["willemsteller"].Died:Connect(function ()
     print("Player died")
@@ -101,7 +101,7 @@ end)
 ### Respawned { event }
 Fires when the player respawns.
 
-Example
+**Example**
 ```lua
 game["Players"]["willemsteller"].Respawned:Connect(function ()
     print("Player has respawned")
@@ -112,12 +112,12 @@ end)
 ### DropTools { method }
 Drops the tool the player is currently holding.
 
-{{ servermethod() }}
+{{ serverexclusive() }}
 
 ### Kick { method }
 Kicks the player from the server.
 
-{{ servermethod() }}
+{{ serverexclusive() }}
 
 ### OwnsItem:callback { method }
 Checks if the player owns an item
@@ -128,7 +128,7 @@ Checks if the player owns an item
 !!! warning "Rate Limit"
     A maximum of 30 requests can be made per minute per server.
 
-Example
+**Example**
 ```lua
 player:OwnsItem(11117, function(error, owns)
     if error then

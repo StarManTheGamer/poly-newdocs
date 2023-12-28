@@ -10,13 +10,13 @@ PointLight is a source of light that can be placed in the world.
 
 ## Properties
 
-### Brightness:number { property }
+### Brightness:int { property }
 Specifies how bright/intense the light is.
 
 ### Color:Color { property }
 Specifies the color of the light.
 
-### Range:number { property }
+### Range:int { property }
 Specifies how far out the light can reach.
 
 ### Shadows:bool { property }

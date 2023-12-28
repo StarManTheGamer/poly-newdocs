@@ -19,7 +19,7 @@ weight: 4
 ### LocalPlayer:Player { property }
 Returns the local player currently playing
 
-{{ clientproperty() }}
+{{ clientexclusive() }}
 
 ### PlayerCollisionEnabled:bool { property }
 Determines whether or not collisions between players are enabled

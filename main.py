@@ -74,28 +74,27 @@ def define_env(env):
 </div>"""
 
     @env.macro
+    def serverexclusive():
+        return "!!! warning \"This is only available to the server. It can only be accessed within server scripts.\""
+    
+    @env.macro
+    def clientexclusive():
+        return "!!! warning \"This is only available to the client. It can only be accessed within local scripts.\""
+
+    @env.macro
     def nosync():
         return """<div data-search-exclude markdown>
 !!! failure "Does not sync!"
     This object does not sync across the server and client. It is recommended to avoid changing its properties from %ss, as the changes will not be visible to players.
 </div>""" % (getClassLink("Script"))
-    @env.macro
-    def serverproperty():
-        return """<div data-search-exclude markdown>
-!!! warning \"This property is only available to the server. It can only be accessed with server scripts.
-</div>\""""
     
     @env.macro
-    def clientproperty():
-        return "!!! warning \"This property is only available to the client. It can only be accessed with local scripts.\""
-    
-    @env.macro
-    def readonlyproperty():
+    def readonly():
         return "!!! warning \"This property is read-only and cannot be modified.\""
     
     @env.macro
-    def servermethod():
-        return "!!! warning \"This method is only available to the server. It can only be fired within server scripts.\""
+    def comingsoon():
+        return "!!! failure \"This currently doesn't exist but has been promised by Polytoria developers.\""
 
 
     """
@@ -131,6 +130,8 @@ def property(name):
         property_type = "%s" % (property_type)
         
     split = property_type.split("=")
+    if split[0] in type_friendlyname_table:
+        split[0] = type_friendlyname_table[split[0]]
     if not has_link:
         split[0] = "`%s`" % (split[0])
     if len(split) > 1:

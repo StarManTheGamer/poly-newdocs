@@ -20,7 +20,7 @@ Determines the default color of players' usernames in chat.
 ### JumpPower:int { property }
 Determines how high the player jumps by default.
 
-### MaxHealth:int { property }
+### MaxHealth:int=100 { property }
 Determines the default maximum health of players.
 
 ### MaxStamina:int { property }

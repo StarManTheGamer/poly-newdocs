@@ -9,4 +9,6 @@ weight: 15
 
 {{ notnewable() }}
 
+:polytoria-PlayerAvatar: PlayerAvatar is a class that is the player's avatar in game.
+
 {{ inherits("DynamicInstance") }}

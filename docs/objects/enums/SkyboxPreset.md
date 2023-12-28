@@ -3,7 +3,7 @@ icon: polytoria/Enum
 ---
 
 # SkyboxPreset
-| Value | Value | Description |
+| Name | Value | Description |
 | --- | --- | --- |
 | `SkyboxPreset.Day1` | 0 | A blue sky with clouds |
 | `SkyboxPreset.Day2` | 1 | A blue sky with clouds |
