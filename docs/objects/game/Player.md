@@ -11,4 +11,143 @@ weight: 5
 
 :polytoria-Player: Player is the class of the player and it's character controlled by it's player.
 
-{{ inherits("Instance") }}
+{{ inherits("DynamicInstance") }}
+
+## Properties
+### CanMove:bool { property }
+Determines whether or not the player can move.
+
+### ChatColor:Color { property }
+The player's username color in the chat.
+```lua
+game["Players"]["willemsteller"].ChatColor = Color3.New(0, 1, 0)
+```
+
+### Health:int { property }
+The current health of the player.
+
+### IsAdmin:bool { property }
+Returns whether or not the player is a Polytoria admin.
+
+{{ readonlyproperty() }}
+
+### IsCreator:bool { property }
+Returns whether or not the player is the creator of the current game.
+
+{{ readonlyproperty() }}
+
+### IsInputFocused:bool { property }
+Determines whether or not the player is currently focused on an input.
+
+### JumpPower:int { property }
+Specifies how high the player's jump is.
+
+### MaxHealth:int { property }
+Specifies the maximum health the player can have.
+
+### MaxStamina:int { property }
+Specifies the maximum stamina the player can have.
+
+### RespawnTime:int=1.5 { property }
+Determines how long it takes between the player's death and respawn.
+
+### SittingIn:instance { property }
+Returns the seat the player is currently sitting in, `nil` if the player is not sitting in any seat.
+
+### SprintSpeed:int { property }
+Determines how fast the player is while sprinting.
+
+!!! note "Remarks"
+    Sprinting can be disabled by setting the player's SprintSpeed to their WalkSpeed.
+
+### Stamina:int { property }
+The player's current amount of stamina.
+
+### StaminaEnabled:bool { property }
+Determines whether or not stamina is enabled for the player.
+
+### StaminaRegen:int { property }
+The rate at which stamina regenerates after being depleted for the player.
+
+### UserID:int { property }
+Returns the player's user ID.
+
+{{ readonlyproperty() }}
+
+### WalkSpeed:int=16 { property }
+Determines how fast the player walks.
+
+## Events
+### Chatted:string { event }
+Fires when the player sends a chat message.
+
+Example
+```lua
+game["Players"]["willemsteller"].Chatted:Connect(function (message)
+    print("Player wrote: " .. message)
+end)
+```
+
+### Died { event }
+Fires when the player dies.
+
+Example
+```lua
+game["Players"]["willemsteller"].Died:Connect(function ()
+    print("Player died")
+end)
+```
+
+### Respawned { event }
+Fires when the player respawns.
+
+Example
+```lua
+game["Players"]["willemsteller"].Respawned:Connect(function ()
+    print("Player has respawned")
+end)
+```
+
+## Methods
+### DropTools { method }
+Drops the tool the player is currently holding.
+
+{{ servermethod() }}
+
+### Kick { method }
+Kicks the player from the server.
+
+{{ servermethod() }}
+
+### OwnsItem:callback { method }
+Checks if the player owns an item
+
+!!! note "Caching"
+    The function will cache the result for 5 minutes.
+
+!!! warning "Rate Limit"
+    A maximum of 30 requests can be made per minute per server.
+
+Example
+```lua
+player:OwnsItem(11117, function(error, owns)
+    if error then
+        print("An error occurred!")
+    else
+        if owns then
+            print("Player owns Blade of Spooks!")
+        else
+            print("Player does not own Blade of Spooks!")
+        end
+    end
+end)
+```
+
+### Respawn { method }
+Respawns the player.
+
+### Sit:Seat { method }
+Sit the player in a specific seat.
+
+### Unsit:bool=false { method }
+Unsit the player.

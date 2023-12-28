@@ -88,6 +88,16 @@ def define_env(env):
     @env.macro
     def clientproperty():
         return "!!! warning \"This property is only available to the client. It can only be accessed with local scripts.\""
+    
+    @env.macro
+    def readonlyproperty():
+        return "!!! warning \"This property is read-only and cannot be modified.\""
+    
+    @env.macro
+    def servermethod():
+        return """<div data-search-exclude markdown>
+!!! warning \"This method is only available to the server. It can only be fired within server scripts.
+</div>\""""
 
 
     """
@@ -97,16 +107,19 @@ def define_env(env):
     def doc_env():
         "Document the environment"
         return {name:getattr(env, name) for name in dir(env) if not name.startswith('_')}
-    
+
+# define list of friendly names for method and property types
+type_friendlyname_table = {
+    "int": "number",
+    "float": "number",
+    "bool": "boolean",
+    "array": "[]"
+}
+
 def property(name):
     value = name[3:] # in form "name:type=value"
     name = value.split(":")[0].strip()
     property_type = value.split(":")[1].strip()
-    type_friendlyname_table = {
-        "int": "number",
-        "float": "number",
-        "bool": "boolean"
-    }
     if property_type in type_friendlyname_table:
         property_type = type_friendlyname_table[property_type]
         
@@ -140,12 +153,13 @@ def event(name):
 def method(name):
     value = name[3:] # in form "name:type"
     name = value.split(":")[0]
-    property_type = value.split(":")[1]
-    type_friendlyname_table = {
-        "array": "[]"
-    }
-    if property_type in type_friendlyname_table:
-        property_type = type_friendlyname_table[property_type]
+    property_type = ""
+    if 1 < len(value.split(":")):
+        property_type = value.split(":")[1].strip()
+        if property_type in type_friendlyname_table:
+            property_type = type_friendlyname_table[property_type]
+    else:
+        property_type = "void"
     return "### :polytoria-Method: %s → `%s` { #%s data-toc-label=\"%s\" }" % (name, property_type, name, name)
 
 def on_pre_page_macros(env):
