@@ -87,7 +87,7 @@ def define_env(env):
     
     @env.macro
     def clientproperty():
-        return "!!! warning \"This property is only available to the client. It can only be accessed with server scripts\"" 
+        return "!!! warning \"This property is only available to the client. It can only be accessed with local scripts.\""
 
 
     """
@@ -105,7 +105,7 @@ def property(name):
     type_friendlyname_table = {
         "int": "number",
         "float": "number",
-        "bool": "boolean",
+        "bool": "boolean"
     }
     if property_type in type_friendlyname_table:
         property_type = type_friendlyname_table[property_type]
@@ -141,9 +141,15 @@ def method(name):
     value = name[3:] # in form "name:type"
     name = value.split(":")[0]
     property_type = value.split(":")[1]
-    return "### %s → `%s` { #%s data-toc-label=\"%s\" }" % (name, property_type, name, name)
+    type_friendlyname_table = {
+        "array": "[]"
+    }
+    if property_type in type_friendlyname_table:
+        property_type = type_friendlyname_table[property_type]
+    return "### :polytoria-Method: %s → `%s` { #%s data-toc-label=\"%s\" }" % (name, property_type, name, name)
+
 def on_pre_page_macros(env):
-    #find headers with { property } at the end and replace with the property macro
+    #find headers with { macroName } at the end and replace with the associated macro
     markdown_text = env.markdown
     lines = markdown_text.split("\n")
     for i in range(len(lines)):
@@ -151,5 +157,7 @@ def on_pre_page_macros(env):
             lines[i] = property(lines[i][:-len("{ property }")])
         elif lines[i].endswith("{ event }"):
             lines[i] = event(lines[i][:-len("{ event }")])
+        elif lines[i].endswith("{ method }"):
+            lines[i] = method(lines[i][:-len("{ method }")])
     markdown_text = "\n".join(lines)
     env.markdown = markdown_text
