@@ -12,8 +12,3 @@ Tools are objects that can be held by players.
 ## Properties
 ### Droppable:bool { property }
 Determines whether the tool can be dropped by the player or not.
-
-**Example**
-```lua
-tool.Droppable = true
-```
