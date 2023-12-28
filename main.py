@@ -168,7 +168,7 @@ def event(name):
 
 def method(name):
     value = name[3:] # in form "name:type"
-    name = value.split(":")[0]
+    name = value.split(":")[0].strip()
     property_type = ""
     if 1 < len(value.split(":")):
         property_type = value.split(":")[1].strip()
