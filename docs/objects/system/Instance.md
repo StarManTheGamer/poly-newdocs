@@ -31,8 +31,7 @@ Specifies the parent instance of an instance.
 ### Shared:Table { property }
 An empty table you can use to hold metadata about anything on any object or player you want.
 
-!!! note "This property doesn't sync!"
-    Doesn't sync from the client to the server, or from the server to the client.
+!!! note "Doesn't sync from the client to the server, or from the server to the client."
 
 **Example**
 
