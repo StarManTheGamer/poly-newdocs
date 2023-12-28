@@ -9,4 +9,6 @@ weight: 5
 
 {{ notnewable() }}
 
+:polytoria-ScriptService: ScriptService is a service used for storing scripts and local scripts.
+
 {{ inherits("Instance") }}
