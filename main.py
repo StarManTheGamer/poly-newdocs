@@ -132,6 +132,9 @@ def property(name):
     split = property_type.split("=")
     if split[0] in type_friendlyname_table:
         split[0] = type_friendlyname_table[split[0]]
+    if getClassLink(split[0]) != "?":
+        split[0] = getClassLink(split[0])
+        has_link = True
     if not has_link:
         split[0] = "`%s`" % (split[0])
     if len(split) > 1:
@@ -168,7 +171,8 @@ def event(name):
 
 def method(name):
     value = name[3:] # in form "name:type"
-    name = value.split(":")[0].strip()
+    name = value.split(":")[0].strip().split("(")[0].strip()
+    print('NAME: ' + name)
     property_type = ""
     if 1 < len(value.split(":")):
         property_type = value.split(":")[1].strip()
@@ -176,6 +180,22 @@ def method(name):
             property_type = type_friendlyname_table[property_type]
     else:
         property_type = "void"
+
+    """
+    parametersList = ""
+    print(value.split("("))
+    parameters = ''.join(value.split("("))
+    print('PARAMETERS: ' + parameters)
+    parameters = parameters.split(")")[1:]
+    print(parameters)
+    for i in range(len(parameters)):
+        parameters[i] = parameters[i].replace(':', '').strip()
+        if parameters[i] in type_friendlyname_table:
+            parameters[i] = type_friendlyname_table[parameters[i]]
+        parameters[i] = '`' + parameters[i] + '`'
+    if len(parameters) > 0:
+        parametersList = "(" + ', '.join(parameters) + ")"
+    """
     return "### :polytoria-Method: %s → `%s` { #%s data-toc-label=\"%s\" }" % (name, property_type, name, name)
 
 def on_pre_page_macros(env):

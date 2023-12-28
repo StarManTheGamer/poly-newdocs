@@ -6,7 +6,7 @@ weight: 10
 
 # IntValue
 
-This object can be used for storing integer number values.
+:polytoria-IntValue: IntValue is a ValueBase that stores integers.
 
 {{ inherits("ValueBase") }}
 

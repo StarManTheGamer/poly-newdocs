@@ -17,26 +17,26 @@ weight: 4
 
 ## Properties
 ### LocalPlayer:Player { property }
-Returns the local player currently playing
+Returns the local player currently playing.
 
 {{ clientexclusive() }}
 
 ### PlayerCollisionEnabled:bool { property }
-Determines whether or not collisions between players are enabled
+Determines whether or not collisions between players are enabled.
 
 ## Events
 ### PlayerAdded:Player { event }
-Fires when a player joins the server
+Fires when a player joins the server.
 
 ### PlayerRemoved:Player { event }
-Fires when a player leaves the server
+Fires when a player leaves the server.
 
 ## Methods
 ### GetPlayer:Player { method }
-Returns the player instance from their username
+Returns the player instance from their username.
 
 ### GetPlayerByID:Player { method }
-Returns the player instance from their user ID
+Returns the player instance from their user ID.
 
 ### GetPlayers:array { method }
-Returns all players in the game as an array
+Returns all players in the game as an array.

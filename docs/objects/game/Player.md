@@ -14,16 +14,16 @@ weight: 5
 {{ inherits("DynamicInstance") }}
 
 ## Properties
-### CanMove:bool { property }
+### CanMove:bool=true { property }
 Determines whether or not the player can move.
 
-### ChatColor:Color { property }
+### ChatColor:Color=(255,255,255) { property }
 The player's username color in the chat.
 ```lua
 game["Players"]["willemsteller"].ChatColor = Color3.New(0, 1, 0)
 ```
 
-### Health:int { property }
+### Health:int=100 { property }
 The current health of the player.
 
 ### IsAdmin:bool { property }
@@ -39,34 +39,34 @@ Returns whether or not the player is the creator of the current game.
 ### IsInputFocused:bool { property }
 Determines whether or not the player is currently focused on an input.
 
-### JumpPower:int { property }
+### JumpPower:int=36 { property }
 Specifies how high the player's jump is.
 
 ### MaxHealth:int=100 { property }
 Specifies the maximum health the player can have.
 
-### MaxStamina:int { property }
+### MaxStamina:int=3 { property }
 Specifies the maximum stamina the player can have.
 
-### RespawnTime:int=1.5 { property }
+### RespawnTime:int=5 { property }
 Determines how long it takes between the player's death and respawn.
 
-### SittingIn:instance { property }
+### SittingIn:Seat { property }
 Returns the seat the player is currently sitting in, `nil` if the player is not sitting in any seat.
 
-### SprintSpeed:int { property }
+### SprintSpeed:int=25 { property }
 Determines how fast the player is while sprinting.
 
 !!! note "Remarks"
     Sprinting can be disabled by setting the player's SprintSpeed to their WalkSpeed.
 
-### Stamina:int { property }
+### Stamina:int=0 { property }
 The player's current amount of stamina.
 
-### StaminaEnabled:bool { property }
+### StaminaEnabled:bool=true { property }
 Determines whether or not stamina is enabled for the player.
 
-### StaminaRegen:int { property }
+### StaminaRegen:int=1.2 { property }
 The rate at which stamina regenerates after being depleted for the player.
 
 ### UserID:int { property }

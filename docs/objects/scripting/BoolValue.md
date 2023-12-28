@@ -6,7 +6,7 @@ weight: 10
 
 # BoolValue
 
-BoolValues are objects used for storing boolean values.
+:polytoria-BoolValue: BoolValue is a ValueBase that stores a boolean.
 
 {{ inherits("ValueBase") }}
 

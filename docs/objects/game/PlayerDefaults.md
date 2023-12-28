@@ -14,36 +14,36 @@ weight: 6
 {{ inherits("Instance") }}
 
 ## Properties
-### ChatColor:Color { property }
+### ChatColor:Color=(255,255,255) { property }
 Determines the default color of players' usernames in chat.
 
-### JumpPower:int { property }
+### JumpPower:int=36 { property }
 Determines how high the player jumps by default.
 
 ### MaxHealth:int=100 { property }
 Determines the default maximum health of players.
 
-### MaxStamina:int { property }
+### MaxStamina:int=3 { property }
 Determines the default maximum stamina of players.
 
-### RespawnTime:int { property }
+### RespawnTime:int=5 { property }
 Determines the default of how long it takes between player's death and respawn.
 
-### SprintSpeed:int { property }
+### SprintSpeed:int=25 { property }
 Determines the default sprint speed of players.
 
-### Stamina:int { property }
+### Stamina:int=0 { property }
 Determines the default stamina of players.
 
-### StaminaEnabled:bool { property }
+### StaminaEnabled:bool=true { property }
 Determines whether or not stamina is enabled by default for players.
 
-### StaminaRegen:int { property }
+### StaminaRegen:int=1.2 { property }
 Determines the default rate at which stamina regenerates after being depleted for players.
 
 ### WalkSpeed:int=16 { property }
 Determines how fast the player walks by default.
 
 ## Methods
-### LoadDefaults:Player { method }
+### LoadDefaults:void { method }
 Resets the specified player back to their default values.

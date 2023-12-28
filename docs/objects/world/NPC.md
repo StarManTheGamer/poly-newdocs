@@ -46,7 +46,7 @@ Specifies the color of the NPC's right leg.
 Specifies the color of the NPC's torso.
 
 ## Methods
-### LoadAppearance:int { method }
+### LoadAppearance:void { method }
 Loads the specified user ID's avatar on the NPC.
 
 **Example**

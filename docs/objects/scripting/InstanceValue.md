@@ -6,7 +6,7 @@ weight: 10
 
 # InstanceValue
 
-This object can be used for storing Instance values.
+:polytoria-InstanceValue: InstanceValue is a ValueBase that stores an instance.
 
 {{ inherits("ValueBase") }}
 

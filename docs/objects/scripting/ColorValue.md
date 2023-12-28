@@ -6,7 +6,7 @@ weight: 10
 
 # ColorValue
 
-ColorValues are objects that can be used for storing Color values.
+:polytoria-ColorValue: ColorValue is a ValueBase that stores color.
 
 {{ inherits("ValueBase") }}
 

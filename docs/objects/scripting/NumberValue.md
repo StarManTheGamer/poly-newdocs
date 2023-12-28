@@ -6,7 +6,7 @@ weight: 10
 
 # NumberValue
 
-This object can be used for storing number values.
+:polytoria-NumberValue: NumberValue is a ValueBase that stores numbers.
 
 {{ inherits("ValueBase") }}
 
