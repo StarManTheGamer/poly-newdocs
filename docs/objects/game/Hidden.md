@@ -10,4 +10,6 @@ weight: 6
 
 {{ notnewable() }}
 
+:polytoria-Hidden: Hidden is a service used for hiding instances.
+
 {{ inherits("Instance") }}

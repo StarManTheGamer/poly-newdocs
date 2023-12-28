@@ -95,9 +95,7 @@ def define_env(env):
     
     @env.macro
     def servermethod():
-        return """<div data-search-exclude markdown>
-!!! warning \"This method is only available to the server. It can only be fired within server scripts.
-</div>\""""
+        return "!!! warning \"This method is only available to the server. It can only be fired within server scripts.\""
 
 
     """
@@ -148,7 +146,24 @@ def property(name):
 
 def event(name):
     value = name[3:]
-    return "### :polytoria-Event: %s { #%s data-toc-label=\"%s\" }" % (value, value, value)
+    name = value.split(":")[0].strip()
+
+    parametersList = ""
+    parameters = value.split(":")[1:]
+    for i in range(len(parameters)):
+        parameters[i] = parameters[i].strip()
+        if parameters[i] in type_friendlyname_table:
+            parameters[i] = type_friendlyname_table[parameters[i]]
+        """
+        todo: add support for class links in parameters
+        if getClassLink(parameters[i]) != "?":
+            parameters[i] = getClassLink(parameters[i])
+        """
+        parameters[i] = '`' + parameters[i] + '`'
+    if len(parameters) > 0:
+        parametersList = ": " + ", ".join(parameters)
+
+    return "### :polytoria-Event: %s %s { #%s data-toc-label=\"%s\" }" % (name, parametersList, name, name)
 
 def method(name):
     value = name[3:] # in form "name:type"
