@@ -1,0 +1,64 @@
+site_name: Polytoria Scripting Documentation
+copyright: Copyright &copy; 2019 - 2023 Polytoria
+theme:
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.expand
+    - navigation.instant
+    - navigation.path
+    - content.code.annotate
+    - header.autohide
+    - navigation.top
+    - toc.follow
+    
+  name: material
+  custom_dir: docs/theme
+  logo: assets/logo.svg
+  font:
+    text: Rubik
+  palette:
+    - scheme: slate
+      primary: blue
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+    - scheme: default
+      primary: blue
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+
+
+# For consistency, for MkDocs is instead credited on the main home page ❤️
+extra:
+  generator: false
+  
+plugins:
+  - search
+  - macros
+  - mkdocs-nav-weight:
+      section_renamed: true
+      index_weight: -10
+      warning: true
+      reverse: false
+  
+markdown_extensions:
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
+  - pymdownx.snippets
+  - tables
+  - admonition
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+      options:
+        custom_icons:
+          - docs/theme/.icons
+extra_css:
+  - assets/extra.css
