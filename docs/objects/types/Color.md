@@ -4,7 +4,7 @@ icon: polytoria/Color
 
 # Color
 
-Color is a data type that represents a color.
+:polytoria-Color: Color is a data type that represents a color.
 
 ## Notes
 Alpha is between 1 and 255.
