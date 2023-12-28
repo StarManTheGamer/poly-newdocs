@@ -11,7 +11,9 @@ def getClassLink(className):
                     filePath = filePath[len(search_path):]
                     filePath = filePath[:-3]
                     icon = className
-                    if (filePath.startswith("enums/")):
+                    print('FILE PATH: ' + filePath)
+                    if "enums/" in filePath:
+                        print("IS ENUM")
                         icon = "Enum"
                     return "[:polytoria-%s: %s](/objects/%s)" % (icon, className, filePath)
     return "?"
