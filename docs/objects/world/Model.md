@@ -6,4 +6,6 @@ weight: 6
 
 # Model
 
-{{ inherits("Instance") }}
+A model is an instance that can hold other instances, and which transform affects its children.
+
+{{ inherits("DynamicInstance") }}
