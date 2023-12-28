@@ -35,3 +35,27 @@ Specifies the size of the font.
 ```lua
 text.FontSize = 64
 ```
+
+### HorizontalAlignment:HorizontalAlignment { property }
+Specifies the horizontal alignment of the text.
+
+**Example**
+```lua
+text.HorizontalAlignment = HorizontalAlignment.Left
+```
+
+### Text:string { property }
+Specifies the text to display.
+
+**Example**
+```lua
+text.Text = "Hello world!"
+```
+
+### VerticalAlignment:VerticalAlignment { property }
+Specifies the vertical alignment of the text.
+
+**Example**
+```lua
+text.VerticalAlignment = VerticalAlignment.Middle
+```
