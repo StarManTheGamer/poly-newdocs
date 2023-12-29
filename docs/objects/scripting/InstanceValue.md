@@ -1,7 +1,6 @@
 ---
 icon: polytoria/InstanceValue
 weight: 10
-
 ---
 
 # InstanceValue
@@ -13,4 +12,5 @@ weight: 10
 ## Properties
 
 ### Value:Instance { property }
+
 The value of this object.

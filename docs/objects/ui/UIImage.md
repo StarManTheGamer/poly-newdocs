@@ -1,7 +1,6 @@
 ---
 icon: polytoria/UIImage
 weight: 100
-
 ---
 
 # UIImage
@@ -11,12 +10,15 @@ weight: 100
 ## Properties
 
 ### Color:Color { property }
+
 Specifies the color of the image.
 
 ### ImageID:Int32 { property }
+
 Specifies the image ID of the UIImage.
 
 ### Loading:bool { property }
+
 True if the image is loading.
 
 **Example**
@@ -29,4 +31,5 @@ print("Image loaded")
 ```
 
 ### Visible:bool { property }
+
 Specifies if the image is visible.

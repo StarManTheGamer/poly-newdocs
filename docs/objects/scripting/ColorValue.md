@@ -1,7 +1,6 @@
 ---
 icon: polytoria/ColorValue
 weight: 10
-
 ---
 
 # ColorValue
@@ -13,4 +12,5 @@ weight: 10
 ## Properties
 
 ### Value:Color { property }
+
 The value of this object.

@@ -1,7 +1,6 @@
 ---
 icon: polytoria/BasePart
 weight: 100
-
 ---
 
 # BasePart

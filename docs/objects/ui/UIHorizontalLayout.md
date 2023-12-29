@@ -1,7 +1,6 @@
 ---
 icon: polytoria/UIHorizontalLayout
 weight: 100
-
 ---
 
 # UIHorizontalLayout

@@ -1,7 +1,6 @@
 ---
 icon: polytoria/UIVerticalLayout
 weight: 100
-
 ---
 
 # UIVerticalLayout

@@ -3,8 +3,9 @@ icon: polytoria/Enum
 ---
 
 # TextVerticalAlign
-| Name |
-| --- |
-| `TextVerticalAlign.Top` |
+
+| Name                       |
+| -------------------------- |
+| `TextVerticalAlign.Top`    |
 | `TextVerticalAlign.Middle` |
 | `TextVerticalAlign.Button` |

@@ -1,7 +1,6 @@
 ---
 icon: polytoria/NumberValue
 weight: 10
-
 ---
 
 # NumberValue
@@ -13,4 +12,5 @@ weight: 10
 ## Properties
 
 ### Value:int { property }
+
 The value of this object.

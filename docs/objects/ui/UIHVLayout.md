@@ -1,7 +1,6 @@
 ---
 icon: polytoria/UIHVLayout
 weight: 100
-
 ---
 
 # UIHVLayout

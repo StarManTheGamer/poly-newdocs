@@ -1,7 +1,6 @@
 ---
 icon: polytoria/StringValue
 weight: 10
-
 ---
 
 # StringValue
@@ -11,5 +10,7 @@ weight: 10
 {{ inherits("ValueBase") }}
 
 ## Properties
+
 ### Value:string { property }
+
 The value of this object.

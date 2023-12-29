@@ -1,7 +1,6 @@
 ---
 icon: polytoria/ValueBase
 weight: 20
-
 ---
 
 # ValueBase
@@ -13,5 +12,7 @@ weight: 20
 {{ inherits("Instance") }}
 
 ## Events
+
 ### Changed { event }
+
 Fires when the value of the ValueBase changes.

@@ -11,7 +11,7 @@ theme:
     - header.autohide
     - navigation.top
     - toc.follow
-    
+
   name: material
   custom_dir: docs/theme
   logo: assets/logo.svg
@@ -29,11 +29,10 @@ theme:
         icon: material/weather-night
         name: Switch to light mode
 
-
 # For consistency, for MkDocs is instead credited on the main home page ❤️
 extra:
   generator: false
-  
+
 plugins:
   - search
   - macros
@@ -42,7 +41,7 @@ plugins:
       index_weight: -10
       warning: true
       reverse: false
-  
+
 markdown_extensions:
   - pymdownx.highlight
   - pymdownx.inlinehilite

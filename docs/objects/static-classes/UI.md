@@ -1,7 +1,6 @@
 ---
 icon: polytoria/UI
 weight: 11
-
 ---
 
 # UI
@@ -15,21 +14,27 @@ UI is a static class used for creating User Interface elements through LocalScri
 ## Methods
 
 ### CreateButton:UIButton { method }
+
 Creates a GUI Button
 
 ### CreateEmpty:UIElement { method }
+
 Creates an empty UI element
 
 ### CreateHorizontalLayout:UIHorizontalLayout { method }
+
 Creates a horizontal UI layout.
 
 ### CreateImage:UIImage { method }
+
 Creates an UI image.
 
 ### CreateLabel:UILabel { method }
+
 Creates a text label.
 
 ### CreateVerticalLayout:UIVerticalLayout { method }
+
 Creates a horizontal UI layout.
 
 ## Properties
@@ -39,7 +44,9 @@ Creates a horizontal UI layout.
 </div>
 
 ### ScreenHeight:int { property }
+
 Get current user's screen height
 
 ### ScreenWidth:int { property }
+
 Get current user's screen width

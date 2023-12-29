@@ -16,9 +16,11 @@ weight: 2
 ## Methods
 
 ### CreateExplosion:void { method }
+
 Creates a deadly explosion killing players and applying force to parts at the given position.
 
 **Example**
+
 ```lua
 game["Environment"]:CreateExplosion(Vector3.New(0, 0, 0), 30, 5000, false)
 ```
@@ -32,9 +34,11 @@ game["Environment"]:CreateExplosion(Vector3.New(0, 0, 0), 30, 5000, false)
 </div>
 
 ### Raycast:RayResult { method }
+
 Casts a ray from origin with a specified direction and returns a RayResult for the first hit object.
 
 **Example**
+
 ```lua
 local hit = game["Environment"]:Raycast(barrel.Position, barrel.Forward)
 
@@ -44,9 +48,11 @@ end
 ```
 
 ### RaycastAll:RayResult[] { method }
+
 Casts a ray from origin with a specified direction and returns a RayResult array for all hit objects.
 
 **Example**
+
 ```lua
 local hits = game["Environment"]:RaycastAll(Vector3.New(0, 10, 0), Vector3.New(0, -1, 0), 100)
 
@@ -58,25 +64,33 @@ end
 ## Properties
 
 ### FogColor:Color { property }
+
 The color of the fog. Fog is a visual effect that makes the world look like it is covered in a colored mist.
 
 **Example**
 
 Change the fog color to white:
+
 ```lua
 game["Environment"].FogColor = Color.New(1, 1, 1, 1)
 ```
+
 ### FogEnabled:boolean { property }
+
 Whether or not fog is enabled.
 
 ### FogStartDistance:float { property }
+
 The distance from the camera at which fog starts to appear
 
 ### FogEndDistance:float { property }
+
 The distance from the camera at which fog is fully opaque
 
 ### Gravity:Vector3=Vector3.New(0, -75, 0) { property }
+
 The direction and strength of gravity in the world
 
 ### Skybox:SkyboxPreset { property }
+
 The default skybox preset to use for the world, if no ImageSky is present.

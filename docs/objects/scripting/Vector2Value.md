@@ -1,7 +1,6 @@
 ---
 icon: polytoria/Vector2Value
 weight: 10
-
 ---
 
 # Vector2Value
@@ -11,5 +10,7 @@ weight: 10
 {{ inherits("Vector3Value") }}
 
 ## Properties
+
 ### Value:Vector2=(5, 10) { property }
+
 The value of this object.

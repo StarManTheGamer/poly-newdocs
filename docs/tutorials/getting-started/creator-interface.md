@@ -26,7 +26,7 @@ When you start the creator via the "Launch Creator" button on the [Create](https
 2. <b>Toolbar</b> - Access various tools such as Select, Move, Rotate, Scale and others. View [Toolbar Tools](#toolbar-tools) further below to learn more.
 3. <b>Toolbox</b> - Insert models created by other users into your place. See [Publishing Models (TODO)](/tutorials/ddsgsdfsd/publishing-toolbox-models) to publish your own.
 4. <b>Explorer</b> - View and modify the place structure. You will need this to move objects from one parent to another.
-5. <b>Properties</b> -  Modify the various properties of the selected object.
+5. <b>Properties</b> - Modify the various properties of the selected object.
 6. <b>Scene View</b> - The place's scene. The gizmos from the Select, Move, Scale and Rotate tools will appear here for you to use. The Paint, Color, Brush and Material tools require you to click objects within the Scene View.
 
 ### Menu Bar Options

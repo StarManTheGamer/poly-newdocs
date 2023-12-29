@@ -1,7 +1,6 @@
 ---
 icon: polytoria/LocalScript
 weight: 2
-
 ---
 
 # LocalScript

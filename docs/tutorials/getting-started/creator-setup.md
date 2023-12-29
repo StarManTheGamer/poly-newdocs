@@ -8,12 +8,12 @@ Polytoria Creator, available for Windows, Mac and Linux, is a tool to make your 
 
 ## System Requirements
 
-| Operating System             | Windows                                                                             | MacOS                                      | Linux                                               |
-| ---------------------------- | ----------------------------------------------------------------------------------- | ------------------------------------------ | --------------------------------------------------- |
-| **Operating System Version** | Windows 7 (SP1+), Windows 10 and Windows 11                                         | High Sierra 10.13+                         | Ubuntu 20.04, Ubuntu 18.04, and CentOS 7            |
-| **CPU**                      | x86, x64 architecture with SSE2 instruction set support.                            | Apple Silicon, x64 architecture with SSE2. | x64 architecture with SSE2 instruction set support. |
-| **Graphics API**             | DX10, DX11, DX12 capable.                                                           | Metal capable Intel and AMD GPUs           | OpenGL 3.2+, Vulkan capable.                        |
-| **RAM**                      | At least 1GB+                                                                       |
+| Operating System             | Windows                                                                               | MacOS                                      | Linux                                               |
+| ---------------------------- | ------------------------------------------------------------------------------------- | ------------------------------------------ | --------------------------------------------------- |
+| **Operating System Version** | Windows 7 (SP1+), Windows 10 and Windows 11                                           | High Sierra 10.13+                         | Ubuntu 20.04, Ubuntu 18.04, and CentOS 7            |
+| **CPU**                      | x86, x64 architecture with SSE2 instruction set support.                              | Apple Silicon, x64 architecture with SSE2. | x64 architecture with SSE2 instruction set support. |
+| **Graphics API**             | DX10, DX11, DX12 capable.                                                             | Metal capable Intel and AMD GPUs           | OpenGL 3.2+, Vulkan capable.                        |
+| **RAM**                      | At least 1GB+                                                                         |
 | **Internet Connection**      | An internet connection is required to update the creator and connect to its services. |
 
 A 2-button mouse with a scroll wheel is also recommended.
@@ -29,4 +29,5 @@ A 2-button mouse with a scroll wheel is also recommended.
 If you haven't downloaded the Launcher yet, you must download it from the [Places](https://polytoria.com/places/) page.
 
 ## Going further
+
 You should now be ready to learn the Creator's Interface. View [Understanding Creator's Interface](/tutorials/getting-started/creator-interface/) to learn more.

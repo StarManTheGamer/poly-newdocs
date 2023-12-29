@@ -1,7 +1,6 @@
 ---
 icon: polytoria/BoolValue
 weight: 10
-
 ---
 
 # BoolValue
@@ -13,4 +12,5 @@ weight: 10
 ## Properties
 
 ### Value:bool { property }
+
 The value of this object.

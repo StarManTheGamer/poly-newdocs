@@ -1,7 +1,6 @@
 ---
 icon: polytoria/Backpack
 weight: 10
-
 ---
 
 # Backpack

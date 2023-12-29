@@ -1,7 +1,6 @@
 ---
 icon: polytoria/UIButton
 weight: 100
-
 ---
 
 # UIButton

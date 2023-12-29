@@ -1,7 +1,6 @@
 ---
 icon: polytoria/Json
 weight: 11
-
 ---
 
 # Json
@@ -15,15 +14,19 @@ weight: 11
 ## Methods
 
 ### isNull:bool { method }
+
 Returns true if the value specified is a null read from a json
 
 ### null:string { method }
+
 Returns a special value which is a representation of a null in a json
 
 ### parse:Table { method }
+
 Returns a table with the contents of the specified JSON string
 
 **Example**
+
 ```lua
 Http:Get("https://api.polytoria.com/v1/asset/owner?userID=1&assetID=234", function (data, error, errmsg)
     if error then
@@ -36,9 +39,5 @@ end)
 ```
 
 ### serialize:string { method }
+
 Returns a json string with the contents of the specified table.
-
-
-
-
-
