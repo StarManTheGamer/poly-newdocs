@@ -10,6 +10,37 @@ An NPC (Non-Player Character) is an object similar to a Player but that can be c
 
 {{ inherits("DynamicInstance") }}
 
+## Events
+
+### Died { event }
+Gets triggered when the NPC dies.
+
+**Example**
+```lua
+game["Environment"]["NPC"].Died:Connect(function ()
+    print("NPC died!")
+end)
+```
+
+## Methods
+### LoadAppearance:void { method }
+Loads the specified user ID's avatar on the NPC.
+
+**Example**
+```lua
+-- Loads the appearance of willemsteller
+npc:LoadAppearance(2)
+```
+
+### ClearAppearance { method }
+Clears the NPC's appearance.
+
+**Example**
+```lua
+-- Clears the appearance of the NPC
+npc:ClearAppearance()
+```
+
 ## Properties
 
 ### Anchored:bool { property }
@@ -44,22 +75,3 @@ Specifies the color of the NPC's right leg.
 
 ### TorsoColor:Color { property }
 Specifies the color of the NPC's torso.
-
-## Methods
-### LoadAppearance:void { method }
-Loads the specified user ID's avatar on the NPC.
-
-**Example**
-```lua
--- Loads the appearance of willemsteller
-npc:LoadAppearance(2)
-```
-
-### ClearAppearance { method }
-Clears the NPC's appearance.
-
-**Example**
-```lua
--- Clears the appearance of the NPC
-npc:ClearAppearance()
-```
