@@ -12,6 +12,24 @@ DynamicInstance is the base class where all objects with a position, rotation an
 
 {{ inherits("Instance") }}
 
+## Methods
+
+### LookAt:void { method }
+Rotates the DynamicInstance so that the forward vector looks at the target.
+
+**Example**
+```lua
+part.LookAt(Vector3.New(12, 34, 56))
+```
+
+### Translate:void { method }
+Moves the transform in the direction and distance of translation.
+
+**Example**
+```lua
+part.Translate(part.Forward * 5)
+```
+
 ## Properties
 
 ### Forward:Vector3 { property }
@@ -31,7 +49,7 @@ The size of the instance relative to its parent.
 ### Position:Vector3 = Vector3.New(0, 10, 0) { property }
 Specifies the position of an instance.
 
-### Right:Vector3
+### Right:Vector3 { property }
 The right vector of this DynamicInstance
 
 **Example**
