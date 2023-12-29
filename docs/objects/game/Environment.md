@@ -13,7 +13,50 @@ weight: 2
 
 {{ inherits("Instance") }}
 
+## Methods
+
+### CreateExplosion:void { method }
+Creates a deadly explosion killing players and applying force to parts at the given position.
+
+**Example**
+```lua
+game["Environment"]:CreateExplosion(Vector3.New(0, 0, 0), 30, 5000, false)
+```
+
+<div data-search-exclude markdown>
+!!! note "When set to true, AffectAnchored will unanchor parts within the explosion radius."
+</div>
+
+<div data-search-exclude markdown>
+!!! note "Callback gets called for each part within explosion radius."
+</div>
+
+### Raycast:RayResult { method }
+Casts a ray from origin with a specified direction and returns a RayResult for the first hit object.
+
+**Example**
+```lua
+local hit = game["Environment"]:Raycast(barrel.Position, barrel.Forward)
+
+if hit and hit.Instance:IsA("Player") then
+    hit.Instance.Health = 0
+end
+```
+
+### RaycastAll:RayResult[] { method }
+Casts a ray from origin with a specified direction and returns a RayResult array for all hit objects.
+
+**Example**
+```lua
+local hits = game["Environment"]:RaycastAll(Vector3.New(0, 10, 0), Vector3.New(0, -1, 0), 100)
+
+for i, hit in pairs(hits) do
+    print("Hit at " .. hit.Position .. "!")
+end
+```
+
 ## Properties
+
 ### FogColor:Color { property }
 The color of the fog. Fog is a visual effect that makes the world look like it is covered in a colored mist.
 
