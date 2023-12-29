@@ -8,4 +8,4 @@ weight: 100
 
 UIHVLayout is the base class for all UI layout elements.
 
-{{ inherits("UIElement") }}
+{{ inherits("UIField) }}

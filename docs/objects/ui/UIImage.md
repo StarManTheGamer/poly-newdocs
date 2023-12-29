@@ -6,7 +6,7 @@ weight: 100
 
 # UIImage
 
-{{ inherits("UIElement") }}
+{{ inherits("UIField") }}
 
 ## Properties
 
