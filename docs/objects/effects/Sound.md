@@ -10,6 +10,27 @@ Sounds are objects that can be placed in the world and that emit audio.
 
 {{ inherits("DynamicInstance") }}
 
+## Events
+
+### Loaded { event }
+
+The event that is fired when the sound is loaded from the server.
+
+**Example**
+```lua
+sound.Loaded:Connect(function()
+    sound.Play()
+end)
+```
+
+## Methods
+
+### Play:void { method }
+Plays the sound.
+
+### Stop:void { method }
+Stops playing the sound.
+
 ## Properties
 
 ### Autoplay:bool { property }
