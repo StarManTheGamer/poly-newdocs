@@ -14,6 +14,7 @@ It is important to define and return a table in a ModuleScript. When the game st
 Example:
 
 ModuleScript named `Structures` located in `game["ScriptService"]`
+
 ```lua
 local Structures = {
     ["Tower"] = {
@@ -27,6 +28,7 @@ return Structures -- THIS IS IMPORTANT! DO NOT FORGET TO RETURN THE TABLE AT THE
 ```
 
 In a Script/LocalScript:
+
 ```lua
 wait(0.1) -- The ModuleScript might only start running after this Script/LocalScript began running and thus this wait() is necessary
 local Structures = require(game["ScriptService"]["Structures"])

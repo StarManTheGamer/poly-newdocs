@@ -19,9 +19,11 @@ The type of image to be used.
 Specifies the image asset ID of the decal.
 
 ### TextureOffset:Vector2 { property }
+
 The offset of the texture on the decal.
 
 ### TextureScale:Vector2 { property }
+
 The scale of the texture on the decal.
 
 **Example**
