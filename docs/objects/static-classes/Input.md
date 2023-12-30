@@ -10,9 +10,11 @@ weight: 11
 ## Events
 
 ### KeyDown:string { event }
+
 Gets triggered when a key was pressed.
 
 **Example**
+
 ```lua
 Input.KeyDown:Connect(function (key)
     print(key .. " was pressed!")
@@ -24,6 +26,7 @@ end)
 ```
 
 ### KeyUp:string { event }
+
 Gets triggered when a key was released.
 
 ```lua
