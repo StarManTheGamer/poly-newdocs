@@ -13,7 +13,7 @@ weight: 100
 
 Specifies the color of the image.
 
-### ImageID:Int { property }
+### ImageID:int { property }
 
 Specifies the image ID of the UIImage.
 

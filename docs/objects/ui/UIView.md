@@ -23,6 +23,6 @@ The border width of the UI.
 
 The color of the UI.
 
-### CornerRadius:Int { property }
+### CornerRadius:int { property }
 
 Corner radius of the UI.

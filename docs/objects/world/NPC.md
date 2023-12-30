@@ -53,7 +53,7 @@ npc:ClearAppearance()
 
 Determines whether the NPC is affected by physics or not.
 
-### FaceID:Int { property }
+### FaceID:int { property }
 
 The face ID of the NPC's face.
 
@@ -85,7 +85,7 @@ Specifies the maximum amount of health a NPC can have.
 
 Determines the instance the NPC should walk towards.
 
-### PantsID:Int { property }
+### PantsID:int { property }
 
 The pants ID of the NPC's pants.
 
@@ -97,7 +97,7 @@ Specifies the color of the NPC's right arm.
 
 Specifies the color of the NPC's right leg.
 
-### ShirtID:Int { property }
+### ShirtID:int { property }
 
 The shirt ID of the NPC's shirt.
 
@@ -105,6 +105,6 @@ The shirt ID of the NPC's shirt.
 
 Specifies the color of the NPC's torso.
 
-### WalkSpeed:Int { property }
+### WalkSpeed:int { property }
 
 The walkspeed of the NPC.

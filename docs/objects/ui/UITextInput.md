@@ -19,7 +19,7 @@ Whether the text should be automatically sized to fit the label's size.
 
 The font of the label.
 
-### FontSize:Int { property }
+### FontSize:int { property }
 
 The font size of the label.
 
@@ -35,7 +35,7 @@ Set if the text input can be edited or not.
 
 Determines how the text is justified.
 
-### MaxFontSize:Single { property }
+### MaxFontSize:int { property }
 
 The maximum font size of the UI element if AutoSize is set to true.
 
