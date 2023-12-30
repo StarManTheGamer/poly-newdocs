@@ -5,7 +5,7 @@ weight: 4
 
 # BaseScript
 
-{{ ambiguousMultiple([["Script", "which runs your Lua scripts on the server."],["LocalScript", "which runs your Lua scripts on the client."]]) }}
+{{ ambiguousMultiple([["Script", "which runs your Lua scripts on the server."],["LocalScript", "which runs your Lua scripts on the client."],["ModuleScript", "which contains data accessible by any script."]]) }}
 
 {{ abstract() }}
 
