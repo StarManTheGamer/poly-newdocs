@@ -27,6 +27,10 @@ The player's username color in the chat.
 game["Players"]["willemsteller"].ChatColor = Color3.New(0, 1, 0)
 ```
 
+### HeadColor:Color { property }
+
+Specifies the color of the players's head.
+
 ### Health:int=100 { property }
 
 The current health of the player.
@@ -51,6 +55,14 @@ Determines whether or not the player is currently focused on an input.
 
 Specifies how high the player's jump is.
 
+### LeftArmColor:Color { property }
+
+Specifies the color of the players's left arm.
+
+### LeftLegColor:Color { property }
+
+Specifies the color of the players's left leg.
+
 ### MaxHealth:int=100 { property }
 
 Specifies the maximum health the player can have.
@@ -62,6 +74,14 @@ Specifies the maximum stamina the player can have.
 ### RespawnTime:int=5 { property }
 
 Determines how long it takes between the player's death and respawn.
+
+### RightArmColor:Color { property }
+
+Specifies the color of the players's right arm.
+
+### RightLegColor:Color { property }
+
+Specifies the color of the players's right leg.
 
 ### SittingIn:Seat { property }
 
@@ -85,6 +105,10 @@ Determines whether or not stamina is enabled for the player.
 ### StaminaRegen:int=1.2 { property }
 
 The rate at which stamina regenerates after being depleted for the player.
+
+### TorsoColor:Color { property }
+
+Specifies the color of the players's torso.
 
 ### UserID:int { property }
 
