@@ -15,8 +15,7 @@ weight: 11
 !!! note "The request sends the current game ID as a header (PT-Game-ID)"
 </div>
 
-!!! warning "Notice: Ratelimit"
-There is a limit of 15 requests per minute when using the Http static class.
+!!! warning "There is a limit of 15 requests per minute when using the Http static class."
 
 ## Methods
 
