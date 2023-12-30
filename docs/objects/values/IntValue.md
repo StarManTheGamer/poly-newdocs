@@ -11,6 +11,6 @@ weight: 10
 
 ## Properties
 
-### Value:Int32 { property }
+### Value:Int { property }
 
 The value of this object.

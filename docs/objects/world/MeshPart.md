@@ -25,7 +25,7 @@ Specifies whether the part is to be affected by physics or not.
 
 Specifies the angular velocity of a part.
 
-### AssetID:Int32 { property }
+### AssetID:Int { property }
 
 The asset ID of the mesh part.
 
