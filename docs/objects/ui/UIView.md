@@ -15,7 +15,7 @@ UIView is an element that displays a rectangle.
 
 The border color of the UI.
 
-### BorderWidth:Single { property }
+### BorderWidth:Int { property }
 
 The border width of the UI.
 
@@ -23,6 +23,6 @@ The border width of the UI.
 
 The color of the UI.
 
-### CornerRadius:Single { property }
+### CornerRadius:Int { property }
 
 Corner radius of the UI.

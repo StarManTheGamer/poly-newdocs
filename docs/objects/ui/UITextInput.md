@@ -19,7 +19,7 @@ Whether the text should be automatically sized to fit the label's size.
 
 The font of the label.
 
-### FontSize:Single { property }
+### FontSize:Int { property }
 
 The font size of the label.
 
