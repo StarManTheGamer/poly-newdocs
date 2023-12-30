@@ -10,6 +10,10 @@ Decals are objects that can have an image texture and are placed in the world.
 
 ## Properties
 
+### ImageType:ImageType { property }
+
+The type of image to be used.
+
 ### ImageID:int { property }
 
 Specifies the image asset ID of the decal.
