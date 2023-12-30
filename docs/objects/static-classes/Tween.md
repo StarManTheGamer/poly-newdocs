@@ -12,9 +12,11 @@ Multiple tweens can be applied on the same object at the same time, but they mus
 ## Methods
 
 ### TweenColor { method }
+
 Tweens a color between two specified values.
 
 **Example**
+
 ```lua
 Tween:TweenColor(Color.New(1,1,1,1), Color.New(1,1,1,0), 5, function(val)
     part.Color = val
@@ -24,9 +26,11 @@ end
 ```
 
 ### TweenNumber { method }
+
 Tweens a number between two specified values.
 
 **Example**
+
 ```lua
 Tween:TweenNumber(1, 10, 1, function(val)
     print(val)
@@ -36,9 +40,11 @@ end)
 ```
 
 ### TweenPosition { method }
+
 Tweens the position of a DynamicInstance
 
 **Example**
+
 ```lua
 Tween:TweenPosition(part, Vector3.New(100, 0, 0), 100, TweenType.linear, function()
     print("I have arrived!")
@@ -46,6 +52,7 @@ end)
 ```
 
 ### TweenRotation { method }
+
 Tweens the rotation of a DynamicInstance
 
 <div data-search-exclude markdown>
@@ -53,6 +60,7 @@ Tweens the rotation of a DynamicInstance
 </div>
 
 **Example**
+
 ```lua
 Tween:TweenRotation(part, Vector3.New(0, 90, 0), 1, TweenType.linear, function()
     print("Rotating finished")
@@ -60,9 +68,11 @@ end)
 ```
 
 ### TweenSize { method }
+
 Tweens the size of a DynamicInstance
 
 **Example**
+
 ```lua
 Tween:TweenSize(part, Vector3.New(5, 5, 5), 1, TweenType.linear, function()
     print("Sizing finished")
@@ -70,9 +80,11 @@ end)
 ```
 
 ### TweenVector2 { method }
+
 Tweens a vector2 between two specified values.
 
 **Example**
+
 ```lua
 Tween:TweenVector2(Vector2.New(0,0), Vector2.New(0,50), 5, function(val)
     UIView.PositionOffset = val
@@ -82,9 +94,11 @@ end)
 ```
 
 ### TweenVector3 { method }
+
 Tweens a vector3 between two specified values.
 
 **Example**
+
 ```lua
 Tween:TweenVector3(Vector3.New(0,0,0), Vector3.New(0,50,0), 5, function(val)
     part.Position = val
