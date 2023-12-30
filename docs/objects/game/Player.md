@@ -160,6 +160,17 @@ end)
 
 ## Methods
 
+### ClearAppearance { method }
+
+Clears the player's appearance. This will set their appearance to a gray avatar.
+
+**Example**
+
+```lua
+-- Clears the appearance of the player
+player:ClearAppearance()
+```
+
 ### DropTools { method }
 
 Drops the tool the player is currently holding.
@@ -171,6 +182,17 @@ Drops the tool the player is currently holding.
 Kicks the player from the server.
 
 {{ serverexclusive() }}
+
+### LoadAppearance:void { method }
+
+Loads the specified user ID's avatar on the player.
+
+**Example**
+
+```lua
+-- Loads the appearance of willemsteller
+player:LoadAppearance(2)
+```
 
 ### OwnsItem:callback { method }
 
@@ -196,6 +218,17 @@ player:OwnsItem(11117, function(error, owns)
         end
     end
 end)
+```
+
+### ResetAppearance:void { method }
+
+Resets the player's appearance to their original appearance.
+
+**Example**
+
+```lua
+-- Resets the player's appearance back to their avatar
+player:ResetAppearance()
 ```
 
 ### Respawn { method }
