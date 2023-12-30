@@ -8,26 +8,26 @@ ImageSky is a class that is used to set a custom image skybox in the world. You 
 
 ## Properties
 
-### BackId:Int32 { property }
+### BackId:Int { property }
 
 The image ID of the back side of the skybox.
 
-### BottomId:Int32 { property }
+### BottomId:Int { property }
 
 The image ID of the bottom side of the skybox.
 
-### FrontId:Int32 { property }
+### FrontId:Int { property }
 
 The image ID of the front side of the skybox.
 
-### LeftId:Int32 { property }
+### LeftId:Int { property }
 
 The image ID of the left side of the skybox.
 
-### RightId:Int32 { property }
+### RightId:Int { property }
 
 The image ID of the right side of the skybox.
 
-### TopId:Int32 { property }
+### TopId:Int { property }
 
 The image ID of the top side of the skybox.
