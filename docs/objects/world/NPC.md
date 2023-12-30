@@ -53,6 +53,10 @@ npc:ClearAppearance()
 
 Determines whether the NPC is affected by physics or not.
 
+### FaceID:Int { property }
+
+The face ID of the NPC's face.
+
 ### Grounded:bool { property }
 
 Returns true if the NPC is currently standing on the ground.
@@ -81,6 +85,10 @@ Specifies the maximum amount of health a NPC can have.
 
 Determines the instance the NPC should walk towards.
 
+### PantsID:Int { property }
+
+The pants ID of the NPC's pants.
+
 ### RightArmColor:Color { property }
 
 Specifies the color of the NPC's right arm.
@@ -89,6 +97,14 @@ Specifies the color of the NPC's right arm.
 
 Specifies the color of the NPC's right leg.
 
+### ShirtID:Int { property }
+
+The shirt ID of the NPC's shirt.
+
 ### TorsoColor:Color { property }
 
 Specifies the color of the NPC's torso.
+
+### WalkSpeed:Int { property }
+
+The walkspeed of the NPC.
