@@ -170,12 +170,10 @@ def event(name):
         parameters[i] = parameters[i].strip()
         if parameters[i] in type_friendlyname_table:
             parameters[i] = type_friendlyname_table[parameters[i]]
-        """
-        todo: add support for class links in parameters
         if getClassLink(parameters[i]) != "?":
             parameters[i] = getClassLink(parameters[i])
-        """
-        parameters[i] = '`' + parameters[i] + '`'
+        else:
+            parameters[i] = '`' + parameters[i] + '`'
     if len(parameters) > 0:
         parametersList = ": " + ", ".join(parameters)
 
@@ -200,22 +198,34 @@ def method(name):
     if has_link == False:
         property_type = "`" + property_type + "`"
 
-    """
+    numOfParams = 0
     parametersList = ""
-    print(value.split("("))
+    equals = []
     parameters = ''.join(value.split("("))
-    print('PARAMETERS: ' + parameters)
-    parameters = parameters.split(")")[1:]
+    parameters = parameters.split(")")[0].replace(name, '').split(',')
     print(parameters)
     for i in range(len(parameters)):
-        parameters[i] = parameters[i].replace(':', '').strip()
-        if parameters[i] in type_friendlyname_table:
-            parameters[i] = type_friendlyname_table[parameters[i]]
-        parameters[i] = '`' + parameters[i] + '`'
-    if len(parameters) > 0:
-        parametersList = "(" + ', '.join(parameters) + ")"
-    """
-    return "### :polytoria-Method: %s → %s { #%s data-toc-label=\"%s\" }" % (name, property_type, name, name)
+        if not ":" in parameters[i]:
+            numOfParams = numOfParams + 1
+            parameters[i] = parameters[i].replace(':', '').strip()
+
+            equals = parameters[i].split('=')
+            
+            for v in range(len(equals)):
+                if equals[v] in type_friendlyname_table:
+                    equals[v] = type_friendlyname_table[equals[v]]
+                if getClassLink(equals[v]) != "?":
+                    equals[v] = getClassLink(equals[v])
+                else:
+                    equals[v] = '`' + equals[v] + '`'
+
+        parameters[i] = ' = '.join(equals)
+
+    print(numOfParams)
+    if numOfParams > 0:
+        parametersList = "<small class=\"parameters-text\">Method Parameters: " + ', '.join(parameters) + "</small>\n"
+
+    return "%s### :polytoria-Method: %s → %s { #%s data-toc-label=\"%s\" }" % (parametersList, name, property_type, name, name)
 
 def on_pre_page_macros(env):
     #find headers with { macroName } at the end and replace with the associated macro
