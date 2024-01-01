@@ -1,6 +1,5 @@
 ---
 icon: polytoria/Camera
-weight: 8
 ---
 
 # Camera

@@ -1,9 +1,10 @@
 ---
 icon: polytoria/Json
-weight: 11
 ---
 
 # Json
+
+{{ staticclass()}}
 
 :polytoria-json: Json is a module which converts between JSON scripts and Lua tables.
 

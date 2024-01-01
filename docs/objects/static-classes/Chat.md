@@ -1,6 +1,5 @@
 ---
 icon: polytoria/Chat
-weight: 10
 ---
 
 # Chat
