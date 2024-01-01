@@ -29,5 +29,5 @@ Vector2 is a 2D vector with an x and y component.
 ## Methods
 
 | Name                                                         | Description                               |
-| ------------------------------------------------------------ | ----------------------------------------- | --- |
-| `Vector2` Vector2.Lerp(`Vector2` a, `Vector2` b, `number` t) | Linearly interpolates between two points. | \   |
+| ------------------------------------------------------------ | ----------------------------------------- |
+| `Vector2` Vector2.Lerp(`Vector2` a, `Vector2` b, `number` t) | Linearly interpolates between two points. |
