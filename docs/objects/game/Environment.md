@@ -47,7 +47,7 @@ if hit and hit.Instance:IsA("Player") then
 end
 ```
 
-### RaycastAll:RayResult[] { method }
+### RaycastAll:RayResult { method }
 
 Casts a ray from origin with a specified direction and returns a RayResult array for all hit objects.
 
