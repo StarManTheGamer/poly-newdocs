@@ -92,7 +92,7 @@ Returns the seat the player is currently sitting in, `nil` if the player is not 
 Determines how fast the player is while sprinting.
 
 !!! note "Remarks"
-Sprinting can be disabled by setting the player's SprintSpeed to their WalkSpeed.
+    Sprinting can be disabled by setting the player's SprintSpeed to their WalkSpeed.
 
 ### Stamina:int=0 { property }
 
@@ -199,10 +199,10 @@ player:LoadAppearance(2)
 Checks if the player owns an item
 
 !!! note "Caching"
-The function will cache the result for 5 minutes.
+    The function will cache the result for 5 minutes.
 
 !!! warning "Rate Limit"
-A maximum of 30 requests can be made per minute per server.
+    A maximum of 30 requests can be made per minute per server.
 
 **Example**
 
