@@ -5,7 +5,7 @@ weight: 5
 
 # Player
 
-{{ ambiguousMultiple([["Players","the service object that contains all connected players."], ["PlayerAvatar","the avatar"]]) }}
+{{ ambiguous("Players", "the service object that contains all connected players.") }}
 
 {{ notnewable() }}
 
@@ -207,14 +207,14 @@ Checks if the player owns an item
 **Example**
 
 ```lua
-player:OwnsItem(11117, function(error, owns)
+player:OwnsItem(24122, function(error, owns)
     if error then
         print("An error occurred!")
     else
         if owns then
-            print("Player owns Blade of Spooks!")
+            print("Player owns Polytoria Cap!")
         else
-            print("Player does not own Blade of Spooks!")
+            print("Player does not own Polytoria Cap!")
         end
     end
 end)
