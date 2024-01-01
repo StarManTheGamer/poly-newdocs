@@ -13,16 +13,16 @@ weight: 11
 
 ## Limits
 
-There is a limit placed on the Datastore functions per server instance. Requests that exceed this limit will be canceled and return an error. Read and write functions both have their own rate limit of `(30 + (10 * [amount of players]))` requests per minute. This limit is reset every minute.
-
-You can create as many datastores as you want, however each datastore is limited to 65,535 bytes and it's key cannot be longer than 32 characters. Creating a datastore will also count towards the rate limit.
-
-!!! warning "Size Limits"
+??? warning "TL;DR Limits"
     **Rate Limit:** up to `(30 + (10 * [amount of players]))` requests per minute (for example; a server with 5 players would have a limit of 80 requests/min)
 
     **Datastore Size:** up to 65,535 bytes
 
     **Key Length:** up to 32 characters
+
+There is a limit placed on the Datastore functions per server instance. Requests that exceed this limit will be canceled and return an error. Read and write functions both have their own rate limit of `(30 + (10 * [amount of players]))` requests per minute. This limit is reset every minute.
+
+You can create as many datastores as you want, however each datastore is limited to 65,535 bytes and it's key cannot be longer than 32 characters. Creating a datastore will also count towards the rate limit.
 
 !!! note "Local Testing" 
     If you are testing your place locally through Polytoria Creator, no requests will be made to the server and your data will not be saved after the session ends. You will need to upload your place to the website to test the requests.
@@ -39,7 +39,7 @@ Fires when the Datastore object loads.
 
 Attempts to get a Datastore object from the Datastore service.
 
-??? note "Wait till Loaded"
+!!! note "Wait till Loaded"
     Make sure to wait until the Datastore object is loaded by waiting until the `.Loaded` event on the Datastore object is fired.
 
 **Example**
