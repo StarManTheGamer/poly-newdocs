@@ -198,11 +198,9 @@ player:LoadAppearance(2)
 
 Checks if the player owns an item
 
-!!! note "Caching"
-    The function will cache the result for 5 minutes.
+!!! note "The function will cache the result for 5 minutes."
 
-!!! warning "Rate Limit"
-    A maximum of 30 requests can be made per minute per server.
+!!! warning "There is a limit of up to 30 requests that can be made per minute per server."
 
 **Example**
 
