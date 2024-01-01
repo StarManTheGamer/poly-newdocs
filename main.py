@@ -184,14 +184,21 @@ def event(name):
 def method(name):
     value = name[3:] # in form "name:type"
     name = value.split(":")[0].strip().split("(")[0].strip()
-    print('NAME: ' + name)
+
     property_type = ""
+    has_link = False
     if 1 < len(value.split(":")):
         property_type = value.split(":")[1].strip()
         if property_type in type_friendlyname_table:
             property_type = type_friendlyname_table[property_type]
+        if getClassLink(property_type) != "?":
+            property_type = getClassLink(property_type)
+            has_link = True
     else:
         property_type = "void"
+
+    if has_link == False:
+        property_type = "`" + property_type + "`"
 
     """
     parametersList = ""
@@ -208,7 +215,7 @@ def method(name):
     if len(parameters) > 0:
         parametersList = "(" + ', '.join(parameters) + ")"
     """
-    return "### :polytoria-Method: %s → `%s` { #%s data-toc-label=\"%s\" }" % (name, property_type, name, name)
+    return "### :polytoria-Method: %s → %s { #%s data-toc-label=\"%s\" }" % (name, property_type, name, name)
 
 def on_pre_page_macros(env):
     #find headers with { macroName } at the end and replace with the associated macro
