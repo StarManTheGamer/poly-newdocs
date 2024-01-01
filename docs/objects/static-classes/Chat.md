@@ -5,6 +5,8 @@ weight: 10
 
 # Chat
 
+{{ staticclass()}}
+
 :polytoria-Chat: Chat is a static class used for various actions regarding the chat.
 
 ## Methods

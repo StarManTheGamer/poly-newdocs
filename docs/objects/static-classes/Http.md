@@ -5,17 +5,18 @@ weight: 11
 
 # Http
 
-:polytoria-Http: Http is a static class used for HTTP communications.
+{{ staticclass()}}
+
+:polytoria-Http: Http is a static class used for HTTP communications and requests.
+
+{{ serverexclusive() }}
 
 <div data-search-exclude markdown>
-!!! note "Http requests can only be called from the server."
+!!! note "The Game ID is sent along with the request under the header named `PT-Game-ID`."
 </div>
 
-<div data-search-exclude markdown>
-!!! note "The request sends the current game ID as a header (PT-Game-ID)"
-</div>
-
-!!! warning "There is a limit of 15 requests per minute when using the Http static class."
+!!! warning "Rate Limit"
+    Each server has a limit of 15 requests per minute.
 
 ## Methods
 

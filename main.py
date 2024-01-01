@@ -59,7 +59,7 @@ def define_env(env):
     @env.macro
     def abstract():
         return """<div data-search-exclude markdown>
-!!! danger "Abstract object"
+!!! danger "Abstract Object"
     This object exists only to serve as a foundation for other objects. It cannot be accessed directly, but its properties are documented below.
     
     Additionally, it cannot be created in the creator menu or with `Instance.New()`
@@ -68,8 +68,17 @@ def define_env(env):
     @env.macro
     def service():
         return """<div data-search-exclude markdown>
-!!! example "Service object"
+!!! example "Service Object"
     This object is automatically created by Polytoria. Additionally, scripts cannot change its parent.
+</div>"""
+
+    @env.macro
+    def staticclass():
+        return """<div data-search-exclude markdown>
+!!! tip "Static Class"
+    This object is a static class. It can be accessed by using it's name as a keyword.
+    
+    Additionally, it cannot be created in the creator menu or with `Instance.New()`
 </div>"""
 
     @env.macro
@@ -106,7 +115,8 @@ def define_env(env):
     @env.macro
     def doc_env():
         "Document the environment"
-        return {name:getattr(env, name) for name in dir(env) if not name.startswith('_')}
+        print({name:getattr(env, name) for name in dir(env) if not name.startswith('_')})
+        #return {name:getattr(env, name) for name in dir(env) if not name.startswith('_')}
 
 # define list of friendly names for method and property types
 type_friendlyname_table = {

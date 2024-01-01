@@ -8,7 +8,7 @@ icon: polytoria/Color
 
 ## Notes
 
-Alpha is between 1 and 255.
+The alpha property is between 0 and 255. 0 is fully transparent and 255 is fully visible.
 
 ## Constructors
 

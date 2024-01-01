@@ -14,7 +14,7 @@ It is important to define and return a table in a ModuleScript. When the game st
 
 {{ inherits("BaseScript") }}
 
-**Example:**
+**Example**
 
 ModuleScript named `Structures` located in `game["ScriptService"]`
 
