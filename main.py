@@ -10,12 +10,9 @@ def getClassLink(className):
                     filePath = os.path.join(root, file)
                     filePath = filePath[len(search_path):]
                     filePath = filePath[:-3]
-                    icon = className
-                    print('FILE PATH: ' + filePath)
                     if "enums/" in filePath:
-                        print("IS ENUM")
-                        icon = "Enum"
-                    return "[:polytoria-%s: %s](/objects/%s)" % (icon, className, filePath)
+                        return "[:polytoria-%s: %s](/objects/%s)" % ("Enum", className, filePath)
+                    return "[:polytoria-%s: %s](/objects/%s)" % (className, className, filePath)
     return "?"
 
 "Define macros"
@@ -97,6 +94,10 @@ def define_env(env):
     @env.macro
     def comingsoon():
         return "!!! failure \"This currently doesn't exist but has been promised by Polytoria developers.\""
+    
+    @env.macro
+    def classLink(className):
+        return getClassLink(className)
 
 
     """

@@ -4,7 +4,7 @@ icon: polytoria/NetMessage
 
 # NetMessage
 
-:polytoria-NetMessage: NetMessage is a data type used for transporting data between client and server.
+:polytoria-NetMessage: NetMessage is a data type used for transporting data between client and server when using {{ classLink("NetworkEvent") }}.
 
 ## Constructors
 

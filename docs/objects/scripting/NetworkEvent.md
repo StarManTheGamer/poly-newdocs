@@ -5,7 +5,7 @@ weight: 5
 
 # NetworkEvent
 
-:polytoria-NetworkEvent: NetworkEvents are events that can be called to communicate between server and client.
+:polytoria-NetworkEvent: NetworkEvents are events that can be called to communicate between server and client. {{ classLink("NetMessage") }} are the class used for sharing data between server and client when sending NetworkEvents.
 
 {{ inherits("Instance") }}
 

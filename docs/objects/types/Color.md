@@ -20,18 +20,6 @@ Alpha is between 1 and 255.
 | Color.New(`number` r, `number` g, `number` b, `number` a) | Creates a new Color with the set R, G, B and A values                      |
 | Color.FromHex(`string` HEX)                               | Creates a new Color from the specified hex value.                          |
 | Color.Random()                                            | Returns a random color with an alpha value of 1.                           |
-| Color.New()                                               | Creates a new black color.                                                 |
-| Color.New()                                               | Creates a new black color.                                                 |
-| Color.New()                                               | Creates a new black color.                                                 |
-| Color.New()                                               | Creates a new black color.                                                 |
-| Color.New()                                               | Creates a new black color.                                                 |
-| Color.New()                                               | Creates a new black color.                                                 |
-| Color.New()                                               | Creates a new black color.                                                 |
-| Color.New()                                               | Creates a new black color.                                                 |
-| Color.New()                                               | Creates a new black color.                                                 |
-| Color.New()                                               | Creates a new black color.                                                 |
-| Color.New()                                               | Creates a new black color.                                                 |
-| Color.New()                                               | Creates a new black color.                                                 |
 
 ## Properties
 
