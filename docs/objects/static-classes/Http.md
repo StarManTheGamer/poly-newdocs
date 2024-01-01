@@ -15,7 +15,7 @@ icon: polytoria/Http
 </div>
 
 !!! warning "Rate Limit"
-Each server has a limit of 15 requests per minute.
+    Each server has a limit of 15 requests per minute.
 
 ## Methods
 

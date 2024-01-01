@@ -27,4 +27,4 @@ Specifies how far out the light can reach.
 Specifies whether this light emits shadows or not.
 
 !!! note "Shadows"
-Having many lights with shadows enabled will cause a massive hit in performance. Consider minimzing the amount of lights with shadows to ensure every player is enjoying your game with minimal framerate issues.
+    Having many lights with shadows enabled will cause a massive hit in performance. Consider minimzing the amount of lights with shadows to ensure every player is enjoying your game with minimal framerate issues.
