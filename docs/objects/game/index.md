@@ -4,6 +4,7 @@ empty: true
 ---
 
 # Game
+
 This is Index's test area, go away.
 
 **Method Parameters Test**

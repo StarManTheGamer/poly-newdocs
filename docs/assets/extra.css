@@ -22,6 +22,7 @@ svg[viewBox="0 0 48 48"] {
 	margin-top: 0.11em;
 }
 
-p:has(small.parameters-text), p:has(small.parameters-text) + h3 {
+p:has(small.parameters-text),
+p:has(small.parameters-text) + h3 {
 	margin: 0px;
 }
