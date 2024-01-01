@@ -39,6 +39,6 @@ The text of the label.
 
 The color of the text.
 
-### VerticalAlign:TextVerticalAlign
+### VerticalAlign:TextVerticalAlign { property }
 
 The vertical alignment of the text.
