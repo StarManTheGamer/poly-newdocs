@@ -5,10 +5,10 @@ empty: true
 
 # Game
 
-This is Index's test area, go away.
+This is Index's test area on a very cool hidden page.
 
 **Method Parameters Test**
 
-### Test(Param1=Player,int,NetMessage):Environment { method }
+### CreateExplosion(Position;Vector3,Radius;int=10,Force;int=5000,affectAnchored;bool=false,callback;function=nil) { method }
 
 This is a test method with parameters.

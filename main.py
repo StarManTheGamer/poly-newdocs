@@ -200,35 +200,43 @@ def method(name):
 
     numOfParams = 0
     parametersList = ""
-    
+
+    parameters = ''.join(value.split("("))
+    parameters = parameters.split(")")[0].replace(name, '').split(',')
     if "(" in value:
-        equals = []
-        parameters = ''.join(value.split("("))
-        parameters = parameters.split(")")[0].replace(name, '').split(',')
-        print(parameters)
         for i in range(len(parameters)):
-            if not ":" in parameters[i]:
-                numOfParams = numOfParams + 1
-                parameters[i] = parameters[i].replace(':', '').strip()
+            v = parameters[i].replace(':', '').strip()
 
-                equals = parameters[i].split('=')
+            sections = v.split(';')
+            if len(sections) == 1:
+                sections.insert(0, "")
+            param_name = sections[0].strip()
+            param_type = sections[1].strip()
+
+            parts = param_type.split('=')
+            if len(parts) > 0:
+                for part in range(len(parts)):
+                    if parts[part] in type_friendlyname_table:
+                        parts[part] = type_friendlyname_table[parts[part]]
                 
-                for v in range(len(equals)):
-                    if equals[v] in type_friendlyname_table:
-                        equals[v] = type_friendlyname_table[equals[v]]
-                    if getClassLink(equals[v]) != "?":
-                        equals[v] = getClassLink(equals[v])
+                    if getClassLink(parts[part]) != "?":
+                        parts[part] = getClassLink(parts[part])
                     else:
-                        equals[v] = '`' + equals[v] + '`'
+                        parts[part] = "`" + parts[part] + "`"
+            param_type = ' = '.join(parts)
 
-            parameters[i] = ' = '.join(equals)
+            if param_name != "":
+                v = "%s [ %s ]" % (param_name, param_type)
+            else:
+                v = param_type
 
-        print(numOfParams)
-        if numOfParams > 0:
-            parametersList = "<small class=\"parameters-text\">Method Parameters: " + ', '.join(parameters) + "</small>\n"
+            parameters[i] = v
 
-    return "%s### :polytoria-Method: %s → %s { #%s data-toc-label=\"%s\" }" % (parametersList, name, property_type, name, name)
+        if len(parameters) > 0:
+            parametersList = f"\n??? quote \"Parameters\"\n{'\n\n'.join(['\t' + item for item in parameters])}"
 
+    return "### :polytoria-Method: %s → %s { #%s data-toc-label=\"%s\" }%s" % (name, property_type, name, name, parametersList)
+    
 def on_pre_page_macros(env):
     #find headers with { macroName } at the end and replace with the associated macro
     markdown_text = env.markdown
