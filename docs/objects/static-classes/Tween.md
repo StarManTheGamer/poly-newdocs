@@ -1,6 +1,5 @@
 ---
 icon: polytoria/Tween
-weight: 11
 ---
 
 # Tween

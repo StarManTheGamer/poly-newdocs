@@ -1,6 +1,5 @@
 ---
 icon: polytoria/Datastore
-weight: 11
 ---
 
 # Datastore

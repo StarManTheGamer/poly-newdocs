@@ -1,6 +1,5 @@
 ---
 icon: polytoria/Json
-weight: 11
 ---
 
 # Json

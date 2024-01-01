@@ -1,6 +1,5 @@
 ---
 icon: polytoria/Http
-weight: 11
 ---
 
 # Http

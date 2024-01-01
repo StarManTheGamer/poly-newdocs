@@ -1,6 +1,5 @@
 ---
 icon: polytoria/UI
-weight: 11
 ---
 
 # UI

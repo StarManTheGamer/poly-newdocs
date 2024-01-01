@@ -1,6 +1,5 @@
 ---
 icon: polytoria/Input
-weight: 11
 ---
 
 # Input
