@@ -4,6 +4,8 @@ icon: polytoria/UI
 
 # UI
 
+{{ staticclass()}}
+
 <div data-search-exclude markdown>
 !!! failure "The UI static class was removed in Version 1.2.0, and is currently noted for documental purposes."
 </div>
@@ -37,10 +39,6 @@ Creates a text label.
 Creates a horizontal UI layout.
 
 ## Properties
-
-<div data-search-exclude markdown>
-!!! success "These properties are usable past the removal of the UI static class in Version 1.2.0."
-</div>
 
 ### ScreenHeight:int { property }
 

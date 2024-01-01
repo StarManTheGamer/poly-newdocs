@@ -4,6 +4,8 @@ icon: polytoria/Json
 
 # Json
 
+{{ staticclass()}}
+
 :polytoria-json: Json is a module which converts between JSON scripts and Lua tables.
 
 <div data-search-exclude markdown>

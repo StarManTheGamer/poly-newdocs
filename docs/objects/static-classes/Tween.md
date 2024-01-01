@@ -4,6 +4,8 @@ icon: polytoria/Tween
 
 # Tween
 
+{{ staticclass()}}
+
 :polytoria-Tween: Tween is a static class used for tweening properties of instances, such as Position, Rotation and Size.
 
 <div data-search-exclude markdown>

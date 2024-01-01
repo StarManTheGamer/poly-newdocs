@@ -4,6 +4,8 @@ icon: polytoria/Input
 
 # Input
 
+{{ staticclass()}}
+
 :polytoria-Input: Input is a class used for retrieving user input data, such as the mouse and keyboard.
 
 ## Events
