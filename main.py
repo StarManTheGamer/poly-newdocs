@@ -115,8 +115,7 @@ def define_env(env):
     @env.macro
     def doc_env():
         "Document the environment"
-        print({name:getattr(env, name) for name in dir(env) if not name.startswith('_')})
-        #return {name:getattr(env, name) for name in dir(env) if not name.startswith('_')}
+        return {name:getattr(env, name) for name in dir(env) if not name.startswith('_')}
 
 # define list of friendly names for method and property types
 type_friendlyname_table = {
