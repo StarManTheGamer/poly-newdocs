@@ -200,30 +200,32 @@ def method(name):
 
     numOfParams = 0
     parametersList = ""
-    equals = []
-    parameters = ''.join(value.split("("))
-    parameters = parameters.split(")")[0].replace(name, '').split(',')
-    print(parameters)
-    for i in range(len(parameters)):
-        if not ":" in parameters[i]:
-            numOfParams = numOfParams + 1
-            parameters[i] = parameters[i].replace(':', '').strip()
+    
+    if "(" in value:
+        equals = []
+        parameters = ''.join(value.split("("))
+        parameters = parameters.split(")")[0].replace(name, '').split(',')
+        print(parameters)
+        for i in range(len(parameters)):
+            if not ":" in parameters[i]:
+                numOfParams = numOfParams + 1
+                parameters[i] = parameters[i].replace(':', '').strip()
 
-            equals = parameters[i].split('=')
-            
-            for v in range(len(equals)):
-                if equals[v] in type_friendlyname_table:
-                    equals[v] = type_friendlyname_table[equals[v]]
-                if getClassLink(equals[v]) != "?":
-                    equals[v] = getClassLink(equals[v])
-                else:
-                    equals[v] = '`' + equals[v] + '`'
+                equals = parameters[i].split('=')
+                
+                for v in range(len(equals)):
+                    if equals[v] in type_friendlyname_table:
+                        equals[v] = type_friendlyname_table[equals[v]]
+                    if getClassLink(equals[v]) != "?":
+                        equals[v] = getClassLink(equals[v])
+                    else:
+                        equals[v] = '`' + equals[v] + '`'
 
-        parameters[i] = ' = '.join(equals)
+            parameters[i] = ' = '.join(equals)
 
-    print(numOfParams)
-    if numOfParams > 0:
-        parametersList = "<small class=\"parameters-text\">Method Parameters: " + ', '.join(parameters) + "</small>\n"
+        print(numOfParams)
+        if numOfParams > 0:
+            parametersList = "<small class=\"parameters-text\">Method Parameters: " + ', '.join(parameters) + "</small>\n"
 
     return "%s### :polytoria-Method: %s → %s { #%s data-toc-label=\"%s\" }" % (parametersList, name, property_type, name, name)
 
