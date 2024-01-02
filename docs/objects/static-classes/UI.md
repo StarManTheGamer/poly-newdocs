@@ -2,10 +2,10 @@
 icon: polytoria/UI
 ---
 
-# (Deprecated) UI
+# (Removed) UI
 
 <div data-search-exclude markdown>
-!!! danger "Deprecated"
+!!! danger "Removed"
     The UI static class was removed in Version 1.2.0, and is currently noted for documentation purposes.
 </div>
 
