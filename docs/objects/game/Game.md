@@ -1,7 +1,6 @@
 ---
 title: Game
 description: Game is the root object in the Polytoria instance tree. It is the object of which everything is descended.
-accent: blue
 icon: polytoria/Game
 weight: 1
 ---
