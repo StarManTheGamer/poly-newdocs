@@ -1,4 +1,6 @@
 ---
+title: Environment
+description: This is the environment
 icon: polytoria/Environment
 weight: 2
 ---
