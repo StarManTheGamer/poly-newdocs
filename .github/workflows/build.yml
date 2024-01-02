@@ -1,5 +1,8 @@
 name: build and deploy to github pages
-on: [push]
+on:
+  push:
+    branches:
+      - main
 
 jobs:
   build:
@@ -19,17 +22,5 @@ jobs:
         with:
           name: Artifacts
           path: site
-
-  deploy:
-    needs: build
-    permissions:
-      pages: write
-      id-token: write
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    steps:
-      - name: deploy to github pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+      - name: push to gh-pages branch
+        run: ghp-import site/
