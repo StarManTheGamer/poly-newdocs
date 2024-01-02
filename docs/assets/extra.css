@@ -26,3 +26,11 @@ p:has(small.parameters-text),
 p:has(small.parameters-text) + h3 {
 	margin: 0px;
 }
+
+h3:has(+ .admonition.quote) {
+	margin-bottom: 0px;
+}
+
+h3 + .admonition.quote {
+	margin-top: 5px;
+}

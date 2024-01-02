@@ -160,6 +160,29 @@ end)
 
 ## Methods
 
+### DropTools { method }
+
+Drops the tool the player is currently holding.
+
+{{ serverexclusive() }}
+
+### Kick(?Reason;string) { method }
+
+Kicks the player from the server with an optional reason parameter.
+
+{{ serverexclusive() }}
+
+### LoadAppearance(userID;int) { method }
+
+Loads the specified user ID's avatar on the player.
+
+**Example**
+
+```lua
+-- Loads the appearance of willemsteller
+player:LoadAppearance(2)
+```
+
 ### ClearAppearance { method }
 
 Clears the player's appearance. This will set their appearance to a gray avatar.
@@ -171,36 +194,13 @@ Clears the player's appearance. This will set their appearance to a gray avatar.
 player:ClearAppearance()
 ```
 
-### DropTools { method }
-
-Drops the tool the player is currently holding.
-
-{{ serverexclusive() }}
-
-### Kick { method }
-
-Kicks the player from the server.
-
-{{ serverexclusive() }}
-
-### LoadAppearance:void { method }
-
-Loads the specified user ID's avatar on the player.
-
-**Example**
-
-```lua
--- Loads the appearance of willemsteller
-player:LoadAppearance(2)
-```
-
-### OwnsItem:callback { method }
+### OwnsItem(assetID;int, callback;function) { method }
 
 Checks if the player owns an item
 
 !!! note "The function will cache the result for 5 minutes."
 
-!!! warning "There is a limit of up to 30 requests that can be made per minute per server."
+!!! warning "There is a limit of 30 requests that can be made per minute per server."
 
 **Example**
 
@@ -233,10 +233,10 @@ player:ResetAppearance()
 
 Respawns the player.
 
-### Sit:Seat { method }
+### Sit(Seat;Seat) { method }
 
 Sit the player in a specific seat.
 
-### Unsit:bool=false { method }
+### Unsit(addForce;bool=false) { method }
 
 Unsit the player.

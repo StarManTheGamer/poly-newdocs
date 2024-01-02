@@ -225,15 +225,22 @@ def method(name):
                         parts[part] = "`" + parts[part] + "`"
             param_type = ' = '.join(parts)
 
+            optional_msg = ""
+            if "?" in param_name:
+                optional_msg = " - this parameter is optional"
+                param_name = param_name.replace('?','')
+
             if param_name != "":
-                v = "%s [ %s ]" % (param_name, param_type)
+                v = "%s [ %s ]%s" % (param_name, param_type, optional_msg)
             else:
                 v = param_type
 
             parameters[i] = v
 
-        if len(parameters) > 0:
+        if len(parameters) > 1:
             parametersList = f"\n??? quote \"Parameters\"\n{'\n\n'.join(['\t' + item for item in parameters])}"
+        elif len(parameters) == 1:
+            parametersList = f"\n!!! quote \"**Parameters:** <span style=\"font-weight: normal;\">" + parameters[0] + "</span>\""
 
     return "### :polytoria-Method: %s → %s { #%s data-toc-label=\"%s\" }%s" % (name, property_type, name, name, parametersList)
     
