@@ -1,4 +1,6 @@
 ---
+title: RayResult
+description: RayResult is a data type that contains data about a raycast result.
 icon: polytoria/RayResult
 ---
 

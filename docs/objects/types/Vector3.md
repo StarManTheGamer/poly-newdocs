@@ -1,4 +1,6 @@
 ---
+title: Vector3
+description: Vector3 is a 3D Vector with an x, y and z component.
 icon: polytoria/Vector3
 ---
 

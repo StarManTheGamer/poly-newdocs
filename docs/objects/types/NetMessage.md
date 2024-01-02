@@ -1,4 +1,6 @@
 ---
+title: NetMessage
+description: NetMessage is a data type used for transporting data between client and server.
 icon: polytoria/NetMessage
 ---
 

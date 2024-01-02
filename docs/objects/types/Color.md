@@ -1,4 +1,6 @@
 ---
+title: Color
+description: Color is a data type that represents a color.
 icon: polytoria/Color
 ---
 
