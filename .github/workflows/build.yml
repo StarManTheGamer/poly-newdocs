@@ -23,4 +23,4 @@ jobs:
           name: Artifacts
           path: site
       - name: push to gh-pages branch
-        run: ghp-import site/
+        run: mkdocs gh-deploy
