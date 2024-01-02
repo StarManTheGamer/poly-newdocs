@@ -3,6 +3,8 @@ on:
   push:
     branches:
       - main
+permissions:
+  contents: write
 
 jobs:
   build:
@@ -15,12 +17,9 @@ jobs:
           cache: "pip"
       - name: install dependencies
         run: pip install -r requirements.txt
-      - name: build
-        run: mkdocs build
-      - name: capture build artifacts
-        uses: actions/upload-artifact@v3
-        with:
-          name: Artifacts
-          path: site
+      - name: auth as github-actions
+        run: |
+          git config user.name github-actions
+          git config user-email github-actions@github.com
       - name: push to gh-pages branch
         run: mkdocs gh-deploy
