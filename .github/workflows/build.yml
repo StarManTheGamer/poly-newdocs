@@ -11,7 +11,7 @@ jobs:
           python-version: "3.12.1"
           cache: "pip"
       - name: install dependencies
-        run: pip install -r dependencies.txt
+        run: pip install -r requirements.txt
       - name: build
         run: mkdocs build
       - name: capture build artifacts
