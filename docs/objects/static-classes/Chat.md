@@ -4,17 +4,17 @@ icon: polytoria/Chat
 
 # Chat
 
-{{ staticclass()}}
+{{ staticclass("Chat")}}
 
 :polytoria-Chat: Chat is a static class used for various actions regarding the chat.
 
 ## Methods
 
-### BroadcastMessage { method }
+### BroadcastMessage(message;string) { method }
 
 Sends a chat message to all users.
 
-### UnicastMessage { method }
+### UnicastMessage(message;string,player;Player) { method }
 
 Sends a chat message to a specific user.
 

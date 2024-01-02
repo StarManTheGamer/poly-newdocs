@@ -13,7 +13,7 @@ DynamicInstance is the base class where all objects with a position, rotation an
 
 ## Methods
 
-### LookAt:void { method }
+### LookAt(rotation;Vector3) { method }
 
 Rotates the DynamicInstance so that the forward vector looks at the target.
 
@@ -23,7 +23,7 @@ Rotates the DynamicInstance so that the forward vector looks at the target.
 part.LookAt(Vector3.New(12, 34, 56))
 ```
 
-### Translate:void { method }
+### Translate(translation;Vector3) { method }
 
 Moves the transform in the direction and distance of translation.
 

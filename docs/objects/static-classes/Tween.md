@@ -4,17 +4,18 @@ icon: polytoria/Tween
 
 # Tween
 
-{{ staticclass()}}
+{{ staticclass("Tween")}}
 
 :polytoria-Tween: Tween is a static class used for tweening properties of instances, such as Position, Rotation and Size.
 
 <div data-search-exclude markdown>
-!!! note "Multiple tweens can be applied on the same object at the same time, but they must not be tweening the same property. Only the latest tween will override any other one being applied to the property."
+!!! note "Overlapping Tweens"
+    Multiple tweens can be applied on the same object at the same time, but they must not be tweening the same property. Only the latest tween will override any other one being applied to the property.
 </div>
 
 ## Methods
 
-### TweenColor { method }
+### TweenColor(startValue;Color,endValue;Color,time;number,callPerStep;function,type;TweenType,callback;function) { method }
 
 Tweens a color between two specified values.
 
@@ -28,7 +29,7 @@ end, TweenType.linear, function()
 end
 ```
 
-### TweenNumber { method }
+### TweenNumber(startValue;int,endValue;int,time;number,callPerStep;function,type;TweenType,callback;function) { method }
 
 Tweens a number between two specified values.
 
@@ -42,7 +43,7 @@ end, TweenType.linear, function()
 end)
 ```
 
-### TweenPosition { method }
+### TweenPosition(target;DynamicInstance,destination;Vector3,time;number,type;TweenType,callback;function) { method }
 
 Tweens the position of a DynamicInstance
 
@@ -54,7 +55,7 @@ Tween:TweenPosition(part, Vector3.New(100, 0, 0), 100, TweenType.linear, functio
 end)
 ```
 
-### TweenRotation { method }
+### TweenRotation(target;DynamicInstance,destination;Vector3,time;number,type;TweenType,callback;function) { method }
 
 Tweens the rotation of a DynamicInstance
 
@@ -70,7 +71,7 @@ Tween:TweenRotation(part, Vector3.New(0, 90, 0), 1, TweenType.linear, function()
 end)
 ```
 
-### TweenSize { method }
+### TweenSize(target;DynamicInstance,endValue;Vector3,time;number,type;TweenType,callback;function) { method }
 
 Tweens the size of a DynamicInstance
 
@@ -82,7 +83,7 @@ Tween:TweenSize(part, Vector3.New(5, 5, 5), 1, TweenType.linear, function()
 end)
 ```
 
-### TweenVector2 { method }
+### TweenVector2(startValue;Vector2,endValue;Vector2,time;int,callPerStep;function,type;TweenType,callback;function) { method }
 
 Tweens a vector2 between two specified values.
 
@@ -96,7 +97,7 @@ end, TweenType.linear, function()
 end)
 ```
 
-### TweenVector3 { method }
+### TweenVector3(startValue;Vector3,endValue;Vector3,time;int,callPerStep;function,type;TweenType,callback;function) { method }
 
 Tweens a vector3 between two specified values.
 

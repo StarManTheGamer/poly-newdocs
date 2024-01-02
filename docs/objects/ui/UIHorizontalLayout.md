@@ -5,6 +5,6 @@ weight: 100
 
 # UIHorizontalLayout
 
-UIHorizontalLayout aligns all children horizontally.
+:polytoria-UIHorizontalLayout: UIHorizontalLayout is a class that aligns all of it's children horizontally.
 
 {{ inherits("UIHVLayout") }}

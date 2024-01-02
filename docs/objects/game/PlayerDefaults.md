@@ -57,6 +57,6 @@ Determines how fast the player walks by default.
 
 ## Methods
 
-### LoadDefaults:void { method }
+### LoadDefaults(player;Player) { method }
 
 Resets the specified player back to their default values.

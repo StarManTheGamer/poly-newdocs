@@ -39,11 +39,11 @@ Fires when a player leaves the server.
 
 ## Methods
 
-### GetPlayer:Player { method }
+### GetPlayer(username;String):Player { method }
 
 Returns the player instance from their username.
 
-### GetPlayerByID:Player { method }
+### GetPlayerByID(userID;int):Player { method }
 
 Returns the player instance from their user ID.
 

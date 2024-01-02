@@ -4,7 +4,7 @@ icon: polytoria/Datastore
 
 # Datastore
 
-{{ staticclass()}}
+{{ staticclass("Datastore")}}
 
 :polytoria-Datastore: Datastore (not to be confused with the Datastore data type) is a service used for storing data between game sessions.
 
@@ -13,7 +13,7 @@ icon: polytoria/Datastore
 ## Limits
 
 ??? warning "TL;DR Limits"
-**Rate Limit:** up to `(30 + (10 * [amount of players]))` requests per minute (for example; a server with 5 players would have a limit of 80 requests/min)
+    **Rate Limit:** up to `(30 + (10 * [amount of players]))` requests per minute (for example; a server with 5 players would have a limit of 80 requests/min)
 
     **Datastore Size:** up to 65,535 bytes
 
@@ -34,7 +34,7 @@ Fires when the Datastore object loads.
 
 ## Methods
 
-### GetDatastore:Datastore { method }
+### GetDatastore(datastoreName;string):Datastore { method }
 
 Attempts to get a Datastore object from the Datastore service.
 
@@ -47,7 +47,7 @@ Attempts to get a Datastore object from the Datastore service.
 local ds = Datastore:GetDatastore("Player_" .. player.UserID)
 ```
 
-### Get:callback { method }
+### Get(key;string,callback;function):callback { method }
 
 Attempts to get the value of a key from a Datastore.
 
@@ -64,7 +64,7 @@ ds:Get("Coins", function(value, success, error)
 end)
 ```
 
-### Remove:callback { method }
+### Remove(key;string,callback;function):callback { method }
 
 Attempts to remove a key from a Datastore.
 
@@ -81,7 +81,7 @@ ds:Remove("Coins", function(success, error)
 end)
 ```
 
-### Set:callback { method }
+### Set(key;string,value;any,callback;function):callback { method }
 
 Attempts to set the value of a key in a Datastore
 

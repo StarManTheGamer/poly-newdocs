@@ -4,7 +4,7 @@ icon: polytoria/Input
 
 # Input
 
-{{ staticclass()}}
+{{ staticclass("Input")}}
 
 :polytoria-Input: Input is a class used for retrieving user input data, such as the mouse and keyboard.
 
@@ -12,7 +12,7 @@ icon: polytoria/Input
 
 ### KeyDown:string { event }
 
-Gets triggered when a key was pressed.
+Fires when a key is pressed.
 
 **Example**
 
@@ -28,7 +28,7 @@ end)
 
 ### KeyUp:string { event }
 
-Gets triggered when a key was released.
+Fires when a key is released.
 
 ```lua
 Input.KeyUp:Connect(function (key)

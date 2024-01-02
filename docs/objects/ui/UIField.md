@@ -1,5 +1,5 @@
 ---
-icon: polytoria/UIFIeld
+icon: polytoria/UIField
 weight: 100
 ---
 
@@ -8,6 +8,32 @@ weight: 100
 {{ abstract() }}
 
 {{ inherits("Instance") }}
+
+## Events
+
+### MouseDown { event }
+
+Fires when the mouse is clicked
+
+**Example**
+
+```lua
+label.MouseDown:Connect(function()
+    label.Text = "Mouse Down"
+end)
+```
+
+### MouseUp { event }
+
+Fires when the mouse is released
+
+**Example**
+
+```lua
+label.MouseUp:Connect(function()
+    label.Text = "Mouse Up"
+end)
+```
 
 ## Properties
 

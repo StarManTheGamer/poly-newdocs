@@ -11,9 +11,11 @@ The part that can have custom mesh applied to it, mesh can be loaded from Polyto
 
 ## Methods
 
-### MovePosition:void { method }
+### MovePosition(position;Vector3) { method }
+TO-DO
 
-### MoveRotation:void { method }
+### MoveRotation(rotation;Vector3) { method }
+TO-DO
 
 ## Properties
 

@@ -5,11 +5,13 @@ weight: 100
 
 # UIButton
 
+:polytoria-UIButton: UIButton is a class used for having interactable buttons in your game's UI.
+
 {{ inherits("UILabel") }}
 
 ## Events
 
-### Clicked:void { event }
+### Clicked { event }
 
 Fires when the UIButton is clicked
 

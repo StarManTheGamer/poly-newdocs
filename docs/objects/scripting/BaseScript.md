@@ -13,7 +13,7 @@ weight: 4
 
 ## Methods
 
-### Call:void { method }
+### Call(functionParameters) { method }
 
 Calls a function on another script
 
@@ -23,5 +23,4 @@ Calls a function on another script
 game["ScriptService"]["Script"]:Call("Foo", "Bar")
 ```
 
-!!! warning "Local Functions"
-    Local Functions cannot be ran using the Call function.
+!!! failure "Local Functions cannot be ran using the Call function."

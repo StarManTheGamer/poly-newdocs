@@ -15,7 +15,7 @@ weight: 2
 
 ## Methods
 
-### CreateExplosion:void { method }
+### CreateExplosion(Position;Vector3,Radius;int=10,Force;int=5000,affectAnchored;bool=true,callback;function=nil) { method }
 
 Creates a deadly explosion killing players and applying force to parts at the given position.
 

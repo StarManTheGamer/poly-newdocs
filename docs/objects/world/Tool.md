@@ -5,7 +5,7 @@ weight: 7
 
 # Tool
 
-Tools are objects that can be held by players.
+:polytoria-Tool: Tools are objects that can be held by players.
 
 {{ inherits("Instance") }}
 
@@ -13,7 +13,7 @@ Tools are objects that can be held by players.
 
 ### Activated { event }
 
-Gets fired when the user clicks while holding the tool.
+Fires when the user clicks while holding the tool.
 
 **Example**
 
@@ -25,7 +25,7 @@ end)
 
 ## Methods
 
-### Play:void { method }
+### Play(animationName;string) { method }
 
 Plays an animation on the tool or the player that is currently holding the tool.
 

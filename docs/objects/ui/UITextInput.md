@@ -5,7 +5,7 @@ weight: 100
 
 # UITextInput
 
-UITextInput is an element that allows the user to enter text.
+:polytoria-UITextInput: UITextInput is a class that allows the user to enter text.
 
 {{ inherits("UIView") }}
 

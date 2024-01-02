@@ -12,10 +12,10 @@ Seats are parts the player can sit on.
 ## Events
 
 ### Sat:Player { event }
-This event fires when a player sits in the seat.
+Fires when a player sits in the seat.
 
 ### Vacated:Player { event }
-This event fires when a player leaves the seat.
+Fires when a player leaves the seat.
 
 ## Properties
 

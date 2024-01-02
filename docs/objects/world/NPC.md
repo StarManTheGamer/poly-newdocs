@@ -5,7 +5,7 @@ weight: 5
 
 # NPC
 
-An NPC (Non-Player Character) is an object similar to a Player but that can be controlled by code. Like players, it can walk and jump, and it's body part colors can be customized.
+An NPC (non-player character) is an object similar to a Player but that can be controlled by code. Like players, it can walk and jump, and it's body part colors can be customized.
 
 {{ inherits("DynamicInstance") }}
 
@@ -13,7 +13,7 @@ An NPC (Non-Player Character) is an object similar to a Player but that can be c
 
 ### Died { event }
 
-Gets triggered when the NPC dies.
+Fires when the NPC dies.
 
 **Example**
 
@@ -25,7 +25,7 @@ end)
 
 ## Methods
 
-### LoadAppearance:void { method }
+### LoadAppearance(userID;int) { method }
 
 Loads the specified user ID's avatar on the NPC.
 

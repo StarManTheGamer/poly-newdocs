@@ -5,7 +5,7 @@ weight: 100
 
 # UIView
 
-UIView is an element that displays a rectangle.
+:polytoria-UIView: UIView is a class that displays a rectangle in your game's UI.
 
 {{ inherits("UIField") }}
 
@@ -13,16 +13,16 @@ UIView is an element that displays a rectangle.
 
 ### BorderColor:Color { property }
 
-The border color of the UI.
+Determines the border color of the UI.
 
 ### BorderWidth:Int { property }
 
-The border width of the UI.
+Determines the border width of the UI.
 
 ### Color:Color { property }
 
-The color of the UI.
+Determines the color of the UI.
 
 ### CornerRadius:int { property }
 
-Corner radius of the UI.
+Determines the corner radius of the UI.

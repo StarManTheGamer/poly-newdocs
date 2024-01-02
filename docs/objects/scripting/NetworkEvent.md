@@ -41,7 +41,7 @@ end)
 
 ## Methods
 
-### InvokeClient:void { method }
+### InvokeClient(message;NetMessage,player;Player) { method }
 
 Sends a network event to a specific player from the server.
 
@@ -55,7 +55,7 @@ netEvent.InvokeClient(message, game["Players"]["willemsteller"])
 
 {{ serverexclusive() }}
 
-### InvokeClients:void { method }
+### InvokeClients(message;NetMessage) { method }
 
 Sends a network event to all players from the server.
 

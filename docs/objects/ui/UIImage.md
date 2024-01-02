@@ -5,6 +5,8 @@ weight: 100
 
 # UIImage
 
+:polytoria-UIImage: UIImage is a class for displaying images in your game's UI.
+
 {{ inherits("UIField") }}
 
 ## Properties
@@ -19,7 +21,7 @@ Specifies the image ID of the UIImage.
 
 ### Loading:bool { property }
 
-True if the image is loading.
+Returns whether or not the image is loading.
 
 **Example**
 

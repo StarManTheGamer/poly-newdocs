@@ -2,27 +2,23 @@
 icon: polytoria/Json
 ---
 
-# Json
+# json
 
-{{ staticclass()}}
+{{ staticclass("json")}}
 
-:polytoria-json: Json is a module which converts between JSON scripts and Lua tables.
-
-<div data-search-exclude markdown>
-!!! note "The json module can be called through scripts with the `json` keyword."
-</div>
+:polytoria-json: json is a module which allows for scripts to interface with JSON data representation by converting it to a Lua array or from a Lua array.
 
 ## Methods
 
-### isNull:bool { method }
+### isNull(jsonString;string):bool { method }
 
-Returns true if the value specified is a null read from a json
+Returns true if the value specified is a null read from a json string
 
 ### null:string { method }
 
 Returns a special value which is a representation of a null in a json
 
-### parse:Table { method }
+### parse(jsonString;string):Table { method }
 
 Returns a table with the contents of the specified JSON string
 
@@ -39,6 +35,6 @@ Http:Get("https://api.polytoria.com/v1/asset/owner?userID=1&assetID=234", functi
 end)
 ```
 
-### serialize:string { method }
+### serialize(array;array):string { method }
 
 Returns a json string with the contents of the specified table.

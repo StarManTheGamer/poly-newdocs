@@ -4,13 +4,13 @@ icon: polytoria/Camera
 
 # Camera
 
-{{ service() }}
+{{ staticclass("Camera") }}
 
 {{ clientexclusive() }}
 
 {{ notnewable() }}
 
-:polytoria-Camera: Camera is the local player's camera.
+:polytoria-Camera: Camera is a class that represents the local player's camera.
 
 {{ inherits("Instance") }}
 

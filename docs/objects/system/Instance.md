@@ -33,11 +33,11 @@ Specifies the name of an instance.
 
 Specifies the parent instance of an instance.
 
-### Shared:Table { property }
+### Shared:array { property }
 
 An empty table you can use to hold metadata about anything on any object or player you want.
 
-!!! note "Doesn't sync from the client to the server, or from the server to the client."
+!!! note "Shared doesn't sync from the client to the server, or from the server to the client."
 
 **Example**
 
@@ -47,7 +47,9 @@ local players = game.Players.GetChildren()
 local lucky = players[math.random(1, #players)]
 
 lucky.Shared.IsZombie = true
+```
 
+```lua
 -- Script 2
 local killBrick = game.Environment["Kill Brick"]
 

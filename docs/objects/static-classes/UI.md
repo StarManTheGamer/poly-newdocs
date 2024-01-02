@@ -2,13 +2,14 @@
 icon: polytoria/UI
 ---
 
-# UI
-
-{{ staticclass()}}
+# (Deprecated) UI
 
 <div data-search-exclude markdown>
-!!! failure "The UI static class was removed in Version 1.2.0, and is currently noted for documental purposes."
+!!! danger "Deprecated"
+    The UI static class was removed in Version 1.2.0, and is currently noted for documentation purposes.
 </div>
+
+{{ staticclass("UI")}}
 
 UI is a static class used for creating User Interface elements through LocalScripts. While it is possible to create UI elements in normal scripts, it will only work in local playtesting and not on server.
 
@@ -18,21 +19,21 @@ UI is a static class used for creating User Interface elements through LocalScri
 
 Creates a GUI Button
 
-### CreateEmpty:UIElement { method }
+### CreateEmpty:UIField { method }
 
-Creates an empty UI element
-
-### CreateHorizontalLayout:UIHorizontalLayout { method }
-
-Creates a horizontal UI layout.
+Creates an empty UIField
 
 ### CreateImage:UIImage { method }
 
 Creates an UI image.
 
-### CreateLabel:UILabel { method }
+### CreateLabel(text;string):UILabel { method }
 
 Creates a text label.
+
+### CreateHorizontalLayout:UIHorizontalLayout { method }
+
+Creates a horizontal UI layout.
 
 ### CreateVerticalLayout:UIVerticalLayout { method }
 
