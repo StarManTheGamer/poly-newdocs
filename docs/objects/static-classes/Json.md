@@ -1,5 +1,5 @@
 ---
-icon: polytoria/Json
+icon: polytoria/json
 ---
 
 # json
