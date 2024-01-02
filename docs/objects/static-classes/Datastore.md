@@ -6,7 +6,7 @@ icon: polytoria/Datastore
 
 {{ staticclass("Datastore")}}
 
-:polytoria-Datastore: Datastore (not to be confused with the Datastore data type) is a service used for storing data between game sessions.
+:polytoria-Datastore: Datastore (not to be confused with the Datastore data type) is a service used for storing data between place sessions.
 
 {{ serverexclusive() }}
 

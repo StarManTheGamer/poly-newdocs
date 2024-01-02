@@ -5,7 +5,7 @@ weight: 100
 
 # UIImage
 
-:polytoria-UIImage: UIImage is a class for displaying images in your game's UI.
+:polytoria-UIImage: UIImage is a class for displaying images in your place's UI.
 
 {{ inherits("UIField") }}
 

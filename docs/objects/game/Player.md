@@ -45,7 +45,7 @@ Returns whether or not the player is a Polytoria admin.
 
 ### IsCreator:bool { property }
 
-Returns whether or not the player is the creator of the current game.
+Returns whether or not the player is the creator of the current place.
 
 {{ readonly() }}
 

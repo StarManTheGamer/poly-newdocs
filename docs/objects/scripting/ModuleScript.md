@@ -10,7 +10,7 @@ weight: 2
 
 :polytoria-ModuleScript: ModuleScripts are a kind of script, that is specialized to hold data that can be accessed by other scripts using the `require()` function.
 
-It is important to define and return a table in a ModuleScript. When the game starts, the server and the client will run the ModuleScript once and store the result for other scripts to retrieve with `require()`.
+It is important to define and return a table in a ModuleScript. When the place starts, the server and the client will run the ModuleScript once and store the result for other scripts to retrieve with `require()`.
 
 !!! note "When trying to require a specific module script, put the path to the ModuleScript in the require function."
 

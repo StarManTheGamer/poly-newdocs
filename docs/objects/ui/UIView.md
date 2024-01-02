@@ -5,7 +5,7 @@ weight: 100
 
 # UIView
 
-:polytoria-UIView: UIView is a class that displays a rectangle in your game's UI.
+:polytoria-UIView: UIView is a class that displays a rectangle in your place's UI.
 
 {{ inherits("UIField") }}
 

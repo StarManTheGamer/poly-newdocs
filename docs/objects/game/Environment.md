@@ -1,6 +1,6 @@
 ---
 title: Environment
-description: Environment is the primary object intended for storing active objects in the game.
+description: Environment is the primary object intended for storing active objects in the place.
 icon: polytoria/Environment
 weight: 2
 ---
@@ -11,7 +11,7 @@ weight: 2
 
 {{ notnewable() }}
 
-:polytoria-Environment: Environment is the primary object intended for storing active objects in the game.
+:polytoria-Environment: Environment is the primary object intended for storing active objects in the place.
 
 {{ inherits("Instance") }}
 

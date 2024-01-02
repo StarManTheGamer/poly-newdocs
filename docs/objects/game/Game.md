@@ -23,7 +23,7 @@ weight: 1
 
 The ID of the current Polytoria place.
 
-The value is `0` when testing locally through Polytoria Creator, which can be used as a conditional to check if the game is live or not.
+The value is `0` when testing locally through Polytoria Creator, which can be used as a conditional to check if the place is live or not.
 
 ### InstanceCount:int { property }
 
@@ -36,7 +36,7 @@ The total number of instances currently loaded
 
 ### Rendered { event }
 
-Called every frame after the game has been rendered
+Called every frame after the place has been rendered
 
 !!! warning "Notice"
     The server is incapable of rendering frames; rather, on server Scripts, the event will fire at the server's tick rate which may vary between 1-30Hz.

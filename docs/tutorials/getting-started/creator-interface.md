@@ -35,7 +35,7 @@ When you start the creator via the "Launch Creator" button on the [Create](https
 2. <b>Edit</b> ─ Undo and Redo your actions as well as deleting, duplicating, grouping and ungrouping objects.
 3. <b>Insert</b> ─ Insert various objects into the place.
 4. <b>Model</b> ─ You can use this menu to import, export or publish your models.
-5. <b>Tools</b> ─ You can use this menu to test the game.
+5. <b>Tools</b> ─ You can use this menu to test the place.
 
 ### Toolbar Tools
 

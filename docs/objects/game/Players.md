@@ -51,4 +51,4 @@ Returns the player instance from their user ID.
 
 ### GetPlayers:array { method }
 
-Returns all players in the game as an array.
+Returns all players in the place as an array.
