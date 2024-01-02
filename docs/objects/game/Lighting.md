@@ -1,4 +1,6 @@
 ---
+title: Lighting
+description: Lighting is responsible for controlling the state of the lighting in the place.
 icon: polytoria/Lighting
 weight: 3
 ---

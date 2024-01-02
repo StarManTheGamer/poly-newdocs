@@ -1,4 +1,6 @@
 ---
+title: Hidden
+description: Hidden is a service used for hiding instances.
 icon: polytoria/Hidden
 weight: 6
 ---

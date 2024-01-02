@@ -1,4 +1,6 @@
 ---
+title: Game
+description: Game is the root object in the Polytoria instance tree. It is the object of which everything is descended.
 icon: polytoria/Game
 weight: 1
 ---
@@ -11,7 +13,7 @@ weight: 1
 !!! tip "This object can be accessed in scripts by using the `game` keyword."
 </div>
 
-:polytoria-Game: Game is the root object in the Polytoria instance tree. It is the object of which everything is descended
+:polytoria-Game: Game is the root object in the Polytoria instance tree. It is the object of which everything is descended.
 
 {{ inherits("Instance") }}
 

@@ -1,6 +1,6 @@
 ---
 title: Environment
-description: This is the environment
+description: Environment is the primary object intended for storing active objects in the game.
 icon: polytoria/Environment
 weight: 2
 ---

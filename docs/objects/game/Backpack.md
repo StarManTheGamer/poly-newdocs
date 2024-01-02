@@ -1,4 +1,6 @@
 ---
+title: Backpack
+description: Backpack is a child of player used for storing tools.
 icon: polytoria/Backpack
 weight: 10
 ---

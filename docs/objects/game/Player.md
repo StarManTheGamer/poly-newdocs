@@ -1,4 +1,6 @@
 ---
+title: Player
+description: Player is the class of the player and it's character controlled by it's player.
 icon: polytoria/Player
 weight: 5
 ---

@@ -1,4 +1,6 @@
 ---
+title: PlayerDefaults
+description: PlayerDefaults is a service used for storing the default values of the Player when created.
 icon: polytoria/PlayerDefaults
 weight: 6
 ---
