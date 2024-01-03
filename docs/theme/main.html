@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block extrahead %}
+    {{ super() }}
+    {% if page and page.meta and page.meta.icon %}
+    <meta property="og:image" content="{{ page.meta.icon|replace("polytoria/", "/poly-newdocs/assets/tree/", 1) }}.png">
+    {% endif %}
+{% endblock %}
+{% block scripts %}
+    {{ super() }}
+{% endblock %}
