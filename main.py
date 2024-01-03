@@ -125,6 +125,12 @@ type_friendlyname_table = {
     "array": "[]"
 }
 
+parametertype_friendlyname_table = {
+    "int": "number",
+    "float": "number",
+    "bool": "boolean"
+}
+
 def property(name):
     value = name[3:] # in form "name:type=value"
     name = value.split(":")[0].strip()
@@ -217,8 +223,8 @@ def method(name):
             parts = param_type.split('=')
             if len(parts) > 0:
                 for part in range(len(parts)):
-                    if parts[part] in type_friendlyname_table:
-                        parts[part] = type_friendlyname_table[parts[part]]
+                    if parts[part] in parametertype_friendlyname_table:
+                        parts[part] = parametertype_friendlyname_table[parts[part]]
                 
                     if getClassLink(parts[part]) != "?":
                         parts[part] = getClassLink(parts[part])

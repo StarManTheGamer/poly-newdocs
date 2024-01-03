@@ -35,7 +35,7 @@ game["Environment"]:CreateExplosion(Vector3.New(0, 0, 0), 30, 5000, false)
 !!! note "Callback gets called for each part within explosion radius."
 </div>
 
-### Raycast:RayResult { method }
+### Raycast(origin;Vector3,direction;Vector3,maxDistance;int=infinite,ignoreList;array=Instance[]):RayResult { method }
 
 Casts a ray from origin with a specified direction and returns a RayResult for the first hit object.
 
@@ -49,7 +49,7 @@ if hit and hit.Instance:IsA("Player") then
 end
 ```
 
-### RaycastAll:RayResult { method }
+### RaycastAll(origin;Vector3,direction;Vector3,maxDistance;int=infinite,ignoreList;array=Instance[]):RayResult { method }
 
 Casts a ray from origin with a specified direction and returns a RayResult array for all hit objects.
 
