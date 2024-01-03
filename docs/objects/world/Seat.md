@@ -1,22 +1,25 @@
 ---
 title: Seat
 description: Seats are parts the player can sit on.
+
 icon: polytoria/Seat
 weight: 3
 ---
 
 # Seat
 
-Seats are parts the player can sit on.
+:polytoria-Seat: Seats are parts the player can sit on.
 
 {{ inherits("Part") }}
 
 ## Events
 
 ### Sat:Player { event }
+
 Fires when a player sits in the seat.
 
 ### Vacated:Player { event }
+
 Fires when a player leaves the seat.
 
 ## Properties

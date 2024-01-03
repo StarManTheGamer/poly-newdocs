@@ -1,13 +1,12 @@
 ---
-title: BasePart
+title: Climbable
 description: Base class of all climbable objects.
+
 icon: polytoria/BasePart
 weight: 100
 ---
 
 # Climbable
-
-Base class of all climbable objects.
 
 {{ abstract() }}
 

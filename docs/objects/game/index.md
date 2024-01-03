@@ -1,7 +1,6 @@
 ---
 title: Game
 description: This page is used for testing purposes
-favicon: polytoria/Environment
 
 weight: 1
 empty: true

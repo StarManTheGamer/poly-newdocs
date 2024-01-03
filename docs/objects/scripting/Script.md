@@ -1,6 +1,7 @@
 ---
 title: Script
 description: Script runs Lua scripts on the server.
+
 icon: polytoria/Script
 weight: 1
 ---

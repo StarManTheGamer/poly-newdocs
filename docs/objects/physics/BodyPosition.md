@@ -1,6 +1,7 @@
 ---
 title: BodyPosition
 description: BodyPosition are objects that apply a force to their parent until it moves toward the target position.
+
 icon: polytoria/BodyPosition
 ---
 

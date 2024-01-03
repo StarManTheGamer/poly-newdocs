@@ -1,6 +1,7 @@
 ---
 title: Tool
 description: Tools are objects that can be held by players.
+
 icon: polytoria/Tool
 weight: 7
 ---

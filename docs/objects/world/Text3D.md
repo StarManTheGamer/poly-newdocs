@@ -1,13 +1,14 @@
 ---
 title: Text3D
 description: Text3D allows placement of text in the world.
+
 icon: polytoria/Text3D
 weight: 4
 ---
 
 # Text3D
 
-Text3D allows placement of text in the world.
+:polytoria-Text3D: Text3D allows for placement of text in the world.
 
 {{ inherits("DynamicInstance") }}
 
@@ -20,12 +21,13 @@ Specifies the color of the text.
 **Example**
 
 ```lua
+-- Sets the text color to a random color
 text.Color = Color.Random()
 ```
 
 ### FaceCamera:bool { property }
 
-Specifies whether the text should always be facing the camera or not.
+Determines whether or not the text should be facing the camera or not.
 
 ### FontSize:int { property }
 

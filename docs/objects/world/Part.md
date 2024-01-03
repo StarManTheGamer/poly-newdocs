@@ -1,13 +1,14 @@
 ---
 title: Part
 description: Parts are physical objects that can be placed in the world.
+
 icon: polytoria/Part
 weight: 1
 ---
 
 # Part
 
-Parts are physical objects that can be placed in the world.
+:polytoria-Part: Parts are physical objects that can be placed in the world.
 
 {{ inherits("BasePart") }}
 
@@ -39,7 +40,7 @@ Specifies the color of a part.
 
 ### Drag:int { property }
 
-Drag (air resistance) of this part.
+Determines Drag (air resistance) of this part.
 
 ### Forward:Vector3 { property }
 
@@ -47,7 +48,7 @@ Returns the forward vector of the part
 
 ### HideStuds:bool { property }
 
-Controls whether to display studs on the part or not.
+Determines whether to display studs on the part or not.
 
 ### IsSpawn:bool { property }
 

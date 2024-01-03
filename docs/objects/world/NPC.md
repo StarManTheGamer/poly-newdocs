@@ -1,13 +1,14 @@
 ---
 title: NPC
 description: An NPC (non-player character) is an object similar to a Player but that can be controlled by code.
+
 icon: polytoria/NPC
 weight: 5
 ---
 
 # NPC
 
-An NPC (non-player character) is an object similar to a Player but that can be controlled by code. Like players, it can walk and jump, and it's body part colors can be customized.
+:polytoria-NPC: NPC (non-player character) is an object similar to a {{ classLink("Player") }} but that can be controlled by code. Like players, it can walk and jump, and its body part colors can be customized.
 
 {{ inherits("DynamicInstance") }}
 
@@ -71,42 +72,42 @@ Specifies the color of the NPC's head.
 
 Specifies the current amount of health the NPC has.
 
-### LeftArmColor:Color { property }
+### MoveTarget:Instance { property }
 
-Specifies the color of the NPC's left arm.
+Determines the instance the NPC should walk towards.
 
-### LeftLegColor:Color { property }
+### WalkSpeed:int { property }
 
-Specifies the color of the NPC's left leg.
+Determines the walkspeed of the NPC.
 
 ### MaxHealth:int=100 { property }
 
 Specifies the maximum amount of health a NPC can have.
 
-### MoveTarget:Instance { property }
+### ShirtID:int { property }
 
-Determines the instance the NPC should walk towards.
+Specifies the shirt ID of the NPC's shirt.
 
 ### PantsID:int { property }
 
 The pants ID of the NPC's pants.
 
-### RightArmColor:Color { property }
-
-Specifies the color of the NPC's right arm.
-
-### RightLegColor:Color { property }
-
-Specifies the color of the NPC's right leg.
-
-### ShirtID:int { property }
-
-The shirt ID of the NPC's shirt.
-
 ### TorsoColor:Color { property }
 
 Specifies the color of the NPC's torso.
 
-### WalkSpeed:int { property }
+### LeftArmColor:Color { property }
 
-The walkspeed of the NPC.
+Specifies the color of the NPC's left arm.
+
+### RightArmColor:Color { property }
+
+Specifies the color of the NPC's right arm.
+
+### LeftLegColor:Color { property }
+
+Specifies the color of the NPC's left leg.
+
+### RightLegColor:Color { property }
+
+Specifies the color of the NPC's right leg.

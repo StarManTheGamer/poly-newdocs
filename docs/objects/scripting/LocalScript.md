@@ -1,6 +1,7 @@
 ---
 title: LocalScript
 description: LocalScript is a script that runs locally for each player. It can only see what the player can see.
+
 icon: polytoria/LocalScript
 weight: 2
 ---

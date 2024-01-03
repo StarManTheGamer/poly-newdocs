@@ -1,13 +1,14 @@
 ---
 title: MeshPart
 description: A part that can have custom mesh applied to it.
+
 icon: polytoria/MeshPart
 weight: 2
 ---
 
 # MeshPart
 
-A part that can have custom mesh applied to it, the mesh may be from the Polytoria Store (Hats, Tools and Heads) or user-uploaded meshes.
+:polytoria-MeshPart: MeshPart is a part that can have custom mesh applied to it, the mesh may be from the Polytoria Store (Hats, Tools and Heads) or user-uploaded meshes.
 
 {{ inherits("BasePart") }}
 

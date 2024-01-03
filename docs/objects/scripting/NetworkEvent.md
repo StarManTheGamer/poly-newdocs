@@ -1,6 +1,7 @@
 ---
 title: NetworkEvent
 description:  NetworkEvents are events that can be called to communicate between server and client.
+
 icon: polytoria/NetworkEvent
 weight: 5
 ---
