@@ -1,4 +1,6 @@
 ---
+title: ImageType
+description: ImageType is an Enum.
 icon: polytoria/Enum
 ---
 

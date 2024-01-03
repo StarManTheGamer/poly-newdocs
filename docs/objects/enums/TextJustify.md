@@ -1,4 +1,6 @@
 ---
+title: TextJustify
+description: TextJustify is an Enum.
 icon: polytoria/Enum
 ---
 

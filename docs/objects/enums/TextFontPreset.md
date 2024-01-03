@@ -1,4 +1,6 @@
 ---
+title: TextFontPreset
+description: TextFontPreset is an Enum.
 icon: polytoria/Enum
 ---
 

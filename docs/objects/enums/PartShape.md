@@ -1,4 +1,6 @@
 ---
+title: PartShape
+description: PartShape is an Enum.
 icon: polytoria/Enum
 ---
 

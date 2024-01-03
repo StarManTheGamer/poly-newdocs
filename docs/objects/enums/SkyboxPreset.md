@@ -1,4 +1,6 @@
 ---
+title: SkyboxPreset
+description: SkyboxPreset is an Enum.
 icon: polytoria/Enum
 ---
 

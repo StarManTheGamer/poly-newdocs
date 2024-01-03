@@ -1,4 +1,6 @@
 ---
+title: TweenStyle
+description: TweenStyle is an Enum.
 icon: polytoria/Enum
 ---
 

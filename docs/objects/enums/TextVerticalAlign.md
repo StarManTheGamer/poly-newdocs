@@ -1,4 +1,6 @@
 ---
+title: TextVerticalAlign
+description: TextVerticalAlign is an Enum.
 icon: polytoria/Enum
 ---
 

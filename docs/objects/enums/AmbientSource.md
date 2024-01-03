@@ -1,4 +1,6 @@
 ---
+title: AmbientSource
+description: AmbientSource is an Enum.
 icon: polytoria/Enum
 ---
 

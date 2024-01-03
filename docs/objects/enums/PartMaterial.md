@@ -1,4 +1,6 @@
 ---
+title: PartMaterial
+description: PartMaterial is an Enum.
 icon: polytoria/Enum
 ---
 

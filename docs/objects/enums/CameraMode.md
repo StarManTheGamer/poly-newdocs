@@ -1,4 +1,6 @@
 ---
+title: CameraMode
+description: CameraMode is an Enum.
 icon: polytoria/Enum
 ---
 
