@@ -1,4 +1,6 @@
 ---
+title: Seat
+description: Seats are parts the player can sit on.
 icon: polytoria/Seat
 weight: 3
 ---

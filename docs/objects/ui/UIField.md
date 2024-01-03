@@ -1,9 +1,13 @@
 ---
+title: UIField
+description: UIField is the base class of all UI classes.
 icon: polytoria/UIField
 weight: 100
 ---
 
 # UIField
+
+UIField is the base class of all UI classes.
 
 {{ abstract() }}
 

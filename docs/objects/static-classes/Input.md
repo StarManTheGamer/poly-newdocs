@@ -1,4 +1,6 @@
 ---
+title: Input
+description: Input is a class used for retrieving user input data, such as the mouse and keyboard.
 icon: polytoria/Input
 ---
 

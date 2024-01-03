@@ -1,4 +1,6 @@
 ---
+title: ModuleScript
+description: ModuleScripts are specialized scripts to hold data that can be accessed by other scripts using the `require()` function.
 icon: polytoria/ModuleScript
 weight: 2
 ---
@@ -8,7 +10,7 @@ weight: 2
 !!! bug "BETA Feature"
     ModuleScripts are currently in BETA. As of right now, you aren't able to run functions from ModuleScripts. However this is a planned feature in the near future.
 
-:polytoria-ModuleScript: ModuleScripts are a kind of script, that is specialized to hold data that can be accessed by other scripts using the `require()` function.
+:polytoria-ModuleScript: ModuleScripts are specialized scripts to hold data that can be accessed by other scripts using the `require()` function.
 
 It is important to define and return a table in a ModuleScript. When the place starts, the server and the client will run the ModuleScript once and store the result for other scripts to retrieve with `require()`.
 

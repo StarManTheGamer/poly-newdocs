@@ -1,4 +1,6 @@
 ---
+title: InstanceValue
+description: InstanceValue is a ValueBase that stores an instance.
 icon: polytoria/InstanceValue
 weight: 10
 ---

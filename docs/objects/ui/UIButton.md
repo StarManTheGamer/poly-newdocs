@@ -1,4 +1,6 @@
 ---
+title: UIButton
+description: UIButton is a class used for having interactable buttons in your place's UI.
 icon: polytoria/UIButton
 weight: 100
 ---

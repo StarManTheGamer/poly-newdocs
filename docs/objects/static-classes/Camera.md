@@ -1,4 +1,6 @@
 ---
+title: Camera
+description: Camera is a class that represents the local player's camera.
 icon: polytoria/Camera
 ---
 

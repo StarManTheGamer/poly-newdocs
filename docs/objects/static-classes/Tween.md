@@ -1,4 +1,6 @@
 ---
+title: Tween
+description: Tween is a static class used for tweening properties of instances, such as Position, Rotation and Size.
 icon: polytoria/Tween
 ---
 

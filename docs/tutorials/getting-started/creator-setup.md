@@ -1,4 +1,6 @@
 ---
+title: Setting up Polytoria Creator
+description: Guide on setting up Polytoria Creator and its System Requirements.
 weight: 2
 ---
 

@@ -1,4 +1,6 @@
 ---
+title: BoolValue
+description: BoolValue is a ValueBase that stores a boolean.
 icon: polytoria/BoolValue
 weight: 10
 ---

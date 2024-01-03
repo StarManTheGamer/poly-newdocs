@@ -1,4 +1,6 @@
 ---
+title: Modifying Object Properties
+description: Learn to modify object properties.
 weight: 3
 ---
 

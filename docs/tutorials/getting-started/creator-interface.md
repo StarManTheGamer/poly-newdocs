@@ -1,4 +1,6 @@
 ---
+title: Understanding Creator's Interface
+description: This page will explain you everything about the Creator Interface.
 weight: 3
 ---
 

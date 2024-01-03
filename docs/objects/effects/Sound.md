@@ -1,11 +1,13 @@
 ---
+title: Sound
+description: Sounds are objects that can be placed in the world and emit audio.
 icon: polytoria/Sound
 weight: 2
 ---
 
 # Sound
 
-Sounds are objects that can be placed in the world and that emit audio.
+Sounds are objects that can be placed in the world and emit audio.
 
 {{ inherits("DynamicInstance") }}
 

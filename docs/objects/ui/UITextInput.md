@@ -1,4 +1,6 @@
 ---
+title: UITextInput
+description: UITextInput is a class that allows the user to enter text.
 icon: polytoria/UITextInput
 weight: 100
 ---

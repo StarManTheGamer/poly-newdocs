@@ -1,4 +1,6 @@
 ---
+title: StringValue
+description: StringValue is a ValueBase that stores strings.
 icon: polytoria/StringValue
 weight: 10
 ---

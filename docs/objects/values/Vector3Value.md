@@ -1,11 +1,13 @@
 ---
+title: Vector3Value
+description: Vector3Value is a ValueBase that stores Vector3.
 icon: polytoria/Vector3Value
 weight: 10
 ---
 
 # Vector3Value
 
-This object can be used for storing Vector3 values.
+:polytoria-Vector3Value: Vector3Value is a ValueBase that stores Vector3.
 
 {{ inherits("ValueBase") }}
 

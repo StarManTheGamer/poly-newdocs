@@ -1,4 +1,6 @@
 ---
+title: Vector2Value
+description: Vector2Value is a ValueBase that stores Vector2.
 icon: polytoria/Vector2Value
 weight: 10
 ---

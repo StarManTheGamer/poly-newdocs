@@ -1,4 +1,6 @@
 ---
+title: UIHorizontalLayout
+description: UIHorizontalLayout is a class that aligns all of its children horizontally.
 icon: polytoria/UIHorizontalLayout
 weight: 100
 ---

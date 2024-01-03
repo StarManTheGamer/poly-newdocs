@@ -1,4 +1,6 @@
 ---
+title: IntValue
+description: IntValue is a ValueBase that stores integers.
 icon: polytoria/IntValue
 weight: 10
 ---

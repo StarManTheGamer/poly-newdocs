@@ -1,11 +1,13 @@
 ---
+title: UIHVLayout
+description: UIHVLayout is the base class of all UI layout elements.
 icon: polytoria/UIHVLayout
 weight: 100
 ---
 
 # UIHVLayout
 
-:polytoria-UIHVLayout: UIHVLayout is the base class for all UI layout elements.
+:polytoria-UIHVLayout: UIHVLayout is the base class of all UI layout elements.
 
 {{ inherits("UIField") }}
 

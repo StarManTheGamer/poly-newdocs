@@ -1,4 +1,6 @@
 ---
+title: Text3D
+description: Text3D allows placement of text in the world.
 icon: polytoria/Text3D
 weight: 4
 ---

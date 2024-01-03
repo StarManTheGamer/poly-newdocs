@@ -1,4 +1,6 @@
 ---
+title: UIImage
+description: UIImage is a class for displaying images in your place's UI.
 icon: polytoria/UIImage
 weight: 100
 ---

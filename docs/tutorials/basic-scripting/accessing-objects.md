@@ -1,4 +1,6 @@
 ---
+title: Accessing Objects in a Script
+description: Learn to access objects in a Script.
 weight: 2
 ---
 

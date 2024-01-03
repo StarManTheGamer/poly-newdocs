@@ -1,4 +1,6 @@
 ---
+title: ColorValue
+description: ColorValue is a ValueBase that stores color.
 icon: polytoria/ColorValue
 weight: 10
 ---

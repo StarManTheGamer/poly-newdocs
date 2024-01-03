@@ -1,4 +1,6 @@
 ---
+title: UIView
+description: UIView is a class that displays a rectangle in your place's UI.
 icon: polytoria/UIView
 weight: 100
 ---

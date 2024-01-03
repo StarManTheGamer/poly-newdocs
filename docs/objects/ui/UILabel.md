@@ -1,4 +1,6 @@
 ---
+title: UILabel
+description: UILabel is a label that can be used to display text.
 icon: polytoria/UILabel
 weight: 100
 ---

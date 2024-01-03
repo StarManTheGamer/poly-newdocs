@@ -1,4 +1,6 @@
 ---
+title: Datastore
+description: Datastore is a service used for storing data between place sessions.
 icon: polytoria/Datastore
 ---
 

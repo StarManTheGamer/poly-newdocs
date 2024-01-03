@@ -1,4 +1,6 @@
 ---
+title: Http
+description: Http is a static class used for HTTP communications and requests.
 icon: polytoria/Http
 ---
 

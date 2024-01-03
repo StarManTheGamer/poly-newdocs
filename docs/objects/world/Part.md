@@ -1,4 +1,6 @@
 ---
+title: Part
+description: Parts are physical objects that can be placed in the world.
 icon: polytoria/Part
 weight: 1
 ---

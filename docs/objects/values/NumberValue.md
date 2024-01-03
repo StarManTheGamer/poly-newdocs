@@ -1,4 +1,6 @@
 ---
+title: NumberValue
+description: NumberValue is a ValueBase that stores numbers.
 icon: polytoria/NumberValue
 weight: 10
 ---

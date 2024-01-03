@@ -1,4 +1,6 @@
 ---
+title: json
+description: json is a module which allows for scripts to interface with JSON data representation by converting it to a table and vice versa.
 icon: polytoria/json
 ---
 
@@ -6,7 +8,7 @@ icon: polytoria/json
 
 {{ staticclass("json")}}
 
-:polytoria-json: json is a module which allows for scripts to interface with JSON data representation by converting it to a Lua array or from a Lua array.
+:polytoria-json: json is a module which allows for scripts to interface with JSON data representation by converting it to a table and vice versa.
 
 ## Methods
 

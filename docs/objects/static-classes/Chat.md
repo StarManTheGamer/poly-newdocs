@@ -1,4 +1,6 @@
 ---
+title: Chat
+description: Chat is a static class used for various actions regarding the chat.
 icon: polytoria/Chat
 ---
 

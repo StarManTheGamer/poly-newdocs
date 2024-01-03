@@ -1,4 +1,6 @@
 ---
+title: (Removed) UI
+description: UI was a static class used for creating User Interface elements through LocalScripts. Removed in v1.2.0.
 icon: polytoria/UI
 ---
 
@@ -11,7 +13,7 @@ icon: polytoria/UI
 
 {{ staticclass("UI")}}
 
-UI is a static class used for creating User Interface elements through LocalScripts. While it is possible to create UI elements in normal scripts, it will only work in local playtesting and not on server.
+UI was a static class used for creating User Interface elements through LocalScripts. While it is possible to create UI elements in normal scripts, it will only work in local playtesting and not on server.
 
 ## Methods
 

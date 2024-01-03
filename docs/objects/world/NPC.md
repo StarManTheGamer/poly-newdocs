@@ -1,4 +1,6 @@
 ---
+title: NPC
+description: An NPC (non-player character) is an object similar to a Player but that can be controlled by code.
 icon: polytoria/NPC
 weight: 5
 ---

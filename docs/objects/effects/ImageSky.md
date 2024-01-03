@@ -1,4 +1,6 @@
 ---
+title: ImageSky
+description: ImageSky is a class that is used to set a custom image skybox in the world.
 icon: polytoria/ImageSky
 ---
 
