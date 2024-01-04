@@ -43,7 +43,7 @@ Fires when the Datastore object loads.
 Attempts to get a Datastore object from the Datastore service.
 
 !!! note "Wait till Loaded"
-    
+
     Make sure to wait until the Datastore object is loaded by waiting until the `.Loaded` event on the Datastore object is fired.
 
 **Example**
