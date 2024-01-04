@@ -94,6 +94,7 @@ Returns the seat the player is currently sitting in, `nil` if the player is not 
 Determines how fast the player is while sprinting.
 
 !!! note "Remarks"
+    
     Sprinting can be disabled by setting the player's SprintSpeed to their WalkSpeed.
 
 ### Stamina:int=0 { property }
