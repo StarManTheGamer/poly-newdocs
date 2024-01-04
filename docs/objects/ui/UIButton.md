@@ -18,6 +18,7 @@ weight: 100
 Fires when the UIButton is clicked
 
 **Example**
+
 ```lua
 script.Parent.Clicked:Connect(function ()
     print("The button was clicked!")

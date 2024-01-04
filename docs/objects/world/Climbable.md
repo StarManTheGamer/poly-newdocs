@@ -15,4 +15,5 @@ weight: 100
 ## Properties
 
 ### ClimbSpeed:int { property }
+
 Determines how fast a player can climb the object.
