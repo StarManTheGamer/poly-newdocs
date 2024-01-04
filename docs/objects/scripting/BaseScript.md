@@ -8,9 +8,12 @@ weight: 4
 
 # BaseScript
 
+
 {{ ambiguousMultiple([["Script", "which runs your Lua scripts on the server."],["LocalScript", "which runs your Lua scripts on the client."],["ModuleScript", "which contains data accessible by any script."]]) }}
 
 {{ abstract() }}
+
+BaseScripts are the base classes of all scripts (Scripts, LocalScripts). They can be parented to any instance.pr
 
 {{ inherits("Instance") }}
 
