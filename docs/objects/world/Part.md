@@ -12,6 +12,25 @@ weight: 1
 
 {{ inherits("BasePart") }}
 
+## Methods
+
+### MovePosition(position;Vector3):void { method }
+
+Moves the part to the specified position while keeping physics in mind.
+
+**Example**
+```lua
+game["Environment"]["Part"]:MovePosition(Vector3.New(50, 0, 0))
+```
+
+### MoveRotation(rotation;Vector3):void { method }
+Rotates the part while keeping physics in mind.
+
+**Example**
+```lua
+game["Environment"]["Part"]:MovePosition(Vector3.New(0, 180, 0))
+```
+
 ## Properties
 
 ### Anchored:bool { property }
