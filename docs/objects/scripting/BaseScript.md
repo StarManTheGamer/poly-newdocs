@@ -12,7 +12,7 @@ weight: 4
 
 {{ abstract() }}
 
-BaseScripts are the base classes of all scripts (Scripts, LocalScripts). They can be parented to any instance.pr
+:polytoria-BaseScript: BaseScripts are the base classes of all scripts (Scripts, LocalScripts). They can be parented to any instance.
 
 {{ inherits("Instance") }}
 

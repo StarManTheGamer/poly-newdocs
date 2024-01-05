@@ -7,7 +7,7 @@ weight: 100
 
 # UIField
 
-UIField is the base class of all UI classes.
+:polytoria-UIField: UIField is the base class of all UI classes.
 
 {{ abstract() }}
 
@@ -53,7 +53,7 @@ The offset of the UI element in pixels.
 
 The position of the UI element relative to its parent.
 
-### Rotation:Single { property }
+### Rotation:int { property }
 
 The rotation of the UI element.
 

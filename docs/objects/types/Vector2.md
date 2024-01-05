@@ -6,9 +6,7 @@ icon: polytoria/Vector2
 
 # Vector2
 
-### Description
-
-Vector2 is a 2D vector with an x and y component, commonly used with UI.
+:polytoria-Vector2: Vector2 is a 2D vector with an x and y component, commonly used with UI.
 
 ## Constructors
 

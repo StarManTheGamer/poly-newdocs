@@ -6,7 +6,7 @@ icon: polytoria/Decal
 
 # Decal
 
-Decals are objects that can have an image texture and are placed in the world.
+:polytoria-Decal: Decals are objects that can have an image texture and are placed in the world.
 
 {{ inherits("DynamicInstance") }}
 

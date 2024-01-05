@@ -6,7 +6,7 @@ icon: polytoria/PointLight
 
 # PointLight
 
-PointLight is a source of light that can be placed in the world.
+:polytoria-PointLight: PointLight is a source of light that can be placed in the world.
 
 {{ inherits("DynamicInstance") }}
 

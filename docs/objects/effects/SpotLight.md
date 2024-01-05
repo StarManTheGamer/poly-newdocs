@@ -6,7 +6,7 @@ icon: polytoria/SpotLight
 
 # SpotLight
 
-PointLight is a source of light emitting in a specific direction and angle that can be placed in the world.
+:polytoria-SpotLight: SpotLight is a source of light emitting in a specific direction and angle that can be placed in the world.
 
 {{ inherits("DynamicInstance") }}
 

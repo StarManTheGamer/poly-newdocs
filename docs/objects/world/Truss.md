@@ -8,6 +8,6 @@ weight: 7
 
 # Truss
 
-Trusses are parts that can be climbed by the player.
+:polytoria-Truss: Trusses are parts that can be climbed by the player.
 
 {{ inherits("Climbable") }}

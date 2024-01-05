@@ -6,7 +6,7 @@ icon: polytoria/Vector3
 
 # Vector3
 
-Vector3 is a 3D vector with an x, y and z component.
+:polytoria-Vector3: Vector3 is a 3D vector with an x, y and z component.
 
 ## Constructors
 

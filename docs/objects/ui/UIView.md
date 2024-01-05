@@ -17,7 +17,7 @@ weight: 100
 
 Determines the border color of the UI.
 
-### BorderWidth:Int { property }
+### BorderWidth:int { property }
 
 Determines the border width of the UI.
 

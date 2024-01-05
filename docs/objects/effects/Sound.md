@@ -7,7 +7,7 @@ weight: 2
 
 # Sound
 
-Sounds are objects that can be placed in the world and emit audio.
+:polytoria-Sound: Sounds are objects that can be placed in the world and emit audio.
 
 {{ inherits("DynamicInstance") }}
 

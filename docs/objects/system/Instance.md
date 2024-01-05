@@ -9,7 +9,7 @@ weight: 100
 
 {{ notnewable() }}
 
-Instance is the base class of all classes. Every class derives from it and has all properties, events and functions Instance has.
+:polytoria-Instance: Instance is the base class of all classes. Every class derives from it and has all properties, events and functions Instance has.
 
 {{ abstract() }}
 

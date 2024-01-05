@@ -29,7 +29,7 @@ The font size of the label.
 
 Determines how the text is justified.
 
-### MaxFontSize:Int { property }
+### MaxFontSize:int { property }
 
 The maximum font size of the UI element if AutoSize is set to true.
 
