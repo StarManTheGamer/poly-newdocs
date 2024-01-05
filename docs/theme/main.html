@@ -3,6 +3,7 @@
 {% block extrahead %}
     {{ super() }}
     {% if page and page.meta %} 
+        <meta property="og:theme-color" content="#526cfe">
         {% if page.meta.title %}
         <meta property="og:title" content="{{ page.meta.title }}">
         {% endif %}
@@ -13,7 +14,6 @@
         <meta property="og:image" content="{{ page.meta.icon|replace("polytoria/", "/poly-newdocs/assets/tree/", 1) }}.png">
         {% endif %}
         <meta property="og:site_name" content="Polytoria Scripting Documentation">
-        <meta property="og:theme-color" content="#526cfe">
     {% endif %}
 {% endblock %}
 {% block scripts %}
