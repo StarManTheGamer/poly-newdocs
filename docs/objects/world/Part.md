@@ -19,14 +19,17 @@ weight: 1
 Moves the part to the specified position while keeping physics in mind.
 
 **Example**
+
 ```lua
 game["Environment"]["Part"]:MovePosition(Vector3.New(50, 0, 0))
 ```
 
 ### MoveRotation(rotation;Vector3):void { method }
+
 Rotates the part while keeping physics in mind.
 
 **Example**
+
 ```lua
 game["Environment"]["Part"]:MovePosition(Vector3.New(0, 180, 0))
 ```
