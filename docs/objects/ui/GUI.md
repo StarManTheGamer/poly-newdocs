@@ -15,7 +15,7 @@ weight: 5
 Determines whether the GUI is visible or not.
 
 **Example**
+
 ```lua
 gui.Visible = true
 ```
-
