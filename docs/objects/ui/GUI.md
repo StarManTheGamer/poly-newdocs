@@ -2,11 +2,11 @@
 title: GUI
 description: GUI is a class that is used to create a GUI.
 
-icon: polytoria/GUI3D
+icon: polytoria/GUI
 weight: 5
 ---
 
-:polytoria-GUI3D: GUI is a class that is used to create a GUI.
+:polytoria-GUI: GUI is a class that is used to create a GUI.
 
 ## Properties
 
