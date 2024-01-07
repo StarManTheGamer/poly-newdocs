@@ -53,6 +53,8 @@ Returns whether or not the player is the creator of the current place.
 
 Determines whether or not the player is currently focused on an input.
 
+{{ readonly() }}
+
 ### JumpPower:int=36 { property }
 
 Specifies how high the player's jump is.
