@@ -5,11 +5,13 @@ Thanks for waiting to contribute to the new unofficial Polytoria documentation! 
 1. When creating a page make sure if it is a class it should have the corresponding icon at the start of the description
 2. When creating a page it is recommended that if it is an abstract object (one that can't be created using `Instance.New()` and is only used a base/inheriting class for other parts) there is no description
 
-## How-To: Write Events
+### How-To: Write Events
+> Events will be slightly updated in a few days so this will be written after that.
 
-## How-To: Write Methods
+### How-To: Write Methods
+> To be written
 
-## How-To: Write Properties
+### How-To: Write Properties
 `PropertyName:Type { property }`
 PropertyName is the name of the property
 Type is the type that is returned when reading the property and that the property is set to when set
