@@ -13,8 +13,8 @@ Polytoria is a game platform where you can socialize, buy clothes and accessorie
 
 | Link                                                        | Description                                 |
 | ----------------------------------------------------------- | ------------------------------------------- |
-| [Basic Scripting](/docs/tutorials/basic-scripting/index.md) | Learn the basics of scripting on Polytoria! |
-| [Getting Started](/docs/tutorials/basic-scripting/index.md) | Get started with scripting on Polytoria!    |
+| [Basic Scripting](tutorials/basic-scripting/) | Learn the basics of scripting on Polytoria! |
+| [Getting Started](tutorials/getting-started/) | Get started with scripting on Polytoria!    |
 
 And don't forget to download the creator first:
 
