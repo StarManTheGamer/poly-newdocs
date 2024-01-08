@@ -1,6 +1,6 @@
 # Home
 
-![Polytoria Creator](/docs/assets/interface/startup.png)
+![Polytoria Creator](assets/interface/startup.png)
 
 Welcome to the Polytoria Scripting API documentation! This documentation provides up-to-date information on creating your experiences using the Polytoria Scripting Language and the Polytoria Creator!
 
