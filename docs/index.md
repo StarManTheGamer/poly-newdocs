@@ -7,12 +7,13 @@ Welcome to the Polytoria Scripting API documentation! This documentation provide
 Polytoria uses the Lua programming language. If you are unfamiliar with Lua, you can find the documentation [here](https://www.lua.org/manual/5.2/)
 
 ## What's Polytoria?
+
 Polytoria is a game platform where you can socialize, buy clothes and accessories, play fun games made by the community, participate of cool events, and more! All of that with a vibrant community! Join us at [Polytoria](https://polytoria.com/).
 
 ## Tutorials to Get Started
 
-| Link                                                        | Description                                 |
-| ----------------------------------------------------------- | ------------------------------------------- |
+| Link                                          | Description                                 |
+| --------------------------------------------- | ------------------------------------------- |
 | [Basic Scripting](tutorials/basic-scripting/) | Learn the basics of scripting on Polytoria! |
 | [Getting Started](tutorials/getting-started/) | Get started with scripting on Polytoria!    |
 
