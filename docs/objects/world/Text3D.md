@@ -29,18 +29,48 @@ text.Color = Color.Random()
 
 Determines whether or not the text should be facing the camera or not.
 
+**Example**
+
+```lua
+text.FaceCamera = true
+```
+
 ### FontSize:int { property }
 
 Specifies the size of the font.
+
+**Example**
+
+```lua
+text.FontSize = 64
+```
 
 ### HorizontalAlignment:HorizontalAlignment { property }
 
 Specifies the horizontal alignment of the text.
 
+**Example**
+
+```lua
+text.HorizontalAlignment = HorizontalAlignment.Left
+```
+
 ### Text:string { property }
 
 Specifies the text to display.
 
+**Example**
+
+```lua
+text.Text = "Hello world!"
+```
+
 ### VerticalAlignment:VerticalAlignment { property }
 
 Specifies the vertical alignment of the text.
+
+**Example**
+
+```lua
+text.VerticalAlignment = VerticalAlignment.Middle
+```
