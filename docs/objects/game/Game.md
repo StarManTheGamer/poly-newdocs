@@ -17,6 +17,19 @@ weight: 1
 
 {{ inherits("Instance") }}
 
+## Events
+
+### Rendered { event }
+
+Called every frame after the place has been rendered
+
+!!! warning "Notice"
+
+    The server is incapable of rendering frames; rather, on server Scripts, the event will fire at the server's tick rate which may vary between 1-30Hz.
+
+    It is recommended to only listen to this event on LocalScripts.
+
+
 ## Properties
 
 ### GameID:int { property }
@@ -32,15 +45,3 @@ The total number of instances currently loaded
 !!! note "Remarks"
 
     The value will differ depending on if it is being accessed through a Script or a LocalScript, as LocalScripts can only see instances that are relevant to the client.
-
-## Events
-
-### Rendered { event }
-
-Called every frame after the place has been rendered
-
-!!! warning "Notice"
-
-    The server is incapable of rendering frames; rather, on server Scripts, the event will fire at the server's tick rate which may vary between 1-30Hz.
-
-    It is recommended to only listen to this event on LocalScripts.

@@ -15,6 +15,12 @@ weight: 6
 
 {{ inherits("Instance") }}
 
+## Methods
+
+### LoadDefaults(player;Player) { method }
+
+Resets the specified player back to their default values.
+
 ## Properties
 
 ### ChatColor:Color=(255,255,255) { property }
@@ -56,9 +62,3 @@ Determines the default rate at which stamina regenerates after being depleted fo
 ### WalkSpeed:int=16 { property }
 
 Determines how fast the player walks by default.
-
-## Methods
-
-### LoadDefaults(player;Player) { method }
-
-Resets the specified player back to their default values.

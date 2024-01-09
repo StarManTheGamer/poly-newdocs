@@ -15,116 +15,6 @@ weight: 5
 
 {{ inherits("DynamicInstance") }}
 
-## Properties
-
-### CanMove:bool=true { property }
-
-Determines whether or not the player can move.
-
-### ChatColor:Color=(255,255,255) { property }
-
-The player's username color in the chat.
-
-```lua
-game["Players"]["willemsteller"].ChatColor = Color3.New(0, 1, 0)
-```
-
-### HeadColor:Color { property }
-
-Specifies the color of the players's head.
-
-### Health:int=100 { property }
-
-The current health of the player.
-
-### IsAdmin:bool { property }
-
-Returns whether or not the player is a Polytoria admin.
-
-{{ readonly() }}
-
-### IsCreator:bool { property }
-
-Returns whether or not the player is the creator of the current place.
-
-{{ readonly() }}
-
-### IsInputFocused:bool { property }
-
-Determines whether or not the player is currently focused on an input.
-
-{{ readonly() }}
-
-### JumpPower:int=36 { property }
-
-Specifies how high the player's jump is.
-
-### LeftArmColor:Color { property }
-
-Specifies the color of the players's left arm.
-
-### LeftLegColor:Color { property }
-
-Specifies the color of the players's left leg.
-
-### MaxHealth:int=100 { property }
-
-Specifies the maximum health the player can have.
-
-### MaxStamina:int=3 { property }
-
-Specifies the maximum stamina the player can have.
-
-### RespawnTime:int=5 { property }
-
-Determines how long it takes between the player's death and respawn.
-
-### RightArmColor:Color { property }
-
-Specifies the color of the players's right arm.
-
-### RightLegColor:Color { property }
-
-Specifies the color of the players's right leg.
-
-### SittingIn:Seat { property }
-
-Returns the seat the player is currently sitting in, `nil` if the player is not sitting in any seat.
-
-### SprintSpeed:int=25 { property }
-
-Determines how fast the player is while sprinting.
-
-!!! note "Remarks"
-
-    Sprinting can be disabled by setting the player's SprintSpeed to their WalkSpeed.
-
-### Stamina:int=0 { property }
-
-The player's current amount of stamina.
-
-### StaminaEnabled:bool=true { property }
-
-Determines whether or not stamina is enabled for the player.
-
-### StaminaRegen:int=1.2 { property }
-
-The rate at which stamina regenerates after being depleted for the player.
-
-### TorsoColor:Color { property }
-
-Specifies the color of the players's torso.
-
-### UserID:int { property }
-
-Returns the player's user ID.
-
-{{ readonly() }}
-
-### WalkSpeed:int=16 { property }
-
-Determines how fast the player walks.
-
 ## Events
 
 ### Chatted:string { event }
@@ -245,3 +135,113 @@ Sit the player in a specific seat.
 ### Unsit(addForce;bool=false) { method }
 
 Unsit the player.
+
+## Properties
+
+### CanMove:bool=true { property }
+
+Determines whether or not the player can move.
+
+### ChatColor:Color=(255,255,255) { property }
+
+The player's username color in the chat.
+
+```lua
+game["Players"]["willemsteller"].ChatColor = Color3.New(0, 1, 0)
+```
+
+### HeadColor:Color { property }
+
+Specifies the color of the players's head.
+
+### Health:int=100 { property }
+
+The current health of the player.
+
+### IsAdmin:bool { property }
+
+Returns whether or not the player is a Polytoria admin.
+
+{{ readonly() }}
+
+### IsCreator:bool { property }
+
+Returns whether or not the player is the creator of the current place.
+
+{{ readonly() }}
+
+### IsInputFocused:bool { property }
+
+Determines whether or not the player is currently focused on an input.
+
+{{ readonly() }}
+
+### JumpPower:int=36 { property }
+
+Specifies how high the player's jump is.
+
+### LeftArmColor:Color { property }
+
+Specifies the color of the players's left arm.
+
+### LeftLegColor:Color { property }
+
+Specifies the color of the players's left leg.
+
+### MaxHealth:int=100 { property }
+
+Specifies the maximum health the player can have.
+
+### MaxStamina:int=3 { property }
+
+Specifies the maximum stamina the player can have.
+
+### RespawnTime:int=5 { property }
+
+Determines how long it takes between the player's death and respawn.
+
+### RightArmColor:Color { property }
+
+Specifies the color of the players's right arm.
+
+### RightLegColor:Color { property }
+
+Specifies the color of the players's right leg.
+
+### SittingIn:Seat { property }
+
+Returns the seat the player is currently sitting in, `nil` if the player is not sitting in any seat.
+
+### SprintSpeed:int=25 { property }
+
+Determines how fast the player is while sprinting.
+
+!!! note "Remarks"
+
+    Sprinting can be disabled by setting the player's SprintSpeed to their WalkSpeed.
+
+### Stamina:int=0 { property }
+
+The player's current amount of stamina.
+
+### StaminaEnabled:bool=true { property }
+
+Determines whether or not stamina is enabled for the player.
+
+### StaminaRegen:int=1.2 { property }
+
+The rate at which stamina regenerates after being depleted for the player.
+
+### TorsoColor:Color { property }
+
+Specifies the color of the players's torso.
+
+### UserID:int { property }
+
+Returns the player's user ID.
+
+{{ readonly() }}
+
+### WalkSpeed:int=16 { property }
+
+Determines how fast the player walks.

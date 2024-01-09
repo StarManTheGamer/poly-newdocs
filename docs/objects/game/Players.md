@@ -17,18 +17,6 @@ weight: 4
 
 {{ inherits("Instance") }}
 
-## Properties
-
-### LocalPlayer:Player { property }
-
-Returns the local player currently playing.
-
-{{ clientexclusive() }}
-
-### PlayerCollisionEnabled:bool { property }
-
-Determines whether or not collisions between players are enabled.
-
 ## Events
 
 ### PlayerAdded:Player { event }
@@ -52,3 +40,15 @@ Returns the player instance from their user ID.
 ### GetPlayers:array { method }
 
 Returns all players in the place as an array.
+
+## Properties
+
+### LocalPlayer:Player { property }
+
+Returns the local player currently playing.
+
+{{ clientexclusive() }}
+
+### PlayerCollisionEnabled:bool { property }
+
+Determines whether or not collisions between players are enabled.
