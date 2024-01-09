@@ -18,6 +18,18 @@ weight: 7
 
 Fires when the user clicks while holding the tool.
 
+### Deactivated { event }
+
+Gets fired when the user lets go of the mouse button while holding the tool.
+
+### Equipped { event }
+
+Fired when the tool is equipped.
+
+### Unequipped { event }
+
+Fired when the tool is unequipped.
+
 **Example**
 
 ```lua
