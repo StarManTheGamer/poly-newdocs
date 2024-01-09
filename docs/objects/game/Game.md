@@ -29,7 +29,6 @@ Called every frame after the place has been rendered
 
     It is recommended to only listen to this event on LocalScripts.
 
-
 ## Properties
 
 ### GameID:int { property }
