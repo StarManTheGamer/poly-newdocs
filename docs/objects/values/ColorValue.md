@@ -16,3 +16,9 @@ weight: 10
 ### Value:Color { property }
 
 The value of this object.
+
+**Example**
+
+```lua
+colorValue.Value = Color.New(1, 1, 1, 1)
+```

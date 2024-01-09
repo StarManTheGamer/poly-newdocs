@@ -16,6 +16,12 @@ icon: polytoria/Chat
 
 Sends a chat message to all users.
 
+**Example**
+
+```lua
+Chat:BroadcastMessage("Hello, world!")
+```
+
 ### UnicastMessage(message;string,player;Player) { method }
 
 Sends a chat message to a specific user.

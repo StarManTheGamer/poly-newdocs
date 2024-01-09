@@ -16,3 +16,9 @@ weight: 10
 ### Value:bool { property }
 
 The value of this object.
+
+**Example**
+
+```lua
+boolValue.Value = true
+```

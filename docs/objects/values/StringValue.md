@@ -16,3 +16,9 @@ weight: 10
 ### Value:string { property }
 
 The value of this object.
+
+**Example**
+
+```lua
+stringValue.Value = "Hello, world!"
+```

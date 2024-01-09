@@ -16,3 +16,9 @@ weight: 10
 ### Value:Instance { property }
 
 The value of this object.
+
+**Example**
+
+```lua
+instanceValue.Value = game["Environment"]["Part"]
+```

@@ -20,6 +20,12 @@ The type of image to be used.
 
 Specifies the image asset ID of the decal.
 
+**Example**
+
+```lua
+game["Environment"]["Decal"].ImageID = 11643
+```
+
 ### TextureOffset:Vector2 { property }
 
 The offset of the texture on the decal.

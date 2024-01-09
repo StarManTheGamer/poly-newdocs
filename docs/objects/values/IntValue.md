@@ -16,3 +16,9 @@ weight: 10
 ### Value:int { property }
 
 The value of this object.
+
+**Example**
+
+```lua
+intValue.Value = 10
+```

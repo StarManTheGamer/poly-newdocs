@@ -16,3 +16,9 @@ weight: 10
 ### Value:Vector3=(5, 123, 10) { property }
 
 The value of this object.
+
+**Example**
+
+```lua
+vecValue.Value = Vector3.New(5, 123, 10)
+```

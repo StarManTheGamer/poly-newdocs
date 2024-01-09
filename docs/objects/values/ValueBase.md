@@ -20,3 +20,11 @@ Base class of all value classes.
 ### Changed { event }
 
 Fires when the value of the ValueBase changes.
+
+**Example**
+
+```lua
+boolValue.Changed:Connect(function()
+    print("My new value is " .. boolValue.Value)
+end)
+```
