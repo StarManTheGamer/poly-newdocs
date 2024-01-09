@@ -17,14 +17,38 @@ weight: 100
 
 Determines the border color of the UI.
 
+**Example**
+
+```lua
+element.BorderColor = Color.New(1, 0, 0, 1)
+```
+
 ### BorderWidth:int { property }
 
 Determines the border width of the UI.
+
+**Example**
+
+```lua
+element.BorderWidth = 10
+```
 
 ### Color:Color { property }
 
 Determines the color of the UI.
 
+**Example**
+
+```lua
+element.Color = Color.New(0, 0, 0, 1)
+```
+
 ### CornerRadius:int { property }
 
 Determines the corner radius of the UI.
+
+**Example**
+
+```lua
+element.CornerRadius = 10
+```

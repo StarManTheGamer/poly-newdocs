@@ -17,9 +17,25 @@ weight: 100
 
 Specifies the color of the image.
 
+**Example**
+
+```lua
+image.Color = Color.New(1, 0, 0)
+```
+
 ### ImageID:int { property }
 
 Specifies the image ID of the UIImage.
+
+**Example**
+
+```lua
+image.ImageID = 12274
+```
+
+### ImageType:ImageType { property }
+
+TO-DO
 
 ### Loading:bool { property }
 
@@ -37,3 +53,9 @@ print("Image loaded")
 ### Visible:bool { property }
 
 Specifies if the image is visible.
+
+**Example**
+
+```lua
+image.Visible = false
+```
