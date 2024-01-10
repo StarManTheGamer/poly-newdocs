@@ -47,6 +47,7 @@ html, body {
 
 .navbar {
     --bs-navbar-brand-color: #fff !important;
+    --bs-navbar-brand-hover-color: #fff !important;
 }
 
 nav .navbar-brand {
