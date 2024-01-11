@@ -10,11 +10,11 @@ This page will explain you everything about the Creator Interface.
 
 When you start the creator via the "Launch Creator" button on the [Create](https://polytoria.com/create/) page, you will see the following screen:
 
-![Creator Interface](/../../docs/assets/interface/startup.png)
+![Creator Interface](/../../poly-newdocs/docs/assets/interface/startup.png)
 
 ## Setup Wizard
 
-![Setup Wizard](/../../assets/interface/setup-wizard.png)
+![Setup Wizard](/../../poly-newdocs/assets/interface/setup-wizard.png)
 
 1. <b>Starter Places</b> - You can pick one of these template to start creating your place.
 2. <b>Your Places</b> - This is a list of your recently edited places. You can pick one of these to continue editing.
