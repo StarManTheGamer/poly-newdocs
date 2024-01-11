@@ -1,6 +1,6 @@
 ---
 title: Understanding Creator's Interface
-description: This page will explain you everything about the Creator Interface.
+description: A guide to the Polytoria Creator's user interface!
 weight: 3
 ---
 
@@ -10,11 +10,11 @@ This page will explain you everything about the Creator Interface.
 
 When you start the creator via the "Launch Creator" button on the [Create](https://polytoria.com/create/) page, you will see the following screen:
 
-![Creator Interface](/assets/interface/startup.png)
+![Creator Interface](/../../docs/assets/interface/startup.png)
 
 ## Setup Wizard
 
-![Setup Wizard](/assets/interface/setup-wizard.png)
+![Setup Wizard](/../../assets/interface/setup-wizard.png)
 
 1. <b>Starter Places</b> - You can pick one of these template to start creating your place.
 2. <b>Your Places</b> - This is a list of your recently edited places. You can pick one of these to continue editing.
@@ -22,11 +22,11 @@ When you start the creator via the "Launch Creator" button on the [Create](https
 
 ## Main Interface
 
-![Main Interface](/assets/interface/main-interface.png)
+![Main Interface](/../../assets/interface/main-interface.png)
 
 1. <b>Menu Bar</b> - Access various menus including: File, Edit, Insert, Model and Tools. View [Menu Bar Options](#menu-bar-options) further below to learn more.
 2. <b>Toolbar</b> - Access various tools such as Select, Move, Rotate, Scale and others. View [Toolbar Tools](#toolbar-tools) further below to learn more.
-3. <b>Toolbox</b> - Insert models created by other users into your place. See [Publishing Models (TODO)](/tutorials/ddsgsdfsd/publishing-toolbox-models) to publish your own.
+3. <b>Toolbox</b> - Insert models created by other users into your place. See [Publishing Models (TODO)](/tutorials/getting-started/#) to publish your own.
 4. <b>Explorer</b> - View and modify the place structure. You will need this to move objects from one parent to another.
 5. <b>Properties</b> - Modify the various properties of the selected object.
 6. <b>Scene View</b> - The place's scene. The gizmos from the Select, Move, Scale and Rotate tools will appear here for you to use. The Paint, Color, Brush and Material tools require you to click objects within the Scene View.
@@ -64,7 +64,7 @@ When you start the creator via the "Launch Creator" button on the [Create](https
 
 ## Publish Place Menu
 
-![Publish Place Menu](/assets/interface/publish-place.png)
+![Publish Place Menu](/../../assets/interface/publish-place.png)
 
 1. <b>Your Places</b> ─ Select a place to publish to.
 2. <b>Place Info</b> ─ View the select place's title, place icon and the creation and last updated dates.
