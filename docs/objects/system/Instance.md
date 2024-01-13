@@ -13,6 +13,33 @@ weight: 100
 
 {{ abstract() }}
 
+## Events
+
+### ChildAdded:Instance { event }
+Fires when a child instance is added.
+
+### ChildRemoved:Instance { event }
+Fires when a child instance is removed.
+
+### Clicked:Player { event }
+Fires when the instance is clicked by a player.
+
+### MouseEnter { event }
+Fires when the mouse enters the instance.
+
+### MouseExit { event }
+Fires when the mouse enters the instance.
+
+### Touched:Instance { event }
+Fires when the instance was touched by another instance.
+
+!!! note "There must be an active collider on the instance for this event to trigger ({{ classLink("Part") }}, {{ classLink("Player") }}, etc.)"
+
+### TouchEnded { event }
+Fires when the instance is no longer being touched by another instance.
+
+!!! note "There must be an active collider on the instance for this event to trigger ({{ classLink("Part") }}, {{ classLink("Player") }}, etc.)"
+
 ## Properties
 
 ### CanReparent:bool { property }
