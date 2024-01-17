@@ -11,8 +11,8 @@ def getClassLink(className):
                     filePath = filePath[len(search_path):]
                     filePath = filePath[:-3]
                     if "enums/" in filePath:
-                        return "[:polytoria-%s: %s](/objects/%s)" % ("Enum", className, filePath)
-                    return "[:polytoria-%s: %s](/objects/%s)" % (className, className, filePath)
+                        return "[:polytoria-%s: %s](/poly-newdocs/objects/%s)" % ("Enum", className, filePath)
+                    return "[:polytoria-%s: %s](/poly-newdocs/objects/%s)" % (className, className, filePath)
     return "?"
 
 "Define macros"
