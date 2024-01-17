@@ -16,11 +16,11 @@ weight: 2
 
 ### MovePosition(position;Vector3) { method }
 
-TO-DO
+Moves the MeshPart to the specified position.
 
 ### MoveRotation(rotation;Vector3) { method }
 
-TO-DO
+Rotates the MeshPart to the specified rotation.
 
 ## Properties
 
