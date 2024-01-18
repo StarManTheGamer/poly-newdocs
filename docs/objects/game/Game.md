@@ -47,4 +47,6 @@ The total number of instances currently loaded
 
 ### PlayersConnected:int { property }
 
-The amount of players connected to the game.
+Returns the amount of players connected to the game.
+
+{{ readonly() }}
