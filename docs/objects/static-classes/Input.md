@@ -44,43 +44,46 @@ end)
 
 ## Methods
 
-### GetMouseWorldPoint: { method }
+### GetMouseWorldPoint { method }
 
-### GetMouseWorldPosition: { method }
+### GetMouseWorldPosition { method }
 
-### ScreenPointToRay: { method }
+### ScreenPointToRay { method }
 
-### ScreenToViewportPoint:Vector3 { method }
+### ScreenToViewportPoint(screenPosition;Vector3):Vector3 { method }
 
-Transforms screenPosition from screen space into viewport space.
+Transforms `screenPosition` parameter from screen space into viewport space.
 
-### ScreenToWorldPoint:vector3 { method }
-Transforms screenPosition from screen space into world space.
-World space coordinates can still be calculated even when provided as an off-screen coordinate.
+### ScreenToWorldPoint(screenPosition;Vector3):Vector3 { method }
 
-### ViewportPointToRay: { method }
+Transforms `screenPosition` from screen space into world space.
 
-Transforms viewportPosition from viewport space into screen space.
+!!! note "World space coordinates can still be calculated even when provided as an off-screen coordinate."
 
-### ViewportToScreenPoint:Vector3 { method }
+### ViewportPointToRay { method }
 
-Transforms viewportPosition from viewport space into screen space.
+TO-DO
 
-### ViewportToWorldPoint:Vector3 { method }
+### ViewportToScreenPoint(viewportPosition;Vector3):Vector3 { method }
 
-Transforms viewportPosition from viewport space into world space.
-<strong>Note</strong> that ViewportToWorldPoint transforms an x-y screen position into a x-y-z position in 3D space.
+Transforms `viewportPosition` from viewport space into screen space.
 
-### WorldToScreenPoint:Vector3 { method }
+### ViewportToWorldPoint(viewportPosition;Vector3):Vector3 { method }
 
-Transforms worldPosition from world space into screen space.
+Transforms `viewportPosition` from viewport space into world space.
 
-### WorldToViewportPoint:Vector3 { method }
+!!! note "ViewportToWorldPoint transforms an x-y screen position into a x-y-z position in 3D space."
 
-Transforms worldPosition from world space into viewport space.
+### WorldToScreenPoint(worldPosition;Vector3):Vector3 { method }
+
+Transforms `worldPosition` from world space into screen space.
+
+### WorldToViewportPoint(worldPosition;Vector3):Vector3 { method }
+
+Transforms `worldPosition` from world space into viewport space.
 
 ## Properties
 
-### MousePosition:vector2 { property }
+### MousePosition:Vector2 { property }
 
-Get current mouse position.
+Returns the current mouse position.
