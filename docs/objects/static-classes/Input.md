@@ -41,3 +41,46 @@ Input.KeyUp:Connect(function (key)
     end
 end)
 ```
+
+## Methods
+
+### GetMouseWorldPoint: { method }
+
+### GetMouseWorldPosition: { method }
+
+### ScreenPointToRay: { method }
+
+### ScreenToViewportPoint:Vector3 { method }
+
+Transforms screenPosition from screen space into viewport space.
+
+### ScreenToWorldPoint:vector3 { method }
+Transforms screenPosition from screen space into world space.
+World space coordinates can still be calculated even when provided as an off-screen coordinate.
+
+### ViewportPointToRay: { method }
+
+Transforms viewportPosition from viewport space into screen space.
+
+### ViewportToScreenPoint:Vector3 { method }
+
+Transforms viewportPosition from viewport space into screen space.
+
+### ViewportToWorldPoint:Vector3 { method }
+
+Transforms viewportPosition from viewport space into world space.
+<strong>Note</strong> that ViewportToWorldPoint transforms an x-y screen position into a x-y-z position in 3D space.
+
+### WorldToScreenPoint:Vector3 { method }
+
+Transforms worldPosition from world space into screen space.
+
+### WorldToViewportPoint:Vector3 { method }
+
+Transforms worldPosition from world space into viewport space.
+
+## Properties
+
+### MousePosition:vector2 { property }
+
+Get current mouse position.
