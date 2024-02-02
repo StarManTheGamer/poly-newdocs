@@ -17,18 +17,44 @@ Pages should be ordered like this:
 
 ### How-To: Write Events
 
-> Events will be slightly updated in a few days so this will be written after that.
+> Events will be slightly rewritten soon to have support for parameters - this will be written after that change is made
 
 ### How-To: Write Methods
 
-> To be written
+**Example:** `MethodName(ParameterName;ParameterType=ParameterValue):Type { method }`
+
+`MethodName` is the name of the method
+
+`Type` is the type that is returned when using this method (if it returns nothing/void then don't put any return type or colon; it's automatically added)
+
+```
+How-To: Write Parameters
+
+Parameters are an optional feature of methods to better show what the method wants/needs when called. All parameters must be encased in () and parameters entirely are completely optional
+ParameterName is the name of the parameter
+ParameterType is the type of the value which this property expects
+ParameterValue is the default value of the parameter (OPTIONAL)
+
+The last part is a macro, that STAYS THE SAME for all methods to make sure the code knows it's a method
+```
 
 ### How-To: Write Properties
 
-`PropertyName:Type { property }`
-PropertyName is the name of the property
-Type is the type that is returned when reading the property and that the property is set to when set
-The last part is a macro, that stays the same for all properties to make sure the code knows it's a property
+**Example:** `PropertyName:Type=Value { property }`
+
+`PropertyName` is the name of the property
+
+`Type` is the type that is returned when reading the property and that the property is set to when set
+
+`Value` is the default value of the property (OPTIONAL)
+
+The last part is a macro, that **STAYS THE SAME** for all properties to make sure the code knows it's a property
+
+### How-To: Write Macros
+
+**Example:** `{{ service() }}` - returns a "this object is a service" notice when the site is live
+
+To write macros, encase a function like `service()` (or another macro listed in the macro list below) in double curly brackets, also make sure to put `()` after the macro name like it's a function
 
 ## Lists
 
