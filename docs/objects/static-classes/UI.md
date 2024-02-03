@@ -21,25 +21,69 @@ UI was a static class used for creating User Interface elements through LocalScr
 
 Creates a GUI Button
 
+**Example**
+
+```lua
+local button = UI:CreateButton()
+button.Size = Vector2.New(200,100)
+button:ApplyAnchorPreset(AnchorPreset.Center)
+```
+
 ### CreateEmpty:UIField { method }
 
 Creates an empty UIField
+
+**Example**
+
+```lua
+local empty = UI:CreateEmpty()
+```
 
 ### CreateImage:UIImage { method }
 
 Creates an UI image.
 
+**Example**
+
+```lua
+local image = UI:CreateImage()
+image.ImageID = 12384
+image.ApplyAnchorPreset(AnchorPreset.Center)
+image.Size = Vector2.New(200,200)
+```
+
 ### CreateLabel(text;string):UILabel { method }
 
 Creates a text label.
+
+**Example**
+
+```lua
+local text = UI:CreateLabel()
+text.ApplyAnchorPreset(AnchorPreset.Center)
+text.Size = Vector2.New(200, 32)
+text.Text = "Hello, world!"
+```
 
 ### CreateHorizontalLayout:UIHorizontalLayout { method }
 
 Creates a horizontal UI layout.
 
+**Example**
+
+```lua
+local layout = UI:CreateHorizontalLayout()
+```
+
 ### CreateVerticalLayout:UIVerticalLayout { method }
 
 Creates a horizontal UI layout.
+
+**Example**
+
+```lua
+local layout = UI:CreateVerticalLayout()
+```
 
 ## Properties
 
@@ -47,6 +91,24 @@ Creates a horizontal UI layout.
 
 Get current user's screen height
 
+**Example**
+
+```lua
+local Background = UI:CreateImage()
+Background.ImageID = 12384
+Background.ApplyAnchorPreset(AnchorPreset.Center)
+Background.Size = Vector2.New(UI.ScreenWidth,UI.ScreenHeight)
+```
+
 ### ScreenWidth:int { property }
 
 Get current user's screen width
+
+**Example**
+
+```lua
+local Background = UI:CreateImage()
+Background.ImageID = 12384
+Background.ApplyAnchorPreset(AnchorPreset.Center)
+Background.Size = Vector2.New(UI.ScreenWidth,UI.ScreenHeight)
+```

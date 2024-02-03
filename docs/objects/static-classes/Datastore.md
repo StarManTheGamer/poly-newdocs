@@ -36,21 +36,30 @@ You can create as many datastores as you want, however each datastore is limited
 
 Fires when the Datastore object loads.
 
+**Example**
+
+```lua
+local ds = Datastore:GetDatastore("Player_" .. player.UserID)
+ds.Loaded:Connect(function ()
+    ds:Set("Coins", 100)
+end)
+```
+
 ## Methods
 
 ### GetDatastore(datastoreName;string):Datastore { method }
 
 Attempts to get a Datastore object from the Datastore service.
 
-!!! note "Wait till Loaded"
-
-    Make sure to wait until the Datastore object is loaded by waiting until the `.Loaded` event on the Datastore object is fired.
-
 **Example**
 
 ```lua
 local ds = Datastore:GetDatastore("Player_" .. player.UserID)
 ```
+
+!!! note "Wait till Loaded"
+
+    Make sure to wait until the Datastore object is loaded by waiting until the `.Loaded` event on the Datastore object is fired.
 
 ### Get(key;string,callback;function):callback { method }
 
@@ -108,5 +117,14 @@ end)
 ### Loading:bool { property }
 
 Returns true or false depending on if the Datastore object is loaded.
+
+**Example**
+
+```lua
+local ds = Datastore:GetDatastore("Player_" .. player.UserID)
+while ds.Loading do
+    wait()
+end
+```
 
 {{ readonly() }}

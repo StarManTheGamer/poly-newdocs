@@ -16,9 +16,21 @@ icon: polytoria/json
 
 Returns true if the value specified is a null read from a json string
 
+**Example**
+
+```lua
+print(json.isNull("{}"))
+```
+
 ### null:string { method }
 
 Returns a special value which is a representation of a null in a json
+
+**Example**
+
+```lua
+print(json.null())
+```
 
 ### parse(jsonString;string):Table { method }
 
@@ -40,3 +52,12 @@ end)
 ### serialize(array;array):string { method }
 
 Returns a json string with the contents of the specified table.
+
+**Example**
+
+```lua
+print(json.serialize({
+    Name = "Cool Sword",
+    Damage = 10,
+}))
+```
