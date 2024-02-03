@@ -87,7 +87,9 @@ game["Environment"]["Part"].Touched:Connect(function (other)
 end)
 ```
 
+<div data-search-exclude markdown>
 !!! note "There must be an active collider on the instance for this event to trigger ({{ classLink("Part") }}, {{ classLink("Player") }}, etc.)"
+</div>
 
 ### TouchEnded:Instance { event }
 
@@ -101,7 +103,9 @@ game["Environment"]["Part"].TouchEnded:Connect(function (other)
 end)
 ```
 
+<div data-search-exclude markdown>
 !!! note "There must be an active collider on the instance for this event to trigger ({{ classLink("Part") }}, {{ classLink("Player") }}, etc.)"
+</div>
 
 ## Methods
 
@@ -177,7 +181,9 @@ Specifies the parent instance of an instance.
 
 An empty table you can use to hold metadata about anything on any object or player you want.
 
+<div data-search-exclude markdown>
 !!! note "Shared doesn't sync from the client to the server, or from the server to the client."
+</div>
 
 **Example**
 

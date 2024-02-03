@@ -28,4 +28,6 @@ Calls a function on another script
 game["ScriptService"]["Script"]:Call("Foo", "Bar")
 ```
 
+<div data-search-exclude markdown>
 !!! failure "Local Functions cannot be ran using the Call function."
+</div>

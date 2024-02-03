@@ -12,13 +12,11 @@ icon: polytoria/Http
 
 {{ serverexclusive() }}
 
+<div data-search-exclude markdown>
 !!! warning "Each server has a rate limit of 15 requests per minute."
 
-<div data-search-exclude markdown>
 !!! note "The place ID is sent along with the request under the header named `PT-Game-ID`."
-</div>
 
-<div data-search-exclude markdown>
 !!! note "When using Http `:Post`, `:Put`, or `:Delete` parameters are formatted in query form like this: `key1=value&key2=value`"
 </div>
 

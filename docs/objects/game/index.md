@@ -15,3 +15,9 @@ This is Index's test area on a very cool hidden page.
 ### CreateExplosion(Position;Vector3,Radius;int=10,Force;int=5000,affectAnchored;bool=true,callback;function=nil) { method }
 
 This is a test method with parameters.
+
+**Event Parameters Test**
+
+### ExplosionCreated(Position;Vector3,Radius;int=10,Force;int=5000,affectAnchored;bool=true,callback;function=nil) { event }
+
+This is a test event with parameters.

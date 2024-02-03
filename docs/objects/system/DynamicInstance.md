@@ -49,7 +49,9 @@ Specifies the position relative to the parent of an instance.
 
 Specifies the rotation relative to the parent of an instance.
 
+<div data-search-exclude markdown>
 !!! note "Rotation is in euler angles."
+</div>
 
 ### LocalSize:Vector3 = Vector3.New(1, 1, 1) { property }
 
@@ -73,7 +75,9 @@ part.Translate(part.Right * 5)
 
 Specifies the rotation of an instance.
 
+<div data-search-exclude markdown>
 !!! note "Rotation is in euler angles."
+</div>
 
 ### Size:Vector3 = Vector3.New(5, 10, 4) { property }
 

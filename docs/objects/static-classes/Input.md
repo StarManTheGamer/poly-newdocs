@@ -44,9 +44,11 @@ end)
 
 ## Methods
 
+<div data-search-exclude markdown>
 !!! danger "Undocumented Methods"
 
     This section is a work in progress! The methods `GetMouseWorldPoint`, `GetMouseWorldPosition`, `ScreenPointToRay`, and `ViewportPointToRay` are not written yet. Want to contribute? Go to the GitHub and open a pull request [here](https://github.com/StarManTheGamer/poly-newdocs)!
+</div>
 
 ### ScreenToViewportPoint(screenPosition;Vector3):Vector3 { method }
 
@@ -56,7 +58,9 @@ Transforms `screenPosition` parameter from screen space into viewport space.
 
 Transforms `screenPosition` from screen space into world space.
 
+<div data-search-exclude markdown>
 !!! note "World space coordinates can still be calculated even when provided as an off-screen coordinate."
+</div>
 
 ### ViewportToScreenPoint(viewportPosition;Vector3):Vector3 { method }
 
@@ -66,7 +70,9 @@ Transforms `viewportPosition` from viewport space into screen space.
 
 Transforms `viewportPosition` from viewport space into world space.
 
+<div data-search-exclude markdown>
 !!! note "ViewportToWorldPoint transforms an x-y screen position into a x-y-z position in 3D space."
+</div>
 
 ### WorldToScreenPoint(worldPosition;Vector3):Vector3 { method }
 

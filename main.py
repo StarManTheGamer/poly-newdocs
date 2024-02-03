@@ -169,22 +169,53 @@ def property(name):
 
 def event(name):
     value = name[3:]
-    name = value.split(":")[0].strip()
+    name = value.split(":")[0].strip().split("(")[0].strip()
+    print("AAAAAAAAA", name)
 
     parametersList = ""
-    parameters = value.split(":")[1:]
-    for i in range(len(parameters)):
-        parameters[i] = parameters[i].strip()
-        if parameters[i] in type_friendlyname_table:
-            parameters[i] = type_friendlyname_table[parameters[i]]
-        if getClassLink(parameters[i]) != "?":
-            parameters[i] = getClassLink(parameters[i])
-        else:
-            parameters[i] = '`' + parameters[i] + '`'
-    if len(parameters) > 0:
-        parametersList = ": " + ", ".join(parameters)
 
-    return "### :polytoria-Event: %s %s { #%s data-toc-label=\"%s\" }" % (name, parametersList, name, name)
+    parameters = ''.join(value.split("("))
+    parameters = parameters.split(")")[0].replace(name, '').split(',')
+    if "(" in value:
+        for i in range(len(parameters)):
+            v = parameters[i].replace(':', '').strip()
+
+            sections = v.split(';')
+            if len(sections) == 1:
+                sections.insert(0, "")
+            param_name = sections[0].strip()
+            param_type = sections[1].strip()
+
+            parts = param_type.split('=')
+            if len(parts) > 0:
+                for part in range(len(parts)):
+                    if parts[part] in parametertype_friendlyname_table:
+                        parts[part] = parametertype_friendlyname_table[parts[part]]
+                
+                    if getClassLink(parts[part]) != "?":
+                        parts[part] = getClassLink(parts[part])
+                    else:
+                        parts[part] = "`" + parts[part] + "`"
+            param_type = ' = '.join(parts)
+
+            optional_msg = ""
+            if "?" in param_name:
+                optional_msg = " - this parameter is optional"
+                param_name = param_name.replace('?','')
+
+            if param_name != "":
+                v = "%s [ %s ]%s" % (param_name, param_type, optional_msg)
+            else:
+                v = param_type
+
+            parameters[i] = v
+
+        if len(parameters) > 1:
+            parametersList = f"\n??? quote \"Parameters\"\n{'\n\n'.join(['\t' + item for item in parameters])}"
+        elif len(parameters) == 1:
+            parametersList = f"\n!!! quote \"**Parameters:** <span style=\"font-weight: normal;\">" + parameters[0] + "</span>\""
+
+    return "### :polytoria-Event: %s { #%s data-toc-label=\"%s\" }%s" % (name, name, name, parametersList)
 
 def method(name):
     value = name[3:] # in form "name:type"
@@ -205,7 +236,6 @@ def method(name):
     if has_link == False:
         property_type = "`" + property_type + "`"
 
-    numOfParams = 0
     parametersList = ""
 
     parameters = ''.join(value.split("("))

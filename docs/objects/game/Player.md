@@ -93,9 +93,11 @@ player:ClearAppearance()
 
 Checks if the player owns an item
 
+<div data-search-exclude markdown>
 !!! note "The function will cache the result for 5 minutes."
 
 !!! warning "There is a limit of 30 requests that can be made per minute per server."
+</div>
 
 **Example**
 
@@ -216,9 +218,11 @@ Returns the seat the player is currently sitting in, `nil` if the player is not 
 
 Determines how fast the player is while sprinting.
 
+<div data-search-exclude markdown>
 !!! note "Remarks"
 
     Sprinting can be disabled by setting the player's SprintSpeed to their WalkSpeed.
+</div>
 
 ### Stamina:int=0 { property }
 

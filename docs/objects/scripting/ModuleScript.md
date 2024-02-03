@@ -7,15 +7,19 @@ weight: 2
 
 # ModuleScript
 
+<div data-search-exclude markdown>
 !!! bug "BETA Feature"
 
     ModuleScripts are currently in BETA. As of right now, you aren't able to run functions from ModuleScripts. However this is a planned feature in the near future.
+</div>
 
 :polytoria-ModuleScript: ModuleScripts are specialized scripts to hold data that can be accessed by other scripts using the `require()` function.
 
 It is important to define and return a table in a ModuleScript. When the place starts, the server and the client will run the ModuleScript once and store the result for other scripts to retrieve with `require()`.
 
+<div data-search-exclude markdown>
 !!! note "When trying to require a specific module script, put the path to the ModuleScript in the require function."
+</div>
 
 {{ inherits("BaseScript") }}
 

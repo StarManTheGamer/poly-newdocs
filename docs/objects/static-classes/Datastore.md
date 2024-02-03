@@ -26,9 +26,11 @@ There is a limit placed on the Datastore functions per server instance. Requests
 
 You can create as many datastores as you want, however each datastore is limited to 65,535 bytes and it's key cannot be longer than 32 characters. Creating a datastore will also count towards the rate limit.
 
+<div data-search-exclude markdown>
 !!! note "Local Testing"
 
     If you are testing your place locally through Polytoria Creator, no requests will be made to the server and your data will not be saved after the session ends. You will need to upload your place to the website to test the requests.
+</div>
 
 ## Events
 
