@@ -7,3 +7,7 @@ This is a fork of the new-docs branch on the Polytoria Scripting Documentation G
 ## Contributing
 
 Go to the contribution guide [here](CONTRIBUTING.md) for more information on contributing.
+
+## Possible Changes
+- [ ] "Home" link on navbar instead of clicking on the logo/site name to go to homepage
+- [ ] Darker theme colors to connect the homepage and the rest of the site design
