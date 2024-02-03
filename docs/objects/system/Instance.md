@@ -67,7 +67,7 @@ Deletes the instance (same as Destroy method)
 
 Returns the parent of the instance (same as accessing the `.Parent` property).
 
-### SetParent(newParent;Instance)
+### SetParent(newParent;Instance) { method }
 
 Sets the parent of the instance (same as setting the `.Parent` property)
 
