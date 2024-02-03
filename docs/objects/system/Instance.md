@@ -19,31 +19,87 @@ weight: 100
 
 Fires when a child instance is added.
 
+**Example**
+
+```lua
+game["Environment"].ChildAdded:Connect(function (child)
+    print(child.Name .. " was added")
+end)
+```
+
 ### ChildRemoved:Instance { event }
 
 Fires when a child instance is removed.
+
+**Example**
+
+```lua
+game["Environment"].ChildRemoved:Connect(function (child)
+    print(child.Name .. " was removed")
+end)
+```
 
 ### Clicked:Player { event }
 
 Fires when the instance is clicked by a player.
 
+**Example**
+
+```lua
+game["Environment"]["Part"].Clicked:Connect(function (player)
+    print(player.Name .. " clicked on this part!")
+end)
+```
+
 ### MouseEnter { event }
 
 Fires when the mouse enters the instance.
+
+**Example**
+
+```lua
+part.MouseEnter:Connect(function()
+    part.Color = Color.New(1, 0, 0)
+end)
+```
 
 ### MouseExit { event }
 
 Fires when the mouse enters the instance.
 
+**Example**
+
+```lua
+part.MouseExit:Connect(function()
+    part.Color = Color.New(0, 1, 0)
+end)
+```
+
 ### Touched:Instance { event }
 
 Fires when the instance was touched by another instance.
 
+**Example**
+
+```lua
+game["Environment"]["Part"].Touched:Connect(function (other)
+    print(other.Name .. " touched this part!")
+end)
+```
+
 !!! note "There must be an active collider on the instance for this event to trigger ({{ classLink("Part") }}, {{ classLink("Player") }}, etc.)"
 
-### TouchEnded { event }
+### TouchEnded:Instance { event }
 
 Fires when the instance is no longer being touched by another instance.
+
+**Example**
+
+```lua
+game["Environment"]["Part"].TouchEnded:Connect(function (other)
+    print(other.Name .. " stopped touching this part!")
+end)
+```
 
 !!! note "There must be an active collider on the instance for this event to trigger ({{ classLink("Part") }}, {{ classLink("Player") }}, etc.)"
 
