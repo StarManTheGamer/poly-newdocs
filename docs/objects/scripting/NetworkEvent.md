@@ -71,3 +71,16 @@ netEvent.InvokeClients(message)
 ```
 
 {{ serverexclusive() }}
+
+### InvokeServer(message;NetMessage) { method }
+
+Sends a network event to the server from the client.
+
+**Example**
+
+```lua
+-- netEvent defined somewhere else in the code
+local message = NetMessage.New()
+message.AddString("key", "value")
+netEvent.InvokeServer(message)
+```
