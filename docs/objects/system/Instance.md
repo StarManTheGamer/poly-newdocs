@@ -16,26 +16,33 @@ weight: 100
 ## Events
 
 ### ChildAdded:Instance { event }
+
 Fires when a child instance is added.
 
 ### ChildRemoved:Instance { event }
+
 Fires when a child instance is removed.
 
 ### Clicked:Player { event }
+
 Fires when the instance is clicked by a player.
 
 ### MouseEnter { event }
+
 Fires when the mouse enters the instance.
 
 ### MouseExit { event }
+
 Fires when the mouse enters the instance.
 
 ### Touched:Instance { event }
+
 Fires when the instance was touched by another instance.
 
 !!! note "There must be an active collider on the instance for this event to trigger ({{ classLink("Part") }}, {{ classLink("Player") }}, etc.)"
 
 ### TouchEnded { event }
+
 Fires when the instance is no longer being touched by another instance.
 
 !!! note "There must be an active collider on the instance for this event to trigger ({{ classLink("Part") }}, {{ classLink("Player") }}, etc.)"
@@ -45,36 +52,47 @@ Fires when the instance is no longer being touched by another instance.
 ### New
 
 ### Clone { method }
+
 Clones the instance
 
 ### Destroy { method }
+
 Destroys the instance (same as Delete method)
 
 ### Delete { method }
+
 Deletes the instance (same as Destroy method)
 
 ### GetParent:Instance { method }
+
 Returns the parent of the instance (same as accessing the `.Parent` property).
 
 ### SetParent(newParent;Instance)
+
 Sets the parent of the instance (same as setting the `.Parent` property)
 
 ### IsA(className;string):bool { method }
+
 Returns whether or not the instance is the specified class.
 
 ### IsDescendantOf(other;Instance):bool { method }
+
 Returns whether or not the instance is a descendant (child, child of child, etc) of the specified instance.
 
 ### FindChild(name;string):Instance { method }
+
 Attempts to find the first child instance with the specified name (`nil` if not found).
 
 ### FindChildByClass(className;string):Instance { method }
+
 Attempts to find the first child instance with the specified class (`nil` if not found).
 
 ### GetChildren:Instance[] { method }
+
 Returns an array of all the children instances parented to the instance.
 
 ### GetChildrenOfClass(className;string):Instance[] { method }
+
 Returns an array of all the children instances with the specified class.
 
 ## Properties

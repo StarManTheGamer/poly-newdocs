@@ -8,7 +8,9 @@ Thanks for waiting to contribute to the new unofficial Polytoria documentation! 
 2. When creating a page it is recommended that if it is an abstract object (one that can't be created using `Instance.New()` and is only used a base/inheriting class for other parts) there is no description
 
 ## Page Order
+
 Pages should be ordered like this:
+
 1. Events
 2. Methods
 3. Properties
