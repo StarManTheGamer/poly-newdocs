@@ -81,3 +81,23 @@ Transforms `worldPosition` from world space into viewport space.
 ### MousePosition:Vector2 { property }
 
 Returns the current mouse position.
+
+### CursorLocked:bool { property }
+
+to-do
+
+**Example**
+
+```lua
+Input.CursorLocked = true
+```
+
+### CursorVisible:bool { property }
+
+to do
+
+**Example**
+
+```lua
+Input.CursorVisible = true
+```
