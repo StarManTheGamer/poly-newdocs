@@ -11,6 +11,7 @@ weight: 2
 !!! bug "BETA Feature"
 
     ModuleScripts are currently in BETA. As of right now, you aren't able to run functions from ModuleScripts. However this is a planned feature in the near future.
+
 </div>
 
 :polytoria-ModuleScript: ModuleScripts are specialized scripts to hold data that can be accessed by other scripts using the `require()` function.
