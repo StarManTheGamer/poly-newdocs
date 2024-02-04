@@ -4,3 +4,5 @@ empty: true
 ---
 
 # Effects & Utilities
+
+{{ directory("effects") }}

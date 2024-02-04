@@ -4,3 +4,5 @@ empty: true
 ---
 
 # Enums
+
+{{ directory("enums") }}

@@ -4,3 +4,5 @@ empty: true
 ---
 
 # Types
+
+{{ directory("types") }}

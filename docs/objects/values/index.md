@@ -4,3 +4,5 @@ empty: true
 ---
 
 # Values
+
+{{ directory("values") }}

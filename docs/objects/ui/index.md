@@ -4,3 +4,5 @@ empty: true
 ---
 
 # UI
+
+{{ directory("ui") }}

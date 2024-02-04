@@ -4,3 +4,5 @@ empty: true
 ---
 
 # Physics
+
+{{ directory("physics") }}

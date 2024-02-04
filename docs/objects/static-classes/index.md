@@ -4,3 +4,5 @@ empty: true
 ---
 
 # Static classes
+
+{{ directory("static-classes") }}
