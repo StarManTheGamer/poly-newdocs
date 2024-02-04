@@ -2,6 +2,18 @@
 
 Thanks for waiting to contribute to the new unofficial Polytoria documentation! If you can't contribute at this time please notify one of our contributers and tell them the change that should be made and they can do it for you. Otherwise, you can open a pull request and we'll either accept it or request changes depending on what the pull request is about.
 
+## Dependencies
+
+| Name                       | Version  |
+| -------------------------- | -------- |
+| mkdocs                     | 1.5.3    |
+| mkdocs-macros-plugin       | 1.0.5    |
+| mkdocs-material            | 9.5.7    |
+| mkdocs-material-extensions | 1.3.1    |
+| mkdocs-nav-weight          | 0.2.0    |
+| pymdown-extensions         | 10.7     |
+| ghp-import                 | 2.1.0    |
+
 ## Notes
 
 1. When creating a page make sure if it is a class it should have the corresponding icon at the start of the description
