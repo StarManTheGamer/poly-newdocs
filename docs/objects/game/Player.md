@@ -17,7 +17,7 @@ weight: 5
 
 ## Events
 
-### Chatted:string { event }
+### Chatted(message;string) { event }
 
 Fires when the player sends a chat message.
 
@@ -89,7 +89,7 @@ Clears the player's appearance. This will set their appearance to a gray avatar.
 player:ClearAppearance()
 ```
 
-### OwnsItem(assetID;int, callback;function) { method }
+### OwnsItem(assetID;int,callback;function) { method }
 
 Checks if the player owns an item
 

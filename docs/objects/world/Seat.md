@@ -14,11 +14,11 @@ weight: 3
 
 ## Events
 
-### Sat:Player { event }
+### Sat(player;Player) { event }
 
 Fires when a player sits in the seat.
 
-### Vacated:Player { event }
+### Vacated(player;Player) { event }
 
 Fires when a player leaves the seat.
 

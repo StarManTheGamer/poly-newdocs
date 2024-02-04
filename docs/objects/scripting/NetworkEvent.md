@@ -14,7 +14,7 @@ weight: 5
 
 ## Events
 
-### InvokedClient:Sender=nil:NetMessage { event }
+### InvokedClient(sender;nil,netmsg;NetMessage) { event }
 
 Fires when the client receives a message from the server.
 
@@ -28,7 +28,7 @@ end)
 
 {{ clientexclusive() }}
 
-### InvokedServer:Sender=Player:NetMessage { event }
+### InvokedServer(sender;Player,netmsg;NetMessage) { event }
 
 Fires when the server receives a message from the client.
 

@@ -12,7 +12,7 @@ icon: polytoria/Input
 
 ## Events
 
-### KeyDown:string { event }
+### KeyDown(key;string) { event }
 
 Fires when a key is pressed.
 
@@ -28,7 +28,7 @@ Input.KeyDown:Connect(function (key)
 end)
 ```
 
-### KeyUp:string { event }
+### KeyUp(key;string) { event }
 
 Fires when a key is released.
 

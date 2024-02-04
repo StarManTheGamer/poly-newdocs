@@ -19,11 +19,11 @@ weight: 4
 
 ## Events
 
-### PlayerAdded:Player { event }
+### PlayerAdded(player;Player) { event }
 
 Fires when a player joins the server.
 
-### PlayerRemoved:Player { event }
+### PlayerRemoved(player;Player) { event }
 
 Fires when a player leaves the server.
 
