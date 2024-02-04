@@ -15,6 +15,23 @@ def getClassLink(className):
                     return "[:polytoria-%s: %s](/poly-newdocs/objects/%s)" % (className, className, filePath)
     return "?"
 
+def getDirectory(category):
+    # Find the actual link for the input classname by searching for the markdown file
+    search_path = "docs/objects/" + category
+    results = []
+    for root, dirs, files in os.walk(search_path):
+        for file in files:
+            className = file[:-3]
+            if file.endswith(".md") and className != "index":
+                filePath = os.path.join(root, file)
+                filePath = filePath[len(search_path):]
+                filePath = filePath[:-3]
+                if category == "enums":
+                    results.append("[:polytoria-%s: %s](/poly-newdocs/objects/%s)" % ("Enum", className, filePath))
+                else:
+                    results.append("[:polytoria-%s: %s](/poly-newdocs/objects/%s)" % (className, className, filePath))
+    return results
+
 "Define macros"
 def define_env(env):
      
@@ -30,6 +47,10 @@ def define_env(env):
     def inherits(className):
         return "Inherits %s\n{ data-search-exclude }" % (getClassLink(className))
 
+    @env.macro
+    def directory(category):
+        return '\n'.join(["- " + item for item in getDirectory(category)])
+        #return "%s" % ('\n\n'.join(getDirectory(category)))
    
     @env.macro
     def ambiguous(className, description):
