@@ -27,9 +27,9 @@ def getDirectory(category):
                 filePath = filePath[len(search_path):]
                 filePath = filePath[:-3]
                 if category == "enums":
-                    results.append("[:polytoria-%s: %s](/poly-newdocs/objects/%s)" % ("Enum", className, filePath))
+                    results.append("[:polytoria-%s: %s](/poly-newdocs/objects/%s)" % ("Enum", className, (category + "/" + className)))
                 else:
-                    results.append("[:polytoria-%s: %s](/poly-newdocs/objects/%s)" % (className, className, filePath))
+                    results.append("[:polytoria-%s: %s](/poly-newdocs/objects/%s)" % (className, className, (category + "/" + className)))
     results.sort()
     print(results)
     return results
@@ -64,7 +64,7 @@ def define_env(env):
             categoryName = categoryName[0].upper() + categoryName[1:]
             if categoryName == "Ui": categoryName = "UI"
             if categoryName == "Static-classes": categoryName = "Static Classes"
-            
+
             for v in range(len(category)):
                 categoryText += "- " + category[v] + "\n"
             categoryText = "## " + categoryName + "\n" + categoryText + "\n---"
