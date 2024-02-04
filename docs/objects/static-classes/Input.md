@@ -12,7 +12,7 @@ icon: polytoria/Input
 
 ## Events
 
-### KeyDown:string { event }
+### KeyDown(key;string) { event }
 
 Fires when a key is pressed.
 
@@ -28,7 +28,7 @@ Input.KeyDown:Connect(function (key)
 end)
 ```
 
-### KeyUp:string { event }
+### KeyUp(key;string) { event }
 
 Fires when a key is released.
 
@@ -48,6 +48,7 @@ end)
 !!! danger "Undocumented Methods"
 
     This section is a work in progress! The methods `GetMouseWorldPoint`, `GetMouseWorldPosition`, `ScreenPointToRay`, and `ViewportPointToRay` are not written yet. Want to contribute? Go to the GitHub and open a pull request [here](https://github.com/StarManTheGamer/poly-newdocs)!
+
 </div>
 
 ### ScreenToViewportPoint(screenPosition;Vector3):Vector3 { method }

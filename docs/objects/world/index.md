@@ -6,3 +6,5 @@ empty: true
 ---
 
 # World
+
+{{ directory("world") }}

@@ -4,3 +4,5 @@ empty: true
 ---
 
 # Scripting
+
+{{ directory("scripting") }}

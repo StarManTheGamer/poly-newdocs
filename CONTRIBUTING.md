@@ -2,10 +2,23 @@
 
 Thanks for waiting to contribute to the new unofficial Polytoria documentation! If you can't contribute at this time please notify one of our contributers and tell them the change that should be made and they can do it for you. Otherwise, you can open a pull request and we'll either accept it or request changes depending on what the pull request is about.
 
+## Dependencies
+
+| Name                       | Version  |
+| -------------------------- | -------- |
+| mkdocs                     | 1.5.3    |
+| mkdocs-macros-plugin       | 1.0.5    |
+| mkdocs-material            | 9.5.7    |
+| mkdocs-material-extensions | 1.3.1    |
+| mkdocs-nav-weight          | 0.2.0    |
+| pymdown-extensions         | 10.7     |
+| ghp-import                 | 2.1.0    |
+
 ## Notes
 
 1. When creating a page make sure if it is a class it should have the corresponding icon at the start of the description
 2. When creating a page it is recommended that if it is an abstract object (one that can't be created using `Instance.New()` and is only used a base/inheriting class for other parts) there is no description
+3. When creating a note, make sure that it is encased in a `<div data-search-exclude markdown>` element to make sure that the note doesn't show up while searching the documentation
 
 ## Page Order
 
@@ -19,7 +32,20 @@ Pages should be ordered like this:
 
 ### How-To: Write Events
 
-> Events will be slightly rewritten soon to have support for parameters - this will be written after that change is made
+**Example:** `EventName(ParameterName;ParameterType=ParameterValue) { method }`
+
+`EventName` is the name of the event
+
+```
+How-To: Write Parameters
+
+Parameters for events exist to better show what information the event provides when fired. All parameters must be encased in () and parameters entirely are COMPLETELY OPTIONAL
+ParameterName is the name of the parameter
+ParameterType is the type of the value which this property expects
+ParameterValue is the default value of the parameter (OPTIONAL)
+
+The last part is a macro, that STAYS THE SAME for all events to make sure the code knows it's a event
+```
 
 ### How-To: Write Methods
 
@@ -32,7 +58,7 @@ Pages should be ordered like this:
 ```
 How-To: Write Parameters
 
-Parameters are an optional feature of methods to better show what the method wants/needs when called. All parameters must be encased in () and parameters entirely are completely optional
+Parameters for methods exist to better show what the method wants/needs when called. All parameters must be encased in () and parameters entirely are COMPLETELY OPTIONAL
 ParameterName is the name of the parameter
 ParameterType is the type of the value which this property expects
 ParameterValue is the default value of the parameter (OPTIONAL)
@@ -62,7 +88,7 @@ To write macros, encase a function like `service()` (or another macro listed in 
 
 ### Macros List
 
-Macros are short commands you can put in documentation pages that will be replaced with notes.
+Macros are short commands you can put in documentation pages that will be replaced with notes. Macros that are not listed here but are found in the code are most likely macros used on hidden pages or for internal usage.
 
 | Name                                      | Text                                                                                                                                                                                                                                             |
 | ----------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |

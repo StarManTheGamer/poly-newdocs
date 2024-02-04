@@ -4,3 +4,5 @@ empty: true
 ---
 
 # System
+
+{{ directory("system") }}

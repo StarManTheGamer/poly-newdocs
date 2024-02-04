@@ -17,7 +17,7 @@ weight: 5
 
 ## Events
 
-### Chatted:string { event }
+### Chatted(message;string) { event }
 
 Fires when the player sends a chat message.
 
@@ -89,7 +89,7 @@ Clears the player's appearance. This will set their appearance to a gray avatar.
 player:ClearAppearance()
 ```
 
-### OwnsItem(assetID;int, callback;function) { method }
+### OwnsItem(assetID;int,callback;function) { method }
 
 Checks if the player owns an item
 
@@ -97,6 +97,7 @@ Checks if the player owns an item
 !!! note "The function will cache the result for 5 minutes."
 
 !!! warning "There is a limit of 30 requests that can be made per minute per server."
+
 </div>
 
 **Example**
@@ -222,6 +223,7 @@ Determines how fast the player is while sprinting.
 !!! note "Remarks"
 
     Sprinting can be disabled by setting the player's SprintSpeed to their WalkSpeed.
+
 </div>
 
 ### Stamina:int=0 { property }
