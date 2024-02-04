@@ -31,7 +31,6 @@ def getDirectory(category):
                 else:
                     results.append("[:polytoria-%s: %s](/poly-newdocs/objects/%s)" % (className, className, (category + "/" + className)))
     results.sort()
-    print(results)
     return results
 
 "Define macros"
@@ -52,7 +51,6 @@ def define_env(env):
     @env.macro
     def directory(category):
         return '\n'.join(["- " + item for item in getDirectory(category)])
-        #return "%s" % ('\n\n'.join(getDirectory(category)))
     
     @env.macro
     def directorySort(categories):
