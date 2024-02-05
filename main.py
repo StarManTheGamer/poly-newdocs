@@ -27,9 +27,10 @@ def getDirectory(category):
                 filePath = filePath[len(search_path):]
                 filePath = filePath[:-3]
                 if category == "enums":
-                    results.append("[:polytoria-%s: %s](/poly-newdocs/objects/%s)" % ("Enum", className, filePath))
+                    results.append("[:polytoria-%s: %s](/poly-newdocs/objects/%s)" % ("Enum", className, (category + "/" + className)))
                 else:
-                    results.append("[:polytoria-%s: %s](/poly-newdocs/objects/%s)" % (className, className, filePath))
+                    results.append("[:polytoria-%s: %s](/poly-newdocs/objects/%s)" % (className, className, (category + "/" + className)))
+    results.sort()
     return results
 
 "Define macros"
@@ -50,7 +51,23 @@ def define_env(env):
     @env.macro
     def directory(category):
         return '\n'.join(["- " + item for item in getDirectory(category)])
-        #return "%s" % ('\n\n'.join(getDirectory(category)))
+    
+    @env.macro
+    def directorySort(categories):
+        text = ""
+        for i in range(len(categories)):
+            categoryText = ""
+            category = getDirectory(categories[i])
+            categoryName = categories[i]
+            categoryName = categoryName[0].upper() + categoryName[1:]
+            if categoryName == "Ui": categoryName = "UI"
+            if categoryName == "Static-classes": categoryName = "Static Classes"
+
+            for v in range(len(category)):
+                categoryText += "- " + category[v] + "\n"
+            categoryText = "## " + categoryName + "\n" + categoryText + "\n---"
+            text += "\n" + categoryText
+        return text
    
     @env.macro
     def ambiguous(className, description):
