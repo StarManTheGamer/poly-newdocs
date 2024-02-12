@@ -109,7 +109,9 @@ end)
 
 ## Methods
 
-### New
+### New { method }
+
+Create a new instance.
 
 ### Clone { method }
 
