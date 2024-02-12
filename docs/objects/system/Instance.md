@@ -109,7 +109,7 @@ end)
 
 ## Methods
 
-### New(typeOfInstance) { method }
+### New(typeOfInstance):Instance { method }
 
 Create a new instance.
 
