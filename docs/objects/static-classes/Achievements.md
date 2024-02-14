@@ -8,6 +8,8 @@ icon: polytoria/Achievements
 
 {{ staticclass("Achievements") }}
 
+{{ serverexclusive() }}
+
 :polytoria-Achievements: Achievements is a static class, that is used to award place achievements to a player.
 
 ## Methods
