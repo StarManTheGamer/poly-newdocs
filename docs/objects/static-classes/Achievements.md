@@ -23,11 +23,11 @@ Awards the specified player's userID the specified achievement.
 ```lua
 game["Players"].PlayerAdded:Connect(function(plr)
     wait(2)
-    Achievements:Award(plr.UserID, 31472, function(error, errormsg)
-        if error then
-            print("Error awarding achievement: " .. errormsg)
+    Achievements:Award(plr.UserID, 31472, function(success, errormsg)
+        if success then
+            print("Awarded achievement")  
         else
-            print("Awarded achievement")
+            print("Error awarding achievement: " .. errormsg)
         end
     end)
 end)
