@@ -28,5 +28,5 @@ Determines whether or not the player list/leaderboard is visible.
 ### HealthBarEnabled:bool=true { property }
 Determines whether or not the player's health bar is visible.
 
-### HotBarEnabled:bool=true { property }
+### HotbarEnabled:bool=true { property }
 Determines whether or not the hot bar is visible.
