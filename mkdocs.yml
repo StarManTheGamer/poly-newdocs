@@ -1,5 +1,5 @@
 site_name: Polytoria Scripting Documentation
-copyright: Copyright &copy; 2019 - 2024 Polytoria
+copyright: Copyright &copy; 2019 - 2024 Polytoria <a href="/contributors.html" class="contributors-link-footer"> - brought to you by <3</a>
 theme:
   features:
     - navigation.tabs
@@ -32,7 +32,7 @@ theme:
 
 # For consistency, for MkDocs is instead credited on the main home page ❤️
 extra:
-  generator: false
+  generator: true
 
 plugins:
   - search

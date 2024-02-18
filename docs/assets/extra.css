@@ -34,3 +34,7 @@ h3:has(+ .admonition.quote) {
 h3 + .admonition.quote {
 	margin-top: 5px;
 }
+
+.contributors-link-footer {
+	color: #007bff !important;
+}
