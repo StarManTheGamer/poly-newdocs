@@ -49,7 +49,7 @@ game["Players"].PlayerAdded:Connect(function(plr)
             if hasAchievement then
                 print(player.Name .. "has the achievement!")
             else
-                print(player.Name .. "doesn't have the achievement :()")
+                print(player.Name .. "doesn't have the achievement :(")
             end
         else
             print("Error checking for achievement obtainability: " .. error)
