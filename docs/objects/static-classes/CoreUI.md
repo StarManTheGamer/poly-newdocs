@@ -1,6 +1,7 @@
 ---
 title: CoreUI
 description: CoreUI is a static class that allows for the toggling of certain core GUI.
+icon: polytoria/CoreUI
 ---
 
 # CoreUI
