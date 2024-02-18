@@ -10,4 +10,4 @@ icon: polytoria/Enum
 | -------------------------- |
 | `TextVerticalAlign.Top`    |
 | `TextVerticalAlign.Middle` |
-| `TextVerticalAlign.Button` |
+| `TextVerticalAlign.Bottom` |

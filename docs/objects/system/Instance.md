@@ -109,7 +109,9 @@ end)
 
 ## Methods
 
-### New
+### New(typeOfInstance):Instance { method }
+
+Create a new instance.
 
 ### Clone { method }
 
