@@ -29,8 +29,6 @@ Example:
 print(game["Environment"]["myPart"].Position)
 ```
 
-(Image of developer console with that output here)
-
 To set the property, you may do it how you would set variables.
 
 Example:
