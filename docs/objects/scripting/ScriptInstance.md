@@ -2,10 +2,10 @@
 title: ScriptInstance
 description: A ScriptInstance is a script that only runs on the server.
 
-icon: polytoria/Unknown
+icon: polytoria/ScriptInstance
 weight: 6
 ---
 
-A ScriptInstance is a script that only runs on the server.
+:polytoria-ScriptInstance: ScriptInstance is a script that only runs on the server.
 
 {{ inherits("BaseScript") }}
