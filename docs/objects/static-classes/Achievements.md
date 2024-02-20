@@ -25,7 +25,7 @@ game["Players"].PlayerAdded:Connect(function(plr)
     wait(2)
     Achievements:Award(plr.UserID, 31472, function(success, error)
         if success then
-            print("Awarded achievement")  
+            print("Awarded achievement")
         else
             print("Error awarding achievement: " .. error)
         end

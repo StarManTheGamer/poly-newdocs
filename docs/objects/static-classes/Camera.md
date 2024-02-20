@@ -22,29 +22,71 @@ icon: polytoria/Camera
 
 The distance between the camera and the player when the camera is in FollowPlayer mode.
 
+**Example**
+
+```lua
+Camera.Distance = 20
+```
+
 ### FOV:int { property }
 
 Sets or return the camera's field of view.
+
+**Example**
+
+```lua
+Camera.FOV = 90
+```
 
 ### FastFlySpeed:int { property }
 
 The camera speed when the camera is in FreeCam mode while holding shift.
 
-### FastFlySpeed:int { property }
+**Example**
+
+```lua
+Camera.FastFlySpeed = 100
+```
+
+### FlySpeed:int { property }
 
 The camera speed when the camera is in FreeCam mode.
+
+**Example**
+
+```lua
+Camera.FlySpeed = 10
+```
 
 ### FollowLerp:bool { property }
 
 Determines whether or not to use lerping in FollowPlayer mode.
 
+**Example**
+
+```lua
+Camera.FollowLerp = true
+```
+
 ### FreeLookSensitivity:int { property }
 
 The mouse sensitivity while in FreeCam mode.
 
+**Example**
+
+```lua
+Camera.FreeLookSensitivity = 3
+```
+
 ### HorizontalSpeed:int { property }
 
 The horizontal movement speed of the camera in FollowPlayer mode.
+
+**Example**
+
+```lua
+Camera.HorizontalSpeed = 120
+```
 
 ### IsFirstPerson:bool { property }
 
@@ -56,25 +98,61 @@ Returns whether or not the camera is in first person.
 
 The lerp speed of the camera when lerping is enabled.
 
+**Example**
+
+```lua
+Camera.LerpSpeed = 15
+```
+
 ### MaxDistance:int { property }
 
 The camera's maximum distance from the player in FollowPlayer mode.
+
+**Example**
+
+```lua
+Camera.MaxDistance = 0
+```
 
 ### MinDistance:int { property }
 
 The camera's minimum distance from the player in FollowPlayer mode.
 
+**Example**
+
+```lua
+Camera.MinDistance = 5
+```
+
 ### Mode:CameraMode { property }
 
 Sets or returns the camera's current mode.
+
+**Example**
+
+```lua
+Camera.Mode = CameraMode.Scripted
+```
 
 ### Orthographic:bool { property }
 
 Determines whether or not the camera should render in orthographic (2D) mode or not (3D).
 
+**Example**
+
+```lua
+Camera.Orthographic = true
+```
+
 ### OrthographicSize:int { property }
 
 Determines the half-size of the camera when in orthographic mode.
+
+**Example**
+
+```lua
+Camera.OrthographicSize = 30
+```
 
 ### ScrollSensitivity:int { property }
 
