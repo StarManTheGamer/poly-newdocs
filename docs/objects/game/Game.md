@@ -38,11 +38,25 @@ Called every frame after the place has been rendered
 
 The ID of the current Polytoria place.
 
-The value is `0` when testing locally through Polytoria Creator, which can be used as a conditional to check if the place is live or not.
+**Example**
+
+```lua
+print(game.GameID)
+```
+
+<div data-search-exclude markdown>
+!!! note "The value is `0` when testing locally through Polytoria Creator, which can be used as a conditional to check if the place is live or not."
+</div>
 
 ### InstanceCount:int { property }
 
 The total number of instances currently loaded
+
+**Example**
+
+```lua
+print(game.InstanceCount)
+```
 
 <div data-search-exclude markdown>
 !!! note "Remarks"
@@ -51,8 +65,24 @@ The total number of instances currently loaded
 
 </div>
 
+### LocalInstanceCount:int { property }
+
+The amount of instances currently loaded on the client.
+
+**Example**
+
+```lua
+print(game.LocalInstanceCount)
+```
+
 ### PlayersConnected:int { property }
 
 Returns the amount of players connected to the game.
+
+**Example**
+
+```lua
+print(game.PlayersConnected)
+```
 
 {{ readonly() }}
