@@ -92,6 +92,12 @@ Camera.HorizontalSpeed = 120
 
 Returns whether or not the camera is in first person.
 
+**Example**
+
+```lua
+print(Camera.IsFirstPerson)
+```
+
 {{ readonly() }}
 
 ### LerpSpeed:int { property }
@@ -154,10 +160,42 @@ Determines the half-size of the camera when in orthographic mode.
 Camera.OrthographicSize = 30
 ```
 
+### Position:Vector3 { property }
+
+The position of the camera in the world.
+
+**Example**
+
+```lua
+Camera.Position = Vector3.New(0, 100, 0)
+```
+
+### Rotation:Vector3 { property }
+
+The rotation of the camera.
+
+**Example**
+
+```lua
+Camera.Rotation = Vector3.New(90, 0, 0)
+```
+
 ### ScrollSensitivity:int { property }
 
 Determines the scroll move speed of the camera.
 
+**Example**
+
+```lua
+Camera.ScrollSensitivity = 15
+```
+
 ### VerticalSpeed:int { property }
 
 Determines the vertical move speed of the camera.
+
+**Example**
+
+```lua
+Camera.VerticalSpeed = 120
+```
