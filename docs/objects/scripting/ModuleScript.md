@@ -2,7 +2,7 @@
 title: ModuleScript
 description: ModuleScripts are specialized scripts to hold data that can be accessed by other scripts using the `require()` function.
 icon: polytoria/ModuleScript
-weight: 2
+weight: 3
 ---
 
 # ModuleScript
