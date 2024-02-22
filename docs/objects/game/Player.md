@@ -67,6 +67,16 @@ Kicks the player from the server with an optional reason parameter.
 
 {{ serverexclusive() }}
 
+**Example**
+
+```lua
+game["Players"].PlayerAdded:Connect(function(player)
+    if player.Name == "baggy" then
+        player:Kick("Baggy u stink!!!")
+    end
+end)
+```
+
 ### LoadAppearance(userID;int) { method }
 
 Loads the specified user ID's avatar on the player.

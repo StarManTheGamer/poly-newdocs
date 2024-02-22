@@ -23,9 +23,29 @@ weight: 4
 
 Fires when a player joins the server.
 
+**Example**
+
+```lua
+game["Players"].PlayerAdded:Connect(function(player)
+    if player.Name == "baggy" then
+        player:Kick("Baggy u stink!!!")
+    end
+end)
+```
+
 ### PlayerRemoved(player;Player) { event }
 
 Fires when a player leaves the server.
+
+**Example**
+
+```lua
+game["Players"].PlayerRemoved:Connect(function(player)
+    if player.Name == "baggy" then
+        print("Baggy left thank god!!!!!")
+    end
+end)
+```
 
 ## Methods
 
@@ -39,7 +59,15 @@ Returns the player instance from their user ID.
 
 ### GetPlayers:array { method }
 
-Returns all players in the place as an array.
+Returns all players in the place as a table.
+
+**Example**
+
+```lua
+for i, player in ipairs(game["Players"]:GetPlayers()) do
+    print(player.Name .." is in the server!")
+end
+```
 
 ## Properties
 
@@ -49,6 +77,19 @@ Returns the local player currently playing.
 
 {{ clientexclusive() }}
 
+**Example**
+
+```lua
+print(game["Players"].LocalPlayer.Name)
+```
+
 ### PlayerCollisionEnabled:bool { property }
 
 Determines whether or not collisions between players are enabled.
+
+**Example**
+
+```lua
+print("Turning off player collisions!")
+game["Players"].PlayerCollisionEnabled = false
+```
