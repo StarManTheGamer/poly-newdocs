@@ -8,11 +8,11 @@ weight: 4
 
 # BaseScript
 
-{{ ambiguousMultiple([["Script", "which runs your Lua scripts on the server."],["LocalScript", "which runs your Lua scripts on the client."],["ModuleScript", "which contains data accessible by any script."]]) }}
+{{ ambiguousMultiple([["ScriptInstance", "which runs your Lua scripts on the server."],["LocalScript", "which runs your Lua scripts on the client."],["ModuleScript", "which contains data accessible by any script."]]) }}
 
 {{ abstract() }}
 
-:polytoria-BaseScript: BaseScripts are the base classes of all scripts (Scripts, LocalScripts). They can be parented to any instance.
+:polytoria-BaseScript: BaseScripts are the base classes of all scripts (ScriptInstances, LocalScripts). They can be parented to any instance.
 
 {{ inherits("Instance") }}
 
