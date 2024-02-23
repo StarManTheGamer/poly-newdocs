@@ -11,6 +11,9 @@ Go to the contribution guide [here](CONTRIBUTING.md) for more information on con
 ## To-do Changes
 
 - [ ] Adding context to "Developer for other platforms?" link on homepage which was included on the original design but we have no idea what it means or would link to
+- [ ] Document "RemoteEvents" (removed in recent Polytoria client and creator versions; replaced with "Network Events")
+- [ ] Add a "Removed Classes" page for deprecated/removed classes in recent Polytoria client and creator versions
+- [ ] Re-order navbar in order of importance rather than alphabetically
 
 ## Possible Changes
 
