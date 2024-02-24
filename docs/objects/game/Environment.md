@@ -97,6 +97,12 @@ The direction and strength of gravity in the world
 
 The height at which unanchored parts are destroyed when they fall below it.
 
+**Example**
+
+```lua
+game["Environment"].PartDestroyHeight = -2000
+```
+
 ### Skybox:SkyboxPreset { property }
 
 The default skybox preset to use for the world, if no ImageSky is present.
