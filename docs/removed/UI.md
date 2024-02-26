@@ -1,5 +1,5 @@
 ---
-title: (Removed) UI
+title: UI
 description: UI was a static class used for creating User Interface elements through LocalScripts. Removed in v1.2.0.
 icon: polytoria/UI
 ---
@@ -8,7 +8,7 @@ icon: polytoria/UI
 
 <div data-search-exclude markdown>
 !!! danger "Removed"
-    The UI static class was removed in Version 1.2.0, and is currently noted for documentation purposes.
+    The UI static class was removed in Version 1.2.0, and is currently noted for documentation purposes. It is not recommended, if possible, to use in recent versions.
 </div>
 
 {{ staticclass("UI")}}
