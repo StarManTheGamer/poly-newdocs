@@ -1,3 +1,5 @@
+# POLYTORIA NOW USES OUR DOCUMENTATION OFFICIALLY HERE: https://docs.polytoria.com/
+
 > GitHub Pages Deployment: [here](https://starmanthegamer.github.io/poly-newdocs/)
 
 # Revamped Polytoria Documentation
