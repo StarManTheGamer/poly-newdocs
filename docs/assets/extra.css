@@ -38,3 +38,12 @@ h3 + .admonition.quote {
 .contributors-link-footer {
 	color: #007bff !important;
 }
+
+.banner {
+    width: 100%;
+    text-align: center;
+    background-color: #36464e;
+	padding: 15px;
+	color: #fff;
+	font-size: 0.8rem;
+}
