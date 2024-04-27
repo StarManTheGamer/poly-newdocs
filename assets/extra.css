@@ -1,0 +1,49 @@
+[dir="ltr"] .md-header__title {
+	margin-left: initial;
+}
+
+[dir="rtl"] .md-header__title {
+	margin-right: initial;
+}
+
+.md-nav__link svg[viewBox="0 0 48 48"] {
+	width: 22px;
+	height: 22px;
+	margin-right: -4px;
+}
+
+svg[viewBox="0 0 48 48"] {
+	color: transparent !important;
+	transform: translateY(0.5px);
+}
+
+.md-nav__link span:not(:only-child) {
+	font-size: 1em;
+	margin-top: 0.11em;
+}
+
+p:has(small.parameters-text),
+p:has(small.parameters-text) + h3 {
+	margin: 0px;
+}
+
+h3:has(+ .admonition.quote) {
+	margin-bottom: 0px;
+}
+
+h3 + .admonition.quote {
+	margin-top: 5px;
+}
+
+.contributors-link-footer {
+	color: #007bff !important;
+}
+
+.banner {
+    width: 100%;
+    text-align: center;
+    background-color: #36464e;
+	padding: 15px;
+	color: #fff;
+	font-size: 0.8rem;
+}
